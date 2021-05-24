@@ -1,9 +1,10 @@
 import './index.css'
+import Logo from '../Logo'
 
 const Header = () => {
   return (
     <header className="navbar">
-      Lorem Ipsum
+      <Logo />
     </header>
   )
 }
