@@ -1,6 +1,8 @@
+import Sidebar from './Sidebar'
+
 const Home = () => {
   return (
-    <p>Lorem Ipsum</p>
+    <Sidebar />
   )
 }
 
