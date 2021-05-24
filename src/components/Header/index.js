@@ -1,6 +1,6 @@
 import './index.css'
 
-const Sidebar = () => {
+const Header = () => {
   return (
     <header className="navbar">
       Lorem Ipsum
@@ -8,4 +8,4 @@ const Sidebar = () => {
   )
 }
 
-export default Sidebar
+export default Header

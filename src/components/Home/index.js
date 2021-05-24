@@ -1,10 +1,10 @@
 import MainContent from '../MainContent'
-import Sidebar from '../Header'
+import Header from '../Header'
 
 const Home = () => {
   return (
     <>
-      <Sidebar />
+      <Header />
       <MainContent />
     </>
   )
