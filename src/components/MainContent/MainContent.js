@@ -1,6 +1,8 @@
+import "./index.css"
+
 const MainContent = () => {
   return (
-    <div>
+    <div className="main-content">
       Lorem Ipsum
     </div>
   )

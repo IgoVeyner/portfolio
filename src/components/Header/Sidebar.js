@@ -1,8 +1,10 @@
+import './index.css'
+
 const Sidebar = () => {
   return (
-    <div>
+    <header className="navbar">
       Lorem Ipsum
-    </div>
+    </header>
   )
 }
 

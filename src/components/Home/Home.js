@@ -1,5 +1,5 @@
-import MainContent from './MainContent'
-import Sidebar from './Sidebar'
+import MainContent from '../MainContent/MainContent'
+import Sidebar from '../Header/Sidebar'
 
 const Home = () => {
   return (
