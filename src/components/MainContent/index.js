@@ -1,9 +1,10 @@
 import "./index.css"
+import IntroText from '../IntroText'
 
 const MainContent = () => {
   return (
     <div className="main-content">
-      Lorem Ipsum
+      <IntroText />
     </div>
   )
 }
