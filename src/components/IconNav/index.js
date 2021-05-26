@@ -1,6 +1,8 @@
+import "./index.css"
+
 const IconNav = () => {
   return (
-    <nav>
+    <nav className="web-icons">
       <p>-Icon-</p>
       <p>-Icon-</p>
       <p>-Icon-</p>
