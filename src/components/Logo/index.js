@@ -1,6 +1,8 @@
+import './index.css'
+
 const Logo = () => {
   return (
-    <div>-Logo-</div>
+    <div className="logo">-Logo-</div>
   )
 }
 

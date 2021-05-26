@@ -1,3 +1,8 @@
+:root {
+  --SpaceOuter: 48px;
+  --spaceM: 16px
+}
+
 main {
   display: grid;
   grid-template-columns: 150px 1fr;

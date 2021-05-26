@@ -1,7 +1,6 @@
 import './index.css'
 import Logo from '../Logo'
 import Nav from '../Nav'
-import IconNav from '../IconNav'
 import MenuButton from '../MenuButton'
 
 const Header = () => {
@@ -9,7 +8,6 @@ const Header = () => {
     <header className="navbar">
       <Logo />
       <Nav />
-      <IconNav />
       <MenuButton />
     </header>
   )
