@@ -1,9 +1,9 @@
 const AboutMe = () => {
   return (
-    <div>
+    <section className="section">
       <h2>About Me</h2>
       <p>Lorem Ipsum</p>
-    </div>
+    </section>
   )
 }
 

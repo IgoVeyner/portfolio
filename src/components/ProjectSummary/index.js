@@ -1,9 +1,9 @@
 const ProjectSummary = () => {
   return (
-    <div>
+    <section className="section">
       <h2>Projects</h2>
       <p>Lorem Ipsum</p>
-    </div>
+    </section>
   )
 }
 
