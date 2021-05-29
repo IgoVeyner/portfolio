@@ -6,6 +6,10 @@
   --spaceOuter: 48px;
   --rgbBlack: 0 0 0;
   --rgbWhite: 255 255 255;
+  --rgbGrey: 17 17 17;
+  --rgbDarkGrey: 26 26 26;
+  --rgbOffWhite: 242 242 242;
+  --rgbWhite: 255 255 255;
 }
 
 * {
@@ -13,9 +17,14 @@
   margin:0px
 }
 
-main {
-  padding: 0;
-  margin: 0;
+.dark {
+  background-color: rgb(var(--rgbGrey));
+  color: rgb(var(--rgbWhite) / .8);
+}
+
+.light {
+  background-color: rgb(var(--rgbOffWhite));
+  color: rgb(var(--rgbDarkGrey) / .8);
 }
 
 @media only screen and (max-width: 700px) {
