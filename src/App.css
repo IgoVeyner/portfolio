@@ -1,6 +1,7 @@
 :root {
   --SpaceOuter: 48px;
-  --spaceM: 16px
+  --spaceM: 16px;
+  --spaceL: 24px;
 }
 
 * {

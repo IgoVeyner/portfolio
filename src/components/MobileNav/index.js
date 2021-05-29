@@ -5,9 +5,10 @@ const MobileNav = ({ menuExpanded }) => {
 
   return (
     <nav className={`mobile-nav open ${status}`}>
-      <div>
-        temp
-      </div>
+      <a href="#" className="mobile-link">Projects</a>
+      <a href="#" className="mobile-link">Blog</a>
+      <a href="#" className="mobile-link">About</a>
+      <a href="#" className="mobile-link">Contact</a>
     </nav>
   )
 }
