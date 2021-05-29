@@ -8,6 +8,8 @@
 
 @media only screen and (max-width: 700px) {
   .navbar {
+    display: block;
+    width: 0px;
     height: auto;
   }
 }

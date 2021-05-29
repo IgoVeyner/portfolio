@@ -2,3 +2,10 @@
   position: relative;
   top: var(--SpaceOuter);
 }
+
+@media only screen and (max-width: 700px) {
+  .logo {
+    position: fixed;
+    left: var(--SpaceOuter);
+  }
+}
