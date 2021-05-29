@@ -4,6 +4,7 @@ import './index.css'
 import Logo from '../Logo'
 import Nav from '../Nav'
 import MenuButton from '../MenuButton'
+import ThemeButton from '../ThemeButton'
 import MobileNav from '../MobileNav'
 
 const Header = () => {
@@ -26,6 +27,7 @@ const Header = () => {
       <Nav />
       { menuExpanded !== "unmounted" ?  <MobileNav menuExpanded={menuExpanded} /> : null }
       <MenuButton toggleMenu={toggleMenu} />
+      <ThemeButton />
     </header>
   )
 }
