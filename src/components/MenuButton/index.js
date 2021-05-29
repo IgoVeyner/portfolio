@@ -1,8 +1,13 @@
 import './index.css'
 
-const MenuButton = () => {
+const MenuButton = ({ toggleMenu }) => {
   return (
-    <button className="menu">MENU</button>
+    <button 
+      className="menu"
+      onClick={toggleMenu}
+      >
+      MENU
+    </button>
   )
 }
 
