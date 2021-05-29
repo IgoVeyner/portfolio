@@ -1,5 +1,35 @@
 .mobile-nav {
   display: none;
+  backdrop-filter: blur(3px);
+  transform: translateY(0%);
+}
+
+.open {
+  animation: open 1.1s ease;
+}
+
+.closed {
+  animation: close 1.1s ease;
+}
+
+@keyframes open {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes close {
+  0% {
+    transform: translateY(0%);
+  }
+
+  100% {
+    transform: translateY(-105%);
+  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -10,6 +40,6 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background:hsl(0, 0%, 50%, 85%);
+    background:hsl(0, 0%, 15%, 85%);
   }
 }
