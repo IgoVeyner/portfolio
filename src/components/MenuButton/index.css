@@ -8,5 +8,6 @@
     position: fixed;
     top: var(--SpaceOuter);
     right: var(--SpaceOuter);
+    z-index: 1024;
   }
 }

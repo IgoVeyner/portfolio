@@ -1,6 +1,8 @@
+import './index.css'
+
 const MobileNav = () => {
   return (
-    <nav>
+    <nav className="mobile-nav">
       <div>
         temp
       </div>

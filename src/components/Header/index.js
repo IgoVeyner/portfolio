@@ -15,7 +15,7 @@ const Header = () => {
     <header className="navbar">
       <Logo />
       <Nav />
-      <MobileNav />
+      { menuExpanded ?  <MobileNav /> : null }
       <MenuButton toggleMenu={toggleMenu} />
     </header>
   )
