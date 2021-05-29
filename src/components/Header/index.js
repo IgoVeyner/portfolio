@@ -35,7 +35,7 @@ const Header = () => {
     return () => {
       clearTimeout(timeoutId)
     }
-  }, [menuExpanded, time]);
+  }, [menuExpanded]);
 
   return (
     <header className="navbar">

@@ -1,10 +1,7 @@
 import './index.css'
 
 const MobileNav = ({ menuExpanded }) => {
-  let status = ""
-  if (menuExpanded === "unmounting") {
-    status = "closed"
-  }
+  let status = menuExpanded === "unmounting" ? "closed" : ""
 
   return (
     <nav className={`mobile-nav open ${status}`}>
