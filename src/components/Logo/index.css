@@ -1,12 +1,12 @@
 .logo {
   position: relative;
-  top: var(--SpaceOuter);
+  top: var(--spaceOuter);
   z-index: 1024;
 }
 
 @media only screen and (max-width: 700px) {
   .logo {
     position: fixed;
-    left: var(--SpaceOuter);
+    left: var(--spaceOuter);
   }
 }

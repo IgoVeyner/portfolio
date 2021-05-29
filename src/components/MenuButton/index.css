@@ -6,8 +6,8 @@
   .menu {
     display: block;
     position: fixed;
-    top: var(--SpaceOuter);
-    right: var(--SpaceOuter);
+    top: var(--spaceOuter);
+    right: var(--spaceOuter);
     z-index: 1024;
   }
 }

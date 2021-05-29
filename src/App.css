@@ -1,9 +1,11 @@
 :root {
-  --SpaceOuter: 48px;
   --spaceS: 8px;
   --spaceM: 16px;
   --spaceL: 24px;
   --spaceXL: 32px;
+  --spaceOuter: 48px;
+  --rgbBlack: 0 0 0;
+  --rgbWhite: 255 255 255;
 }
 
 * {

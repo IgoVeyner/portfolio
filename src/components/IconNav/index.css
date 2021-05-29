@@ -7,7 +7,7 @@
 .web-icons {
   display: flex;
   position: relative;
-  bottom: var(--SpaceOuter);
+  bottom: var(--spaceOuter);
 }
 
 .web-icons p {
