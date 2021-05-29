@@ -1,4 +1,5 @@
 import './index.css'
+import IconNav from '../IconNav'
 
 const MobileNav = ({ menuExpanded }) => {
   let status = menuExpanded === "unmounting" ? "closed" : ""
@@ -9,6 +10,7 @@ const MobileNav = ({ menuExpanded }) => {
       <a href="#" className="mobile-link">Blog</a>
       <a href="#" className="mobile-link">About</a>
       <a href="#" className="mobile-link">Contact</a>
+      <IconNav classNames={["mobile-icons"]}/>
     </nav>
   )
 }

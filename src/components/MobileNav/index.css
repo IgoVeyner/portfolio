@@ -13,10 +13,7 @@
 }
 
 .mobile-link {
-  width: 100%;
-  text-align: center;
-  padding: var(--spaceL);
-  color: white;
+  display: none;
 }
 
 @keyframes open {
@@ -51,5 +48,13 @@
     bottom: 0;
     left: 0;
     background:hsl(0, 0%, 15%, 85%);
+  }
+
+  .mobile-link {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: var(--spaceL);
+    color: white;
   }
 }

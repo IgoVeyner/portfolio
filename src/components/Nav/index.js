@@ -10,7 +10,7 @@ const Navbar = () => {
         <a href="#" className="web-link">About</a>
         <a href="#" className="web-link">Contact</a>
       </div>
-      <IconNav />
+      <IconNav classNames={["web-icons"]} />
     </nav>
   )
 }

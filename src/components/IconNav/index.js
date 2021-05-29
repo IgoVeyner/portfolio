@@ -1,8 +1,10 @@
 import "./index.css"
 
-const IconNav = () => {
+const IconNav = ({ classNames }) => {
+  const [navName] = classNames
+
   return (
-    <nav className="web-icons">
+    <nav className={classNames} >
       <p>-Icon-</p>
       <p>-Icon-</p>
       <p>-Icon-</p>
