@@ -1,5 +1,6 @@
 import './index.css'
 import { useSelector, useDispatch } from 'react-redux'
+import { setLight, setDark } from '../../redux/actions/themeActions'
 
 const ThemeButton = ({ classNames }) => {
   const [buttonName] = classNames
@@ -7,23 +8,7 @@ const ThemeButton = ({ classNames }) => {
   const theme = useSelector(state => state.theme)
   const dispatch = useDispatch()
 
-  const toggleTheme = () => {
-    let action
-
-    if (theme === "dark") {
-      action = {
-        type: "SET_LIGHT",
-        payload: "light"
-      }
-    } else {
-      action = {
-        type: "SET_DARK",
-        payload: "dark"
-      }
-    }
-
-    dispatch(action)
-  }
+  const toggleTheme = () => dispatch(theme === "dark" ? setLight() : setDark())
 
   return (
     <button 
