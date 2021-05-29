@@ -1,7 +1,17 @@
 .mobile-nav {
   display: hidden;
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(16px);
   transform: translateY(0%);
+}
+
+.nav-dark {
+  background-color: rbg(var(--rgbGrey) / .8);
+  color: rgb(var(--rgbWhite) / .8);
+}
+
+.nav-light {
+  background-color: rgb(var(--rgbOffWhite) / .8);
+  color: rgb(var(--rgbDarkGrey) / .8);
 }
 
 .open {
@@ -47,7 +57,6 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background:hsl(0, 0%, 15%, 85%);
   }
 
   .mobile-link {
@@ -55,6 +64,5 @@
     width: 100%;
     text-align: center;
     padding: var(--spaceL);
-    color: white;
   }
 }

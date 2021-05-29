@@ -14,7 +14,12 @@
 
 * {
   padding: 0px;
-  margin:0px
+  margin:0px;
+  outline: none;
+}
+
+main {
+  transition: all 1s;
 }
 
 .dark {
