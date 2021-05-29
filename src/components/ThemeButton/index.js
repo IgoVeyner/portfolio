@@ -1,9 +1,11 @@
 import './index.css'
 
-const ThemeButton = ({ toggleTheme }) => {
+const ThemeButton = ({ toggleTheme, classNames }) => {
+  const [buttonName] = classNames
+
   return (
     <button 
-      className="theme-button"
+      className={buttonName}
       onClick={null}
       >
       -theme-

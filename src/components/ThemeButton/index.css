@@ -5,8 +5,19 @@
   right: var(--spaceOuter);
 }
 
+.mobile-theme-button{
+  display: none;
+}
+
 @media only screen and (max-width: 700px) {
   .theme-button {
     display: none;
+  }
+
+  .mobile-theme-button {
+    display: block;
+    position: fixed;
+    bottom: var(--spaceXL);
+    right: var(--spaceOuter);
   }
 }
