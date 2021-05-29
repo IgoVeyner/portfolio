@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import useMenuAnimation from '../../Hooks/useMenuAnimation'
 import './index.css'
 import Logo from '../Logo'
 import Nav from '../Nav'
@@ -8,7 +9,7 @@ import MobileNav from '../MobileNav'
 const Header = () => {
 
   const [menuExpanded, setMenuExpanded] = useState("unmounted")
-  const time = 1000
+  useMenuAnimation(menuExpanded, setMenuExpanded)
 
   const toggleMenu = () => {
     if (menuExpanded === "mounted") {
@@ -18,24 +19,6 @@ const Header = () => {
       setMenuExpanded("mounting")
     }
   }
-
-  useEffect(() => {
-    let timeoutId
-
-    if (menuExpanded === "mounting") {
-      timeoutId = setTimeout(() => {
-        setMenuExpanded("mounted");
-      }, time);
-    } else if (menuExpanded === "unmounting") {
-      timeoutId = setTimeout(() => {
-        setMenuExpanded("unmounted");
-      }, time);
-    }
-
-    return () => {
-      clearTimeout(timeoutId)
-    }
-  }, [menuExpanded]);
 
   return (
     <header className="navbar">

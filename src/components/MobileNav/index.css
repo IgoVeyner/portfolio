@@ -1,5 +1,5 @@
 .mobile-nav {
-  display: none;
+  display: hidden;
   backdrop-filter: blur(3px);
   transform: translateY(0%);
 }
