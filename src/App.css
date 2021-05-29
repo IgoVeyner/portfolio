@@ -3,9 +3,12 @@
   --spaceM: 16px
 }
 
+* {
+  padding: 0px;
+  margin:0px
+}
+
 main {
-  display: grid;
-  grid-template-columns: 145px 1fr;
   padding: 0;
   margin: 0;
 }
