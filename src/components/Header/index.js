@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import useMenuAnimation from '../../Hooks/useMenuAnimation'
 import './index.css'
 import Logo from '../Logo'
