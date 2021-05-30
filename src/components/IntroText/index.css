@@ -19,7 +19,7 @@
   position: relative;
   top: 24px;
   left: 0px;
-  animation: reveal 3s forwards 2s;
+  animation: reveal 3s forwards 1.5s;
 }
 
 .name-container {
@@ -30,7 +30,7 @@
 .rotating {
   width: 100%;
   position: relative;
-  animation: slide 7s linear infinite 3s; 
+  animation: slide 7s linear infinite 3.5s; 
   display: block;
 }
 
