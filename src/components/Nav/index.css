@@ -5,6 +5,7 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
+  width: 145px;
 }
 
 .web-nav-list {
