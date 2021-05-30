@@ -1,8 +1,22 @@
+import "./index.css"
+
 const IntroText = () => {
   return (
-    <section className="section">
-      <h3>Igor Veyner</h3>
-      <h1>Lorem Ipsum</h1>
+    <section className="section intro-title">
+      <div className="name-container">
+        <h3 className="name">Igor Veyner</h3>
+      </div>
+
+      <div className="rotate-container">
+        <ul className="rotating">
+          <li className="li-rotate">Frontend</li>
+          <li className="li-rotate">Backend</li>
+          <li className="li-rotate">Full Stack</li>
+        </ul>
+        
+        <span> Engineer</span>
+      </div>
+
     </section>
   )
 }
