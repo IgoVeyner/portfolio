@@ -1,6 +1,10 @@
 import "./index.css"
+import { useSelector } from 'react-redux'
 
 const IntroText = () => {
+  const theme = useSelector(state => state.theme)
+  const color = theme === "dark" ? "light-line" : "dark-line" 
+
   return (
     <section className="section">
       <div className="intro-title">
@@ -17,7 +21,7 @@ const IntroText = () => {
             </ul>
           </div>
 
-          <span className="line"></span>
+          <span className={`line ${color}`}></span>
         </div>
 
         <span className="rotate-span">Engineer</span>
