@@ -10,14 +10,27 @@
   letter-spacing: .3em;
 }
 
+.name::before {
+  content: "";
+  background-color: greenyellow;
+  width: 175px;
+  height: 30px;
+  display: block;
+  position: relative;
+  top: 24px;
+  left: 0px;
+  animation: reveal 3s forwards 2s;
+}
+
 .name-container {
   margin-bottom: var(--space2XL);
+  overflow: hidden;
 }
 
 .rotating {
   width: 100%;
   position: relative;
-  animation: slide 7s linear infinite 5s; 
+  animation: slide 7s linear infinite 3s; 
   display: block;
 }
 
@@ -89,4 +102,9 @@
     filter: blur(0px);
     opacity: 100%;
   }
+}
+
+@keyframes reveal {
+  0% {left: 0px}
+  100% {left: -175px}
 }
