@@ -12,5 +12,7 @@
     display: block;
     width: 0px;
     height: auto;
+    position: relative;
+    z-index: 100;
   }
 }
