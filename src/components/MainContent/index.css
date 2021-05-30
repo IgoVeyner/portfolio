@@ -8,6 +8,7 @@
   justify-content: center;
   flex-direction: column;
   height: 100vh;
-  margin-left: 150px;
-  margin-right: 20%;
+  width: auto;
+  padding-left: 150px;
+  padding-right: 20%;
 }
