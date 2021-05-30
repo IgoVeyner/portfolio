@@ -16,6 +16,14 @@
   text-align: right;
 }
 
+.rotate-container::before {
+  content: "[ ";
+}
+
+.rotate-container::after {
+  content: " ]";
+}
+
 @keyframes slide {
   0%, 20% {transform:translate3d(0,0,0);}
   25%, 45% {transform:translate3d(0,-33%,0);}
