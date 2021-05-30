@@ -8,4 +8,6 @@
   justify-content: center;
   flex-direction: column;
   height: 100vh;
+  margin-left: 150px;
+  margin-right: 20%;
 }

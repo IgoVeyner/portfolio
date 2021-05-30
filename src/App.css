@@ -3,6 +3,7 @@
   --spaceM: 16px;
   --spaceL: 24px;
   --spaceXL: 32px;
+  --space2XL: 48px;
   --spaceOuter: 48px;
   --rgbBlack: 0 0 0;
   --rgbWhite: 255 255 255;
@@ -10,12 +11,14 @@
   --rgbDarkGrey: 26 26 26;
   --rgbOffWhite: 242 242 242;
   --rgbWhite: 255 255 255;
+  --fontStack: Gotham, system-ui, -apple-system, BlinkMacSystemFont, San Francisco, Roboto, Segoe UI, Ubuntu, Helvetica Neue, sans-serif;
 }
 
 * {
   padding: 0px;
   margin:0px;
   outline: none;
+  font-family: var(--fontStack);
 }
 
 main {

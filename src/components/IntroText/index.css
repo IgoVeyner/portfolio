@@ -1,27 +1,39 @@
+.intro-title {
+  animation: unblur 5s forwards;
+  max-width: 500px;
+}
+
+.name {
+  font-size: 1.15rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.name-container {
+  margin-bottom: var(--space2XL);
+}
+
 .rotating {
-  display: inline-flex;
-  flex-direction: column;
+  width: 100%;
   position: relative;
-  animation: slide 7s linear infinite; 
+  animation: slide 7s linear infinite 5s; 
 }
 
 .li-rotate {
-  display: block;
-  margin: 3;
+  display: flex;
+  flex-direction: column;
 }
 
 .rotate-container {
   overflow: hidden;
-  height: 24px;
-  text-align: right;
+  height: 5rem;
+  font-size: 4rem;
 }
 
-.rotate-container::before {
-  content: "[ ";
-}
-
-.rotate-container::after {
-  content: " ]";
+.rotate-span {
+  display: block;
+  position: relative;
+  font-size: 4rem;
 }
 
 @keyframes slide {
@@ -30,4 +42,15 @@
   50%, 70% {transform:translate3d(0,-66%,0);}
   75%, 95% {transform:translate3d(0,-33%,0);}
   100% {transform:translate3d(0,0,0);}
+}
+
+@keyframes unblur {
+  0% {
+    filter: blur(15px);
+    opacity: 0%;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 100%;
+  }
 }
