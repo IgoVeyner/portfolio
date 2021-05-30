@@ -15,16 +15,21 @@ const IntroText = () => {
         <div className="title-container">
           <div className="rotate-container">
             <ul className="rotating">
+              <li className="li-rotate">Full Stack</li>
               <li className="li-rotate">Frontend</li>
               <li className="li-rotate">Backend</li>
-              <li className="li-rotate">Full Stack</li>
             </ul>
           </div>
 
           <span className={`line ${color}`}></span>
         </div>
 
-        <span className="rotate-span">Engineer</span>
+        <span className="rotate-span">
+          <span className="linux">
+            ~$
+          </span> 
+          Engineer
+        </span>
       </div>
     </section>
   )
