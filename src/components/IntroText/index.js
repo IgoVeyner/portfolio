@@ -1,6 +1,5 @@
 import "./index.css"
 import { useSelector } from 'react-redux'
-import Name from '../Name'
 
 const IntroText = () => {
   const theme = useSelector(state => state.theme)
@@ -9,7 +8,9 @@ const IntroText = () => {
   return (
     <section className="section">
       <div className="intro-title">
-        <Name />
+        <div className="name-container">
+          <h3 className="name">Igor Veyner</h3>
+        </div>
 
         <div className="title-container">
           <div className="rotate-container">
