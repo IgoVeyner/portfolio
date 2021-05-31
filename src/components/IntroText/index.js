@@ -1,7 +1,8 @@
 import "./index.css"
 import { useSelector } from 'react-redux'
 import Name from "../Name"
-import Title from "../Title"
+import TitleRotating from "../TitleRotating"
+import TitleTyping from "../TitleTyping"
 
 const IntroText = () => {
   const theme = useSelector(state => state.theme)
@@ -11,7 +12,8 @@ const IntroText = () => {
     <section className="section">
       <div className="intro-title">
         <Name />
-        <Title color={color}/>
+        <TitleRotating color={color}/>
+        <TitleTyping />
       </div>
     </section>
   )

@@ -1,4 +1,3 @@
-
 .title-container {
   width: 100%;
   display: flex;
@@ -26,11 +25,6 @@
   letter-spacing: 1px;
 }
 
-.title-ending {
-  display: block;
-  font-size: 4rem;
-}
-
 .line {
   display: flex;
   width: 100%;
@@ -46,12 +40,6 @@
 
 .dark-line {
   background-color: rgb(var(--rgbBlack) / .3);
-}
-
-.linux {
-  color: var(--hexLinuxGreen);
-  margin-right: var(--spaceS);
-  text-shadow: black 1px 1px 2px;
 }
 
 @keyframes slide {

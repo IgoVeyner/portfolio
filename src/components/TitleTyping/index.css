@@ -1,0 +1,10 @@
+.title-ending {
+  display: block;
+  font-size: 4rem;
+}
+
+.linux {
+  color: var(--hexLinuxGreen);
+  margin-right: var(--spaceS);
+  text-shadow: black 1px 1px 2px;
+}
