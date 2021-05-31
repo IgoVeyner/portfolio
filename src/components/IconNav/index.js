@@ -4,7 +4,7 @@ import "./index.css"
 const IconNav = ({ classNames }) => {
   const [navName] = classNames
   const theme = useSelector(state => state.theme)
-  const iconColor = theme === "dark" ? "light-icon" : "dark-icon"
+  const iconColor = theme === "dark" ? "dark-icon" : "light-icon"
 
   return (
     <nav className={navName} >

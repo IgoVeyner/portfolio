@@ -31,7 +31,7 @@ main {
 
 .dark {
   background-color: rgb(var(--rgbGrey));
-  color: rgb(var(--rgbWhite) / .8);
+  color: rgb(var(--rgbWhite) / .7);
 }
 
 .light {

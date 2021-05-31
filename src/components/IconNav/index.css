@@ -10,16 +10,8 @@
   bottom: var(--spaceOuter);
 }
 
-.web-icons p {
-  padding: var(--spaceM);
-}
-
 .mobile-icons {
   display: none;
-}
-
-.mobile-icons p {
-  padding: var(--spaceS);
 }
 
 .icon-container {
@@ -40,11 +32,11 @@
   transition: fill .2s;
 }
 
-.light-icon {
+.dark-icon {
   fill: var(--lightTextColor);
 }
 
-.dark-icon {
+.light-icon {
   fill: var(--darkTextColor);
 }
 

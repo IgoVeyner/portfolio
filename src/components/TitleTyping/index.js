@@ -1,8 +1,8 @@
 import "./index.css"
 
-const TitleTyping = () => {
+const TitleTyping = ({ titleColor }) => {
   return (
-    <span className="title-ending">
+    <span className={`title-ending ${titleColor}`}>
       <span className="linux">
         ~$
       </span> 

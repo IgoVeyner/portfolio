@@ -34,11 +34,11 @@
   margin-top: 22px;
 }
 
-.light-line {
+.dark-line {
   background-color: rgb(var(--rgbWhite) / .3);
 }
 
-.dark-line {
+.light-line {
   background-color: rgb(var(--rgbBlack) / .3);
 }
 
