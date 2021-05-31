@@ -9,7 +9,7 @@ const IconNav = ({ classNames }) => {
   return (
     <nav className={navName} >
 
-      <a href="https://igor-veyner.medium.com/" className="icon-container">
+      <a href="https://igor-veyner.medium.com/" className="icon-container" target="_blank" >
         <svg className={`icon ${iconColor} medium`}>
           <path 
             d="M2.846 6.887c.03-.295-.083-.586-.303-.784l-2.24-2.7v-.403h6.958l5.378 11.795 
@@ -21,7 +21,7 @@ const IconNav = ({ classNames }) => {
         </svg>
       </a>
 
-      <a href="https://github.com/IgoVeyner" className="icon-container">
+      <a href="https://github.com/IgoVeyner" className="icon-container" target="_blank" >
         <svg  className={`icon ${iconColor}`}>
           <path 
             d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.87 8.17 6.84 
@@ -34,7 +34,7 @@ const IconNav = ({ classNames }) => {
         </svg>
       </a>
 
-      <a href="https://www.linkedin.com/in/igorveyner/" className="icon-container">
+      <a href="https://www.linkedin.com/in/igorveyner/" className="icon-container" target="_blank" >
         <svg className={`icon ${iconColor} medium`}>
           <path 
             d="M0 0v24h24v-24h-24zm8 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 
