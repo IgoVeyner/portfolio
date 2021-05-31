@@ -26,3 +26,18 @@
   0% {left: 0px}
   100% {left: -175px}
 }
+
+@media only screen and (max-width: 700px) {
+  .name {
+    font-size: 0.95rem;
+  }
+
+  .name::before {
+    width: 145px;
+    height: 22px;
+  }
+
+  .name-container {
+    margin-bottom: var(--spaceM);
+  }
+}

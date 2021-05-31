@@ -49,3 +49,18 @@
   75%, 95% {transform:translateY(-33%);}
   100% {transform:translateY(0%);}
 }
+
+@media only screen and (max-width: 700px) {
+  .li-rotate {
+    font-size: 3rem;
+  }
+
+  .rotate-container {
+    height: 3.5rem;
+  }
+
+  .line {
+    margin-top: 20px;
+    margin-left: 11px;
+  }
+}
