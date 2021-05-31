@@ -22,6 +22,35 @@
   padding: var(--spaceS);
 }
 
+.icon-container {
+  padding: var(--spaceS);
+  display: grid;
+  place-items: center;
+}
+
+.icon {
+  width: var(--spaceL);
+  height: var(--spaceL);
+  fill: grey;
+  transition: fill 2s;
+}
+
+.icon:hover {
+  fill: var(--hexLinuxGreen);
+  transition: fill .2s;
+}
+
+.light-icon {
+  fill: var(--lightTextColor);
+}
+
+.dark-icon {
+  fill: var(--darkTextColor);
+}
+
+.medium {
+  transform: scale(.8);
+}
 
 @media only screen and (max-width: 700px) {
   .web-icons {
