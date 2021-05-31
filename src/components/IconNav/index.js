@@ -10,7 +10,7 @@ const IconNav = ({ classNames }) => {
     <nav className={navName} >
 
       <a href="https://igor-veyner.medium.com/" className="icon-container">
-        <svg  xmlns="http://www.w3.org/2000/svg" className={`icon ${iconColor} medium`}>
+        <svg className={`icon ${iconColor} medium`}>
           <path 
             d="M2.846 6.887c.03-.295-.083-.586-.303-.784l-2.24-2.7v-.403h6.958l5.378 11.795 
             4.728-11.795h6.633v.403l-1.916 1.837c-.165.126-.247.333-.213.538v13.498c-.034.204.048.411.213.537l1.871 
@@ -22,7 +22,7 @@ const IconNav = ({ classNames }) => {
       </a>
 
       <a href="https://github.com/IgoVeyner" className="icon-container">
-        <svg viewBox="0 0 24 24" className={`icon ${iconColor}`}>
+        <svg  className={`icon ${iconColor}`}>
           <path 
             d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.87 8.17 6.84 
             9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 
@@ -35,7 +35,7 @@ const IconNav = ({ classNames }) => {
       </a>
 
       <a href="https://www.linkedin.com/in/igorveyner/" className="icon-container">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  className={`icon ${iconColor} medium`}>
+        <svg className={`icon ${iconColor} medium`}>
           <path 
             d="M0 0v24h24v-24h-24zm8 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 
             1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 
