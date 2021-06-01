@@ -22,12 +22,26 @@
   width: var(--spaceL);
   height: var(--spaceL);
   fill: grey;
-  transition: fill 2.5s;
+  transition: fill 2.5s, transform .3s;
 }
 
 .icon:hover {
   fill: var(--hexLinuxGreen);
   transition: fill .2s;
+}
+
+#medium, #github, #linkedIn {
+  transition: transform 1s;
+}
+
+#medium:hover, #github:hover {
+  transition: transform .5s;
+  transform: scale(1.3);
+}
+
+#linkedIn:hover {
+  transition: transform .5s;
+  transform: scale(1.2);
 }
 
 .dark-icon {
