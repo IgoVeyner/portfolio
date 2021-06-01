@@ -2,6 +2,26 @@
   position: relative;
   top: var(--spaceOuter);
   z-index: 1024;
+  height: 65px;
+  width: 65px;
+}
+
+.logo-svg {
+  transition: fill 3s;
+}
+
+.logo-svg:hover {
+  fill: var(--hexLinuxGreen);
+  transition: fill .5s;
+  animation: shake 1s;
+}
+
+.dark-logo {
+  fill: white;
+}
+
+.light-logo {
+  fill: black;
 }
 
 @media only screen and (max-width: 700px) {
@@ -9,4 +29,17 @@
     position: fixed;
     left: var(--spaceOuter);
   }
+}
+
+@keyframes shake {
+  10% { transform: translateX(3px) rotate(2deg) }
+  20% { transform: translateX(-3px) rotate(-2deg); }
+  30% { transform: translateX(3px) rotate(2deg); }
+  40% { transform: translateX(-3px) rotate(-2deg); }
+  50% { transform: translateX(2px) rotate(1deg); }
+  60% { transform: translateX(-2px) rotate(-1deg); }
+  70% { transform: translateX(2px) rotate(1deg); }
+  80% { transform: translateX(-2px) rotate(-1deg); }
+  90% { transform: translateX(1px) rotate(0); }
+  100% {transform: translateX(-1px) rotate(0); }
 }
