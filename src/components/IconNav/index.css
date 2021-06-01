@@ -24,7 +24,7 @@
   width: var(--spaceL);
   height: var(--spaceL);
   fill: grey;
-  transition: fill 2s;
+  transition: fill 2.5s;
 }
 
 .icon:hover {
