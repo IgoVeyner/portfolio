@@ -18,6 +18,18 @@
 
 .web-link {
   padding: var(--spaceM);
+  text-decoration: none;
+  font-weight: bold;
+  line-height: 1;
+  transition: color 2s;
+}
+
+.dark-link {
+  color: rgb(var(--rgbWhite) / .8);
+}
+
+.light-link {
+  color: rgb(var(--rgbBlack) / .8);
 }
 
 @media only screen and (max-width: 700px) {
