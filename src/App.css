@@ -23,6 +23,12 @@
   margin: 0px;
   outline: none;
   font-family: var(--fontStack);
+  cursor: default;
+  user-select: none;
+}
+
+a, svg, path, g {
+  cursor: pointer;
 }
 
 html {

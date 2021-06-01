@@ -25,7 +25,7 @@
   transition: fill 2.5s, transform .3s;
 }
 
-.icon:hover {
+.icon-container:hover .icon{
   fill: var(--hexLinuxGreen);
   transition: fill .2s;
 }
