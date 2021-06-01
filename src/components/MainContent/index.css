@@ -1,5 +1,7 @@
 .main-content {
   width: 100%;
+  opacity: 0;
+  animation: unblur 5s forwards .5s;
 }
 
 .section {
@@ -13,9 +15,21 @@
   padding-right: 150px;
 }
 
+@keyframes unblur {
+  0% {
+    filter: blur(25px);
+    opacity: 0%;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 100%;
+  }
+}
+
 @media only screen and (max-width: 700px) {
   .section {
     padding-left: var(--spaceOuter);
     padding-right: var(--spaceOuter);
   }
 }
+

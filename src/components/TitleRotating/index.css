@@ -14,7 +14,7 @@
 
 .rotating {
   width: 100%;
-  animation: slide 7s infinite 3.5s; 
+  animation: slide 7s infinite 4s; 
   display: block;
 }
 
