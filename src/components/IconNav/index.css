@@ -16,8 +16,6 @@
 
 .icon-container {
   padding: var(--spaceS);
-  display: grid;
-  place-items: center;
 }
 
 .icon {
