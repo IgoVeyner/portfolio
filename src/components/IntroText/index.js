@@ -18,7 +18,7 @@ const IntroText = () => {
   }
 
   return (
-    <section className="section">
+    <section className="section" id="intro">
       <div className="intro-title">
         <Name />
         <TitleRotating color={color} titleColor={titleColor} />

@@ -25,6 +25,10 @@
   font-family: var(--fontStack);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 main {
   transition: all 1s;
 }

@@ -6,7 +6,7 @@ const Logo = () => {
   const logoColor = theme === "dark" ? "dark-logo" : "light-logo"
 
   return (
-    <a href="#" className="logo">
+    <a href="#intro" className="logo">
       <svg className={`logo-svg ${logoColor}`} viewBox="0 0 1200.000000 1200.000000" >
         <g transform="translate(0.000000,1200.000000) scale(0.100000,-0.100000)" >
           <path 
