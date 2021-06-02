@@ -5,7 +5,7 @@
 }
 
 .nav-dark {
-  background-color: rbg(var(--rgbGrey) / .8);
+  background-color: rgb(var(--rgbGrey) / .8);
   color: rgb(var(--rgbWhite) / .8);
 }
 
@@ -54,5 +54,33 @@
     width: 100%;
     text-align: center;
     padding: var(--spaceL);
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 2s;
+    position: relative;
+    font-size: 1.375rem;
+    color: inherit;
+    box-sizing: border-box;
+  }
+  
+  .mobile-link::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    width: 80%;
+    background-color: var(--hexLinuxGreen);
+    position: absolute;
+    top: 54%;
+    left: 0%;
+    right: var(--space3XL);
+    left: var(--space3XL);
+    transform: scaleX(0) translateY(-1px);
+    transform-origin: right;
+    transition: transform .3s ease-in-out;
+  }
+  
+  .mobile-link:hover::after {
+    transform: scaleX(1) translateY(-1px);
+    transform-origin: left;
   }
 }

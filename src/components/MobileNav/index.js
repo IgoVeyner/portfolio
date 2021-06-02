@@ -10,7 +10,7 @@ const MobileNav = ({ menuExpanded }) => {
   const navTheme = theme === "dark" ? "nav-dark" : "nav-light"
 
   return (
-    <nav className={`mobile-nav open ${status}`}>
+    <nav className={`mobile-nav open ${status} ${navTheme}`}>
       <a href="#projects" className="mobile-link">Projects</a>
       <a href="#about" className="mobile-link">About</a>
       <a href="#contact" className="mobile-link">Contact</a>
