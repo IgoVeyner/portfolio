@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { useSpring, animated } from 'react-spring'
 
 const AnimatedIcon = ({ theme }) => {
@@ -19,6 +18,8 @@ const AnimatedIcon = ({ theme }) => {
     }
   }
 
+  const buttonColor = theme === "dark" ? "dark-button" : "light-button"
+
   const { r, transform, cx, cy, opacity } = properties[
     theme === "dark" ? "sun" : "moon"
   ]
@@ -30,6 +31,7 @@ const AnimatedIcon = ({ theme }) => {
 
   return (
     <animated.svg
+      className={`theme-svg ${buttonColor}`}
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
@@ -40,7 +42,6 @@ const AnimatedIcon = ({ theme }) => {
       strokeLinejoin="round"
       stroke="currentColor"
       style={{
-        cursor: "pointer",
         ...svgContainerProps
       }}
     >
@@ -50,13 +51,14 @@ const AnimatedIcon = ({ theme }) => {
       </mask>
 
       <animated.circle
+        className={buttonColor}
         cx="12"
         cy="12"
         style={centerCircleProps}
-        fill="black"
+        fill="currentColor"
         mask="url(#myMask2)"
       />
-      <animated.g stroke="currentColor" style={linesProps}>
+      <animated.g stroke="currentColor" style={linesProps} className={buttonColor} >
         <line x1="12" y1="1" x2="12" y2="3" />
         <line x1="12" y1="21" x2="12" y2="23" />
         <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
