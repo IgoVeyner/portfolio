@@ -44,7 +44,7 @@
   .mobile-theme-button {
     display: block;
     position: fixed;
-    bottom: var(--spaceXL);
+    bottom: 33px;
     right: var(--spaceOuter);
   }
 }
