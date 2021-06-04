@@ -10,6 +10,14 @@
   transform: translateY(-13px);
 }
 
+.dark-menu {
+  background-color: rgb(var(--rgbWhite) / .8);
+}
+
+.light-menu {
+  background-color: rgb(var(--rgbBlack) / .8);
+}
+
 @media only screen and (max-width: 700px) {
   .menu {
     display: block;
@@ -26,10 +34,9 @@
     cursor: inherit;
   }
 
-   .menu-line {
+  .menu-line {
     width: var(--spaceXL);
     height: 3px;
-    background-color: #ecf0f1;
     display: block;
     margin: 9px auto;
     transition: all 0.3s ease-in-out;
