@@ -2,12 +2,16 @@ import './index.css'
 
 const MenuButton = ({ toggleMenu }) => {
   return (
-    <button 
+    <div 
       className="menu"
       onClick={toggleMenu}
       >
-      MENU
-    </button>
+      <div class="hamburger" >
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
   )
 }
 
