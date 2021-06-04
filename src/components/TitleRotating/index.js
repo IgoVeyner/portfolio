@@ -5,6 +5,7 @@ const TitleRotating = ({ color, titleColor }) => {
     <div className="title-container">
       <div className={`rotate-container ${titleColor}`}>
         <ul className="rotating">
+          <li className="li-rotate">Software</li>
           <li className="li-rotate">Full Stack</li>
           <li className="li-rotate">Frontend</li>
           <li className="li-rotate">Backend</li>
