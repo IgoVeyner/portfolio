@@ -41,3 +41,19 @@
     margin-bottom: var(--spaceM);
   }
 }
+
+@media only screen and (max-width: 400px) {
+  .name {
+    font-size: 1.125rem;
+  }
+
+  .name::before {
+    width: 170px;
+    height: 20px;
+    top: 22px
+  }
+
+  .name-container {
+    margin-bottom: var(--spaceM);
+  }
+}

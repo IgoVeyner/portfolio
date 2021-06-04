@@ -16,3 +16,9 @@
     top: calc(var(--space3XL) * -1)
   }
 }
+
+@media only screen and (max-width: 400px) {
+  .intro-title {
+    top: calc(var(--space3XL) * -1)
+  }
+}

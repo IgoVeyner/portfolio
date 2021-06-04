@@ -65,3 +65,17 @@
     margin-left: 11px;
   }
 }
+
+@media only screen and (max-width: 400px) {
+  .li-rotate {
+    font-size: 2rem;
+  }
+
+  .rotate-container {
+    height: 2.5rem;
+  }
+
+  .line {
+    margin-top: 12px;
+  }
+}
