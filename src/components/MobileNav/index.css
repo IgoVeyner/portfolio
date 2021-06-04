@@ -36,7 +36,7 @@
   100% { transform: translateY(-105%); }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 700px), (max-height: 550px) {
   .mobile-nav {
     display: flex;
     flex-direction: column;

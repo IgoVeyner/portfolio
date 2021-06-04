@@ -22,3 +22,9 @@
     top: calc(var(--space3XL) * -1)
   }
 }
+
+@media screen and (max-height: 500px) {
+  .intro-title {
+    margin-top: 50vh;
+  }
+}
