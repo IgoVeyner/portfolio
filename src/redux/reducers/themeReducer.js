@@ -1,4 +1,12 @@
-const handleTheme = (state="dark", action) => {
+const getCurrentTime = () => {
+  const date = new Date()
+  const hour = date.getHours()
+
+  return (hour > 5 && hour < 17) ? "light" : "dark"
+}
+
+
+const handleTheme = (state=getCurrentTime(), action) => {
   switch (action.type) {
     case "SET_LIGHT":
       return action.payload
