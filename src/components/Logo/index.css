@@ -25,6 +25,12 @@
   fill: black;
 }
 
+@keyframes shake {
+  33% { transform: translateX(-1px) rotate(-1deg); }
+  66% { transform: translateX(1px) rotate(1deg); }
+  100% { transform: translateX(0px) rotate(0deg);}
+}
+
 @media only screen and (max-width: 700px) {
   .logo {
     position: fixed;
@@ -32,8 +38,9 @@
   }
 }
 
-@keyframes shake {
-  33% { transform: translateX(-1px) rotate(-1deg); }
-  66% { transform: translateX(1px) rotate(1deg); }
-  100% { transform: translateX(0px) rotate(0deg);}
+@media only screen and (max-width: 400px) {
+  .logo {
+    left: var(--spaceXL);
+    top: var(--spaceXL);
+  }
 }
