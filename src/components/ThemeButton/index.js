@@ -8,12 +8,13 @@ const ThemeButton = ({ classNames }) => {
 
   const theme = useSelector(state => state.theme)
   const dispatch = useDispatch()
+  const buttonColor = theme === "dark" ? "dark-button-cl" : "light-button-cl"
 
   const toggleTheme = () => dispatch(theme === "dark" ? setLight() : setDark())
 
   return (
     <button 
-      className={buttonName}
+      className={`${buttonName} ${buttonColor}`}
       onClick={toggleTheme}
       >
       <AnimatedIcon theme={theme} />

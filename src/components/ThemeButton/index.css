@@ -9,6 +9,22 @@
   width: 40px;
   padding: var(--spaceS);
   box-sizing: content-box;
+  transition: backdrop-filter .3s;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.theme-button:hover {
+  backdrop-filter: contrast(0.85);
+  transition: backdrop-filter .3s;
+}
+
+.dark-button-cl:hover {
+  backdrop-filter: contrast(0.7);
+}
+
+.light-button-cl:hover {
+  backdrop-filter: contrast(0.85);
 }
 
 .theme-svg {
@@ -46,5 +62,8 @@
     position: fixed;
     bottom: 33px;
     right: var(--spaceOuter);
+    padding: var(--spaceS);
+    border-radius: 50px;
+    cursor: pointer;
   }
 }
