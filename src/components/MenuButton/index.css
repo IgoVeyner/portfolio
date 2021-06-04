@@ -2,6 +2,14 @@
   display: none
 }
 
+.menu-open .menu-line:nth-child(1){
+  transform: translateY(13px);
+}
+
+.menu-open .menu-line:nth-child(3){
+  transform: translateY(-13px);
+}
+
 @media only screen and (max-width: 700px) {
   .menu {
     display: block;
@@ -14,26 +22,17 @@
     height: 40px;
   }
 
-  .hamburger, .line {
+  .hamburger {
+    cursor: inherit;
+  }
+
+   .menu-line {
     width: var(--spaceXL);
-    height: 4px;
+    height: 3px;
     background-color: #ecf0f1;
     display: block;
-    margin: 8px auto;
+    margin: 9px auto;
     transition: all 0.3s ease-in-out;
     cursor: inherit;
   }
-}
-
-#menu-open .line:nth-child(1),
-#menu-open .line:nth-child(3){
-  width: 40px;
-}
-
-#menu-open .line:nth-child(1){
-  transform: translateX(-10px) rotate(-45deg);
-}
-
-#menu-open .line:nth-child(3){
-  transform: translateX(-10px) rotate(45deg);
 }

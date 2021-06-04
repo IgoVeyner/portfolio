@@ -26,7 +26,7 @@ const Header = () => {
       <Logo />
       <Nav />
       { menuExpanded !== "unmounted" ?  <MobileNav menuExpanded={menuExpanded} /> : null }
-      <MenuButton toggleMenu={toggleMenu} />
+      <MenuButton toggleMenu={toggleMenu} menuExpanded={menuExpanded}/>
       <ThemeButton classNames={["theme-button"]} />
     </header>
   )
