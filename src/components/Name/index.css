@@ -1,5 +1,5 @@
 .name {
-  font-size: 1.15rem;
+  font-size: 1.5rem;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: .3em;
@@ -18,13 +18,65 @@
 }
 
 .name-container {
-  margin-bottom: var(--space2XL);
+  margin-bottom: var(--spaceS);
   overflow: hidden;
 }
 
 @keyframes reveal {
   0% {left: 0px}
   100% {left: -175px}
+}
+
+@media only screen and (max-width: 2000px) {
+  .name {
+    font-size: 1.4rem;
+  }
+
+  .name::before {
+    width: 145px;
+    height: 22px;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .name {
+    font-size: 1.3rem;
+  }
+
+  .name::before {
+    width: 145px;
+    height: 22px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .name {
+    font-size: 1.2rem;
+  }
+
+  .name::before {
+    width: 145px;
+    height: 22px;
+  }
+
+  .name-container {
+    margin-bottom: var(--spaceM);
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .name {
+    font-size: 1.15rem;
+  }
+
+  .name::before {
+    width: 145px;
+    height: 22px;
+  }
+
+  .name-container {
+    margin-bottom: var(--spaceM);
+  }
 }
 
 @media only screen and (max-width: 700px) {
