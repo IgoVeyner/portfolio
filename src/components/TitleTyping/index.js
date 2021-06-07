@@ -2,12 +2,14 @@ import "./index.css"
 
 const TitleTyping = ({ titleColor }) => {
   return (
-    <span className={`title-ending ${titleColor}`}>
+    <div>
       <span className="linux">
-        ~$
+          ~$
       </span> 
-      Engineer
-    </span>
+      <span className={`title-ending ${titleColor} terminal`}>
+        Engineer
+      </span>
+    </div>
   )
 }
 
