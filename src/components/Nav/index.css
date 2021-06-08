@@ -47,11 +47,11 @@
 }
 
 .dark-link {
-  color: rgb(var(--rgbWhite) / .8);
+  color: rgb(var(--rgbWhite) / .6);
 }
 
 .light-link {
-  color: rgb(var(--rgbBlack) / .8);
+  color: rgb(var(--rgbBlack) / .6);
 }
 
 @media only screen and (max-width: 700px), (max-height: 550px) {
