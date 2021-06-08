@@ -1,9 +1,10 @@
 .blinker {
   margin-left: 4px;
-  height: 5rem;
-  width: 2.5rem;
+  height: 8.5rem;
+  width: 4rem;
   display: inline;
-  position: fixed;
+  position: absolute;
+  bottom: 0px;
 }
 
 .dark-blinker {
@@ -12,4 +13,46 @@
 
 .light-blinker {
   background-color: black;
+}
+
+@media only screen and (max-width: 2000px) {
+  .blinker {
+    height: 7.5rem;
+    width: 3.5rem;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .blinker {
+    height: 6.5rem;
+    width: 3rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .blinker {
+    height: 5.5rem;
+    width: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 900px) { 
+  .blinker {
+    height: 4.5rem;
+    width: 2rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .blinker {
+    height: 3.5rem;
+    width: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .blinker {
+    height: 2.25rem;
+    width: 1rem;
+  }
 }
