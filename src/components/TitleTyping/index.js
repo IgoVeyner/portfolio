@@ -9,17 +9,14 @@ const TitleTyping = ({ titleColor }) => {
   const [reverse, setReverse] = useState(false);
 
   useEffect(() => {
-    if (index === words.length) return;
-
-    if ( subIndex === words[index].length + 1 && 
-        index !== words.length - 1 && !reverse ) {
+    if (subIndex === words[index].length + 1 && !reverse ) {
       setReverse(true);
       return;
     }
 
     if (subIndex === 0 && reverse) {
       setReverse(false);
-      setIndex((prev) => prev + 1);
+      index === words.length - 1 ? setIndex(0) : setIndex((prev) => prev + 1)
       return;
     }
 
