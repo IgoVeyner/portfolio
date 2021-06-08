@@ -14,10 +14,10 @@ const MenuButton = ({ toggleMenu, menuExpanded }) => {
       className={`menu ${menuStatus} ${menuBGColor}`}
       onClick={toggleMenu}
       >
-      <div class="hamburger" >
-        <span class={`menu-line ${menuColor}`}></span>
-        <span class={`menu-line ${menuColor}`}></span>
-        <span class={`menu-line ${menuColor}`}></span>
+      <div className="hamburger" >
+        <span className={`menu-line ${menuColor}`}></span>
+        <span className={`menu-line ${menuColor}`}></span>
+        <span className={`menu-line ${menuColor}`}></span>
       </div>
     </div>
   )
