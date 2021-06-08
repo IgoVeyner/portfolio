@@ -1,16 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
+import useBlink from '../../Hooks/useBlink'
 import "./index.css"
 
 const Blinker = ({ titleColor }) => {
   const [blink, setBlink] = useState(true);
   const blinkerColor = titleColor === "light-title" ? "light-blinker" : "dark-blinker"
-
-  useEffect(() => {
-    const timeout2 = setTimeout(() => {
-      setBlink((prev) => !prev);
-    }, 500);
-    return () => clearTimeout(timeout2);
-  }, [blink])
+  useBlink(blink, setBlink)
 
   return (
     <span className={`blinker ${blink ? blinkerColor : null}`}> </span> 
