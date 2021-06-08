@@ -1,0 +1,15 @@
+.blinker {
+  margin-left: 4px;
+  height: 5rem;
+  width: 2.5rem;
+  display: inline;
+  position: fixed;
+}
+
+.dark-blinker {
+  background-color: white;
+}
+
+.light-blinker {
+  background-color: black;
+}

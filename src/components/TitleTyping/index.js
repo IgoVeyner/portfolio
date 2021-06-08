@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import useTypingAnimation from '../../Hooks/useTypingAnimation'
+import Blinker from "../Blinker";
 import "./index.css"
 
 const words = ["Engineer", "Developer"]
@@ -19,6 +20,7 @@ const TitleTyping = ({ titleColor }) => {
       <span className={`title-ending ${titleColor} terminal`}>
         {`${words[index].substring(0, subIndex)}`}
       </span>
+      <Blinker titleColor={titleColor} />
     </div>
   )
 }
