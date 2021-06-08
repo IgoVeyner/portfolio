@@ -9,6 +9,8 @@
   font-weight: 400;
   font-size: 8rem;
   margin-right: var(--spaceS);
+  position: relative;
+  top: 2px;
 }
 
 @media only screen and (max-width: 2000px) {
