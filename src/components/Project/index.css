@@ -2,15 +2,28 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 100%;
+  align-items: center;
 }
 
 .project-preview {
   place-self: end;
+  order: 1;
 }
 
 .project-description {
   margin: var(--spaceM);
-  max-width: 300px;
+  max-width: 350px;
+  order: 2;
+}
+
+.order-reverse {
+  order: 3;
+  place-self: start;
+}
+
+.description-reverse {
+  text-align: end;
+  justify-self: end;
 }
 
 .project-img {
@@ -30,9 +43,14 @@
 
   .project-preview, .project-description {
     place-self: center;
+    text-align: center;
   }
 
   .project-description {
     max-width: 65%;
+  }
+
+  .order-reverse {
+    order: 1;
   }
 }
