@@ -1,3 +1,5 @@
+import Project from "../Project"
+
 const projects = [
   {
     projectName: "Thrasher Forums",
@@ -19,11 +21,16 @@ const projects = [
   }
 ]
 
+
+const renderProjects = () =>{
+  return projects.map(project => <Project project={project} />)
+}
+
+
 const ProjectSummary = () => {
   return (
     <section className="section" id="projects">
-      <h2>Projects</h2>
-      <p>Lorem Ipsum</p>
+      {renderProjects()}
     </section>
   )
 }
