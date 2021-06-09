@@ -1,7 +1,11 @@
 .project {
   display: flex;
-  flex-direction: column;
-  width: 100%;
   align-items: center;
   text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  .project {
+    flex-direction: column;
+  }
 }
