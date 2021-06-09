@@ -14,7 +14,7 @@ const Project = ({ project, id, reverse, theme }) => {
   }
 
   return (
-    <section className="section" id={id}>
+    <section className="section section-project" id={id}>
       <div className={`project ${projReverse}`}>
         <div className={`project-preview ${orderReverse}`}>
           <img 

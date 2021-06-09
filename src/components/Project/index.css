@@ -61,9 +61,20 @@
   color: rgb(var(--rgbBlack) / .5)
 }
 
+@media only screen and (max-width: 1300px) { 
+  .project-title {
+    font-size: 2rem
+  }
+
+  .project-text {
+    font-size: 1rem;
+  }
+}
+
 @media only screen and (max-width: 1000px) {
   .project {
     grid-template-columns: 100%;
+    margin: 10% 0px;
   }
 
   .project-preview, .project-description {
@@ -77,5 +88,45 @@
 
   .order-reverse {
     order: 1;
+  }
+
+  .project-title {
+    font-size: 2.25rem
+  }
+
+  .project-text {
+    font-size: 1.25rem;
+  }
+
+  .section-project {
+    margin: 20% 0px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .project-description {
+    max-width: 75%;
+  }
+
+  .project-title {
+    font-size: 2rem
+  }
+
+  .project-text {
+    font-size: 1.15rem;
+  }
+}
+
+@media only screen and (max-width: 600px) { 
+  .project-description {
+    max-width: 95%;
+  }
+
+  .project-title {
+    font-size: 1.75rem
+  }
+
+  .project-text {
+    font-size: 1rem;;
   }
 }
