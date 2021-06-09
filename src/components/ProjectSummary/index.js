@@ -3,7 +3,7 @@ import Project from "../Project"
 const projects = [
   {
     projectName: "Thrasher Forums",
-    description: "Skateboarding Forum / Messageboard website in the style of Thrasher Magazine",
+    description: "Skateboarding Forum / Message board site in the style of Thrasher Magazine",
     demoLink: "https://www.youtube.com/watch?v=21PHZBzQKAo",
     github: "https://github.com/IgoVeyner/thrasher-forums"
   },

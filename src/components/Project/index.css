@@ -1,8 +1,12 @@
 .project {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 40%;
   width: 100%;
   align-items: center;
+}
+
+.project-reverse {
+  grid-template-columns: 45% 1fr;
 }
 
 .project-preview {
@@ -22,7 +26,6 @@
 }
 
 .description-reverse {
-  text-align: end;
   justify-self: end;
 }
 
@@ -33,7 +36,13 @@
 }
 
 .project-title {
-  font-size: 2.25rem;
+  font-size: 2.5rem;
+  margin-bottom: var(--spaceM);
+}
+
+.project-text {
+  font-size: 1.25rem;
+  margin-bottom: var(--spaceM);
 }
 
 @media only screen and (max-width: 1000px) {
