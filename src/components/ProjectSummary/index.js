@@ -1,3 +1,4 @@
+import { useSelector } from 'react-redux'
 import Project from "../Project"
 
 const projects = [
@@ -22,18 +23,23 @@ const projects = [
 ]
 
 
-const renderProjects = () =>{
+const renderProjects = (theme) =>{
   return projects.map((project, i) => { 
-    return <Project project={project} id={`project-${i+1}`} key={i}
-    reverse={i % 2 === 0 ? false : true} /> 
+    return (
+      <Project project={project} id={`project-${i+1}`} key={i}
+        reverse={i % 2 === 0 ? false : true} theme={theme}
+        /> 
+    )
   })
 }
 
 
 const ProjectSummary = () => {
+  const theme = useSelector(state => state.theme)
+
   return (
     <>
-      {renderProjects()}
+      {renderProjects(theme)}
     </>
   )
 }

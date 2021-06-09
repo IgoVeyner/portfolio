@@ -1,11 +1,16 @@
 import './index.css'
 
-const Project = ({ project, id, reverse }) => {
+const Project = ({ project, id, reverse, theme }) => {
   const {projectName, description, github, demoLink } = project
   let [orderReverse, descReverse, projReverse] = ["", "", ""]
+  let [titleColor, textColor] = ["dark-proj-title", "dark-proj-text"]
 
   if (reverse) {
     [orderReverse, descReverse, projReverse] = ["order-reverse", "description-reverse", "project-reverse"]
+  }
+
+  if (theme === "light") {
+    [titleColor, textColor] = ["light-proj-title", "light-proj-text"]
   }
 
   return (
@@ -19,8 +24,8 @@ const Project = ({ project, id, reverse }) => {
           />
         </div>
         <div className={`project-description ${descReverse} `}>
-          <h1 className="project-title">{projectName}</h1>
-          <p className="project-text">{description}</p>
+          <h1 className={`project-title ${titleColor}`}>{projectName}</h1>
+          <p className={`project-text ${textColor}`}>{description}</p>
           <a href={github}>GitHub</a>
           <a href={demoLink}>Demo</a>
         </div>

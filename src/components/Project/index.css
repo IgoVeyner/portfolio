@@ -45,6 +45,22 @@
   margin-bottom: var(--spaceM);
 }
 
+.dark-proj-title {
+  color: white
+}
+
+.light-proj-title {
+  color: black;
+}
+
+.dark-proj-text {
+  color: rgb(var(--rgbWhite) / .8)
+}
+
+.light-proj-text {
+  color: rgb(var(--rgbBlack) / .5)
+}
+
 @media only screen and (max-width: 1000px) {
   .project {
     grid-template-columns: 100%;
