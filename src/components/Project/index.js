@@ -1,13 +1,15 @@
+import './index.css'
+
 const Project = ({ project }) => {
   const {projectName, description, github, demoLink } = project
   
   return (
-    <div className="project">
+    <section className="section" id="projects">
       <h1>{projectName}</h1>
       <p>{description}</p>
       <a href={github}>GitHub</a>
       <a href={demoLink}>Demo</a>
-    </div>
+    </section>
   )
 }
 

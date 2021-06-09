@@ -29,9 +29,9 @@ const renderProjects = () =>{
 
 const ProjectSummary = () => {
   return (
-    <section className="section" id="projects">
+    <>
       {renderProjects()}
-    </section>
+    </>
   )
 }
 
