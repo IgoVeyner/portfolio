@@ -23,7 +23,9 @@ const projects = [
 
 
 const renderProjects = () =>{
-  return projects.map(project => <Project project={project} />)
+  return projects.map((project, i) => { 
+    return <Project project={project} id={`project-${i+1}`} key={i} /> 
+  })
 }
 
 
