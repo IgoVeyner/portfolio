@@ -2,7 +2,7 @@ import './index.css'
 
 const Project = ({ project, id, reverse }) => {
   const {projectName, description, github, demoLink } = project
-  let [orderReverse, descReverse] = new Array(2, "")
+  let [orderReverse, descReverse] = ["", ""]
 
   if (reverse) {
     [orderReverse, descReverse] = ["order-reverse", "description-reverse"]
