@@ -30,21 +30,16 @@
   transition: fill .2s;
 }
 
-#linkedIn {
-  transition: transform 1s;
-}
-
-#linkedIn:hover {
-  transition: transform .5s;
-  transform: scale(1.2);
-}
-
 .dark-icon {
   fill: var(--lightTextColor);
 }
 
 .light-icon {
   fill: var(--darkTextColor);
+}
+
+.medium {
+  transform: scale(.8);
 }
 
 @media only screen and (max-width: 700px) {
