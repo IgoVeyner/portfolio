@@ -1,7 +1,7 @@
 import './index.css'
 import { useSelector, useDispatch } from 'react-redux'
-import { setLight, setDark } from '../../redux/actions/themeActions'
-import AnimatedIcon from '../AnimatedIcon'
+import { setLight, setDark } from '../../../redux/actions/themeActions'
+import AnimatedIcon from '../../Icons/Animated'
 
 const ThemeButton = ({ classNames }) => {
   const [buttonName] = classNames

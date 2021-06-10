@@ -1,6 +1,6 @@
 import './index.css'
 import IconNav from '../IconNav'
-import ThemeButton from '../ThemeButton'
+import ThemeButton from '../Buttons/Theme'
 import { useSelector } from 'react-redux'
 
 const MobileNav = ({ menuExpanded }) => {

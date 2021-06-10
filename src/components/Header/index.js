@@ -3,8 +3,8 @@ import useMenuAnimation from '../../Hooks/useMenuAnimation'
 import './index.css'
 import Logo from '../Logo'
 import Nav from '../Nav'
-import MenuButton from '../MenuButton'
-import ThemeButton from '../ThemeButton'
+import MenuButton from '../Buttons/Menu'
+import ThemeButton from '../Buttons/Theme'
 import MobileNav from '../MobileNav'
 
 const Header = () => {
