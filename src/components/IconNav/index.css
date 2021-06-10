@@ -30,7 +30,7 @@
   transition: fill .2s;
 }
 
-#medium, .github, #linkedIn {
+#medium, #linkedIn {
   transition: transform 1s;
 }
 

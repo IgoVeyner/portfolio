@@ -31,7 +31,6 @@ const Project = ({ project, id, reverse, theme }) => {
           <div className="project-links-container">
             <GithubIcon link={github} />
             <YoutubeIcon link={demoLink} />
-            {/* <a href={demoLink}>Demo</a> */}
           </div>
         </div>
       </div>
