@@ -1,7 +1,8 @@
-const GithubIcon = ({ link }) => {
+const GithubIcon = ({ link, iconColor="" }) => {
+
   return (
-    <a href={link} className="icon-container" target="_blank" rel="noreferrer">
-      <svg className={`icon`}>
+    <a href={link} className="icon-container github" target="_blank" rel="noreferrer">
+      <svg className={`icon ${iconColor}`}>
         <path 
           d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.87 8.17 6.84 
           9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 
