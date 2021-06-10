@@ -34,7 +34,7 @@
   transition: transform 1s;
 }
 
-#medium:hover, .github:hover {
+#medium:hover {
   transition: transform .5s;
   transform: scale(1.3);
 }
