@@ -61,6 +61,11 @@
   color: rgb(var(--rgbBlack) / .5)
 }
 
+.project-links-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 @media only screen and (max-width: 1300px) { 
   .project-title {
     font-size: 2rem

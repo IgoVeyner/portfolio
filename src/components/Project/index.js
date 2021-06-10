@@ -26,8 +26,10 @@ const Project = ({ project, id, reverse, theme }) => {
         <div className={`project-description ${descReverse} `}>
           <h1 className={`project-title ${titleColor}`}>{projectName}</h1>
           <p className={`project-text ${textColor}`}>{description}</p>
-          <a href={github}>GitHub</a>
-          <a href={demoLink}>Demo</a>
+          <div className="project-links-container">
+            <a href={github}>GitHub</a>
+            <a href={demoLink}>Demo</a>
+          </div>
         </div>
       </div>
     </section>
