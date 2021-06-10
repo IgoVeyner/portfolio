@@ -1,4 +1,4 @@
-const YoutubeIcon = (link) => {
+const YoutubeIcon = ({ link }) => {
   return (
     <a href={link} className="icon-container youtube" target="_blank" rel="noreferrer">
       <svg 

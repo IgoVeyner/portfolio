@@ -1,4 +1,5 @@
 import GithubIcon from '../GithubIcon'
+import YoutubeIcon from '../YoutubeIcon'
 import './index.css'
 
 const Project = ({ project, id, reverse, theme }) => {
@@ -29,7 +30,8 @@ const Project = ({ project, id, reverse, theme }) => {
           <p className={`project-text ${textColor}`}>{description}</p>
           <div className="project-links-container">
             <GithubIcon link={github} />
-            <a href={demoLink}>Demo</a>
+            <YoutubeIcon link={demoLink} />
+            {/* <a href={demoLink}>Demo</a> */}
           </div>
         </div>
       </div>
