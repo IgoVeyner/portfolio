@@ -1,3 +1,4 @@
+import GithubIcon from '../GithubIcon'
 import './index.css'
 
 const Project = ({ project, id, reverse, theme }) => {
@@ -27,7 +28,7 @@ const Project = ({ project, id, reverse, theme }) => {
           <h1 className={`project-title ${titleColor}`}>{projectName}</h1>
           <p className={`project-text ${textColor}`}>{description}</p>
           <div className="project-links-container">
-            <a href={github}>GitHub</a>
+            <GithubIcon link={github} />
             <a href={demoLink}>Demo</a>
           </div>
         </div>
