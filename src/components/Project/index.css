@@ -30,7 +30,8 @@
 }
 
 .project-img {
-  max-width: 500px;
+  max-width: 1000px;
+  max-width: 90vh;
   width: 100%;
   height: auto;
 }
@@ -103,8 +104,8 @@
     font-size: 1.25rem;
   }
 
-  .section-project {
-    margin: 20% 0px;
+  .project-img {
+    max-width: 70vh;
   }
 }
 
