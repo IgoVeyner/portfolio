@@ -8,7 +8,7 @@ const Project = ({ project, id, reverse, theme }) => {
   let [titleColor, textColor] = ["dark-proj-title", "dark-proj-text"]
 
   if (reverse) {
-    [orderReverse, descReverse, projReverse] = ["order-reverse", "description-reverse", "project-reverse"]
+    [orderReverse, projReverse] = ["order-reverse", "project-reverse"]
   }
 
   if (theme === "light") {
@@ -16,7 +16,7 @@ const Project = ({ project, id, reverse, theme }) => {
   }
 
   return (
-    <section className="section" id={id}>
+    <section className="section section-project" id={id}>
       <div className={`project ${projReverse}`}>
         <div className={`project-preview ${orderReverse}`}>
           <img 
@@ -25,7 +25,7 @@ const Project = ({ project, id, reverse, theme }) => {
             alt="stub"
           />
         </div>
-        <div className={`project-description ${descReverse} `}>
+        <div className="project-description">
           <h1 className={`project-title ${titleColor}`}>{projectName}</h1>
           <p className={`project-text ${textColor}`}>{description}</p>
           <div className="project-links-container">
