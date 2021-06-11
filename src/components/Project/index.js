@@ -3,7 +3,7 @@ import YoutubeIcon from '../Icons/Youtube'
 import './index.css'
 
 const Project = ({ project, id, reverse, theme }) => {
-  const {projectName, description, github, demoLink } = project
+  const {projectName, description, github, demoLink, img } = project
   let [orderReverse, descReverse, projReverse] = ["", "", ""]
   let [titleColor, textColor] = ["dark-proj-title", "dark-proj-text"]
 
@@ -21,7 +21,7 @@ const Project = ({ project, id, reverse, theme }) => {
         <div className={`project-preview ${orderReverse}`}>
           <img 
             className="project-img"
-            src="https://www.firstbenefits.org/wp-content/uploads/2017/10/placeholder-1024x1024.png" 
+            src={img}
             alt="stub"
           />
         </div>
