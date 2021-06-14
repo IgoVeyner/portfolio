@@ -11,6 +11,7 @@ const Navbar = () => {
       <div className="web-nav-list">
         <a href="#project-1" className={`web-link ${linkColor}`}>Projects</a>
         <a href="#about" className={`web-link ${linkColor}`}>About</a>
+        <a href="#skils" className={`web-link ${linkColor}`}>Skills</a>
         <a href="#contact" className={`web-link ${linkColor}`}>Contact</a>
       </div>
       <IconNav classNames={["web-icons"]} />

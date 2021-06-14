@@ -18,7 +18,7 @@
   background-color: rgb(var(--rgbBlack) / .8);
 }
 
-@media only screen and (max-width: 700px), (max-height: 550px) {
+@media only screen and (max-width: 700px), (max-height: 625px) {
   .menu {
     display: block;
     position: fixed;
