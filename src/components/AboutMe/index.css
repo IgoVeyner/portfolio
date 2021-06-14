@@ -34,3 +34,41 @@
   font-size: 1.25rem;
   margin-bottom: var(--spaceM);
 }
+
+@media only screen and (max-width: 1600px) { 
+  .about {
+    grid-template-columns: 45% 1fr;
+  }
+
+  .about-text-container {
+    margin: 0 15%;
+  }
+
+  .about-title {
+    font-size: 2rem
+  }
+
+  .about-text {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .about {
+    grid-template-columns: 1fr;
+  }
+
+  .about-text-container {
+    margin: var(--spaceL);
+  }
+
+  .about-text {
+    font-size: 1.15rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .about-text {
+    font-size: 1rem;
+  }
+}
