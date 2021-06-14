@@ -2,7 +2,7 @@
   max-width: 90%; 
   height: auto;
   max-height: 80vh;
-  filter: contrast(0.95) drop-shadow(2px 2px 6px black);
+  filter: contrast(0.95);
   align-self: center;
 }
 
@@ -54,6 +54,10 @@
 }
 
 @media only screen and (max-width: 1000px) {
+  .section-about {
+    height: 150vh;
+  }
+  
   .about {
     grid-template-columns: 1fr;
   }
