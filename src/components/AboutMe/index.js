@@ -15,9 +15,13 @@ const AboutMe = () => {
           </p>
           <p className="about-text">
             I'm a NYC based Full-Stack Software Engineer and 
-            a proud graduate of The Flatiron School where I learned Ruby on Rails for 
+            a proud graduate of 
+            <a href="https://flatironschool.com/" target="_blank" rel="noreferrer">
+              The Flatiron School
+            </a> 
+            where I learned Ruby on Rails for 
             Backend and React for Frontend development. If you're interested in learning 
-            more about my skills, click here.
+            more about my skills, click <a href="#skills">here</a>.
           </p>
           <p className="about-text">
             When I'm not sitting in front of a computer screen you can find me 
