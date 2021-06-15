@@ -1,6 +1,22 @@
+.skills-header {
+  margin: var(--spaceXL) 0;
+  font-size: 3rem;
+}
+
 .skills-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 100%;
   text-align: center;
+}
+
+.skills-container h2 {
+  font-size: 2rem;
+  margin: var(--spaceM);
+}
+
+.skills-container li {
+  list-style-type: none;
+  margin: var(--spaceS) 0;
+  font-size: 1.25rem;
 }
