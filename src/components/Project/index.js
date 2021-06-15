@@ -4,7 +4,7 @@ import './index.css'
 
 const Project = ({ project, id, reverse, theme }) => {
   const {projectName, description, github, demoLink, img } = project
-  let [orderReverse, descReverse, projReverse] = ["", "", ""]
+  let [orderReverse, projReverse] = ["", "", ""]
   let [titleColor, textColor] = ["dark-proj-title", "dark-proj-text"]
 
   if (reverse) {
