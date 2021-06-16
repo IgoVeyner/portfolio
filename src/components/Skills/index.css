@@ -17,12 +17,14 @@
 
 .skills-container ul {
   display: flex;
+  flex-flow: wrap;
+  justify-content: center;
 }
 
 .skills-container li {
   list-style-type: none;
   font-size: 1.25rem;
-  margin: 0 1rem;
+  margin: 1rem;
 }
 
 .skills-image {
