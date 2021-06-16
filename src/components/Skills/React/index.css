@@ -3,13 +3,6 @@
   height: auto;
 }
 
-.react-progress {
-  margin-top: 1rem;
-  width: 100px;
-  height: 4px;
-  background: lightgrey;
-}
-
 .react-progress::after {
   content: "";
   width: 80px;

@@ -22,6 +22,7 @@
 .skills-container li {
   list-style-type: none;
   font-size: 1.25rem;
+  margin: 0 1rem;
 }
 
 .skills-image {
@@ -31,4 +32,11 @@
 
 .skills-image:hover {
   filter: grayscale(0);
+}
+
+.skills-progress {
+  margin-top: 1rem;
+  width: 100px;
+  height: 4px;
+  background: lightgrey;
 }

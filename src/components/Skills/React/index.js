@@ -6,7 +6,7 @@ const ReactLi = () => {
     <li>
       <img src={ReactImage} className="skills-image react-image" alt="React"/>
       <p>React</p>
-      <div className="react-progress"></div>
+      <div className="skills-progress react-progress"></div>
     </li>
   )
 }

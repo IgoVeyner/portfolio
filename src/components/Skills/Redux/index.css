@@ -1,6 +1,13 @@
 .redux-image {
-  width: 75px;
+  width: 76px;
   height: auto;
   margin: 1rem 0;
 }
 
+.redux-progress::after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  background: var(--hexLinuxGreen);
+  display: block;
+}
