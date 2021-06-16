@@ -1,4 +1,5 @@
 import './index.css'
+import ReactLi from './React'
 
 const Skills = () => {
   return (
@@ -9,7 +10,8 @@ const Skills = () => {
           <div>
             <h2>Frontend</h2>
             <ul>
-              <li>React & Redux</li>
+              <ReactLi />
+              <li>Redux</li>
               <li>JavaScript (ES6)</li>
               <li>jQuery</li>
               <li>HTML</li>
