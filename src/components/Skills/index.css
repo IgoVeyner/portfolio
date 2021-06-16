@@ -23,3 +23,12 @@
   list-style-type: none;
   font-size: 1.25rem;
 }
+
+.skills-image {
+  filter: grayscale(1);
+  transition: filter .3s;
+}
+
+.skills-image:hover {
+  filter: grayscale(0);
+}
