@@ -3,6 +3,7 @@ import JavaScriptLi from './JavaScript'
 import ReactLi from './React'
 import ReduxLi from './Redux'
 import HTMLLi from './HTML'
+import CSSLi from './CSS'
 
 const Skills = () => {
   return (
@@ -17,7 +18,7 @@ const Skills = () => {
               <ReduxLi />
               <JavaScriptLi />
               <HTMLLi />
-              <li>CSS</li>
+              <CSSLi />
               <li>jQuery</li>
             </ul>
           </div>
