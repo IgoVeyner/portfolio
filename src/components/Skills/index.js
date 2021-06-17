@@ -4,6 +4,7 @@ import ReactLi from './React'
 import ReduxLi from './Redux'
 import HTMLLi from './HTML'
 import CSSLi from './CSS'
+import JQueryLi from './jQuery'
 
 const Skills = () => {
   return (
@@ -19,7 +20,7 @@ const Skills = () => {
               <JavaScriptLi />
               <HTMLLi />
               <CSSLi />
-              <li>jQuery</li>
+              <JQueryLi />
             </ul>
           </div>
 
