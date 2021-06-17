@@ -6,7 +6,7 @@
 
 .redux-progress::after {
   content: "";
-  width: 80px;
+  width: 75px;
   height: 4px;
   background: var(--hexLinuxGreen);
   display: block;

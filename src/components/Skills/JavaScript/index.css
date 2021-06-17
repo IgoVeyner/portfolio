@@ -1,0 +1,17 @@
+.javascript-image {
+  width: 150px;
+  height: auto;
+  margin: .5rem 0;
+}
+
+.javascript-small {
+  font-size: 1rem;
+}
+
+.javascript-progress:after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  background: var(--hexLinuxGreen);
+  display: block;
+}

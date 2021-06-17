@@ -37,6 +37,7 @@
 }
 
 .skills-progress {
+  margin: auto;
   margin-top: 1rem;
   width: 100px;
   height: 4px;

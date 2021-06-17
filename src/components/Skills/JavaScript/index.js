@@ -1,8 +1,11 @@
+import './index.css'
+import JavaScriptImage from '../../../images/javascript.png'
+
 const JavaScriptLi = () => {
   return (
     <li>
-      <img src={ReduxImage} className="skills-image javascript-image" alt="javascript"/>
-      <p>JavaScript (ES6)</p>
+      <img src={JavaScriptImage} className="skills-image javascript-image" alt="javascript"/>
+      <p>JavaScript <div className="javascript-small">(ES6)</div></p>
       <div className="skills-progress javascript-progress"></div>
     </li>
   )
