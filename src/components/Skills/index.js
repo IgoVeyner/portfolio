@@ -5,6 +5,7 @@ import ReduxLi from './Redux'
 import HTMLLi from './HTML'
 import CSSLi from './CSS'
 import JQueryLi from './jQuery'
+import RubyLi from './Ruby'
 
 const Skills = () => {
   return (
@@ -27,7 +28,7 @@ const Skills = () => {
           <div>
             <h2>Backend</h2>
             <ul>
-              <li>Ruby</li>
+              <RubyLi />
               <li>Ruby on Rails</li>
               <li>SQLite</li>
               <li>PostgreSQL</li>

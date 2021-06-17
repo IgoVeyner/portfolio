@@ -1,0 +1,13 @@
+.ruby-image {
+  width: 70px;
+  height: auto;
+  margin: 1rem 0;
+}
+
+.ruby-progress:after {
+  content: "";
+  width: 90px;
+  height: 4px;
+  background: var(--hexLinuxGreen);
+  display: block;
+}
