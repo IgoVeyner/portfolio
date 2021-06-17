@@ -7,6 +7,7 @@ import CSSLi from './CSS'
 import JQueryLi from './jQuery'
 import RubyLi from './Ruby'
 import RailsLi from './Rails'
+import SqliteLi from './Sqlite'
 
 const Skills = () => {
   return (
@@ -31,7 +32,7 @@ const Skills = () => {
             <ul>
               <RubyLi />
               <RailsLi />
-              <li>SQLite</li>
+              <SqliteLi />
               <li>PostgreSQL</li>
             </ul>
           </div>

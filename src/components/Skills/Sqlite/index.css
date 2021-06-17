@@ -1,0 +1,13 @@
+.sqlite-image {
+  width: 76px;
+  height: auto;
+  margin: .8rem 0;
+}
+
+.sqlite-progress:after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  background: var(--hexLinuxGreen);
+  display: block;
+}
