@@ -12,7 +12,7 @@ import PostgresLi from './Postgres'
 
 const Skills = () => {
   return (
-    <section className="section" id="skills">
+    <section className="section section-skills" id="skills">
         <h1 className="skills-header">Technical Skills</h1>
 
         <div className="skills-container">
