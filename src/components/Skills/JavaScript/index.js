@@ -5,7 +5,7 @@ const JavaScriptLi = () => {
   return (
     <li>
       <img src={JavaScriptImage} className="skills-image javascript-image" alt="javascript"/>
-      <p>JavaScript <div className="javascript-small">(ES6)</div></p>
+      <p>JavaScript <span className="javascript-small">(ES6)</span></p>
       <div className="skills-progress javascript-progress"></div>
     </li>
   )

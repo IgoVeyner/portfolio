@@ -6,6 +6,7 @@
 
 .javascript-small {
   font-size: 1rem;
+  display: block;
 }
 
 .javascript-progress:after {
