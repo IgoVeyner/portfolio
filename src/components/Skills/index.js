@@ -6,6 +6,7 @@ import HTMLLi from './HTML'
 import CSSLi from './CSS'
 import JQueryLi from './jQuery'
 import RubyLi from './Ruby'
+import RailsLi from './Rails'
 
 const Skills = () => {
   return (
@@ -29,7 +30,7 @@ const Skills = () => {
             <h2>Backend</h2>
             <ul>
               <RubyLi />
-              <li>Ruby on Rails</li>
+              <RailsLi />
               <li>SQLite</li>
               <li>PostgreSQL</li>
             </ul>
