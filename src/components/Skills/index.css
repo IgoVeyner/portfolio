@@ -25,6 +25,7 @@
   list-style-type: none;
   font-size: 1.25rem;
   margin: 1rem;
+  max-width: 100px;
 }
 
 .skills-image {

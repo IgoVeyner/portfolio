@@ -10,7 +10,7 @@
 
 .javascript-progress:after {
   content: "";
-  width: 80px;
+  width: 90px;
   height: 4px;
   background: var(--hexLinuxGreen);
   display: block;
