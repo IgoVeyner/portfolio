@@ -6,7 +6,6 @@ const JQueryLi = () => {
     <li>
       <img src={jQueryImage} className="skills-image jQuery-image" alt="jQuery"/>
       <p>jQuery</p>
-      <div className="skills-progress jQuery-progress"></div>
     </li>
   )
 }

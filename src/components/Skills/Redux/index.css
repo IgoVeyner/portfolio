@@ -3,11 +3,3 @@
   height: auto;
   margin: 1rem 0;
 }
-
-.redux-progress::after {
-  content: "";
-  width: 75px;
-  height: 4px;
-  background: var(--hexLinuxGreen);
-  display: block;
-}

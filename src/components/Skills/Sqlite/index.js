@@ -6,7 +6,6 @@ const SqliteLi = () => {
     <li>
       <img src={SqliteImage} className="skills-image sqlite-image" alt="sqlite"/>
       <p>SQLite</p>
-      <div className="skills-progress sqlite-progress"></div>
     </li>
   )
 }

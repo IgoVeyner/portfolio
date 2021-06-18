@@ -3,11 +3,3 @@
   height: auto;
   margin: .6rem 0;
 }
-
-.rails-progress:after {
-  content: "";
-  width: 85px;
-  height: 4px;
-  background: var(--hexLinuxGreen);
-  display: block;
-}

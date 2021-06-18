@@ -8,11 +8,3 @@
   font-size: 1rem;
   display: block;
 }
-
-.javascript-progress:after {
-  content: "";
-  width: 90px;
-  height: 4px;
-  background: var(--hexLinuxGreen);
-  display: block;
-}

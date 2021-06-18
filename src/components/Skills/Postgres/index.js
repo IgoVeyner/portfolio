@@ -6,7 +6,6 @@ const PostgresLi = () => {
     <li>
       <img src={PostgresImage} className="skills-image postgres-image" alt="postgres"/>
       <p>Postgres</p>
-      <div className="skills-progress postgres-progress"></div>
     </li>
   )
 }

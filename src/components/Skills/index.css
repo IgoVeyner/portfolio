@@ -38,14 +38,6 @@
   filter: grayscale(0);
 }
 
-.skills-progress {
-  margin: auto;
-  margin-top: 1rem;
-  width: 100px;
-  height: 4px;
-  background: lightgrey;
-}
-
 @media only screen and (max-width: 1200px) {
   .section-skills {
     height: 120vh;

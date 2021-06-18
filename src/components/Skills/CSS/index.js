@@ -6,7 +6,6 @@ const CSSLi = () => {
     <li>
       <img src={CSSImage} className="skills-image css-image" alt="css"/>
       <p>CSS</p>
-      <div className="skills-progress css-progress"></div>
     </li>
   )
 }

@@ -6,7 +6,6 @@ const RubyLi = () => {
     <li>
       <img src={RubyImage} className="skills-image ruby-image" alt="ruby"/>
       <p>Ruby</p>
-      <div className="skills-progress ruby-progress"></div>
     </li>
   )
 }
