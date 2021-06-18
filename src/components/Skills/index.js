@@ -9,11 +9,15 @@ import RubyLi from './Ruby'
 import RailsLi from './Rails'
 import SqliteLi from './Sqlite'
 import PostgresLi from './Postgres'
+import { useSelector } from 'react-redux'
 
 const Skills = () => {
+  const theme = useSelector(state => state.theme)
+  const titleColor = theme === "dark" ? "dark-skills-header" : "light-skills-header"
+
   return (
     <section className="section section-skills" id="skills">
-        <h1 className="skills-header">Technical Skills</h1>
+        <h1 className={`skills-header ${titleColor}`}>Technical Skills</h1>
 
         <div className="skills-container">
           <div>
