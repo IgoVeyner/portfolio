@@ -13,7 +13,12 @@ import { useSelector } from 'react-redux'
 
 const Skills = () => {
   const theme = useSelector(state => state.theme)
-  const titleColor = theme === "dark" ? "dark-skills-header" : "light-skills-header"
+  let [titleColor, borderColor] = ["dark-skills-header", "dark-border"]
+
+  
+  if (theme === "light") {
+    [titleColor, borderColor] = ["light-skills-header", "light-border"]
+  }
 
   return (
     <section className="section section-skills" id="skills">
@@ -32,7 +37,7 @@ const Skills = () => {
             </ul>
           </div>
 
-          <div>
+          <div className={borderColor}>
             <h2>Backend</h2>
             <ul>
               <RubyLi />

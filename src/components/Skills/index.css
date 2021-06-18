@@ -30,6 +30,14 @@
   justify-content: center;
 }
 
+.dark-border {
+  border-left: rgb(var(--rgbWhite) / 0.2) 1px solid;
+}
+
+.light-border {
+  border-left: rgb(var(--rgbBlack) / 0.2) 1px solid;
+}
+
 .skills-container li {
   list-style-type: none;
   font-size: 1.25rem;
@@ -59,6 +67,14 @@
     margin: .5rem;
     transform: scale(0.9);
     width: 90px;
+  }
+
+  .dark-border {
+    border: none;
+  }
+  
+  .light-border {
+    border: none;
   }
 }
 
