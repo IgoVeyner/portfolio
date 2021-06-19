@@ -7,13 +7,13 @@ function EmailForum() {
   const sendEmail = (e) => {
     e.preventDefault()
 
-    emailjs.sendForm('service_qyp8yfr', 'template_dlyefrm', e.target, 
-    'user_IGuFOYMswP5iM0AcORkLj')
-      .then((result) => {
-          console.log(result.text)
-      }, (error) => {
-          console.log(error.text)
-      })
+    // emailjs.sendForm('service_qyp8yfr', 'template_dlyefrm', e.target, 
+    // 'user_IGuFOYMswP5iM0AcORkLj')
+    //   .then((result) => {
+    //       console.log(result.text)
+    //   }, (error) => {
+    //       console.log(error.text)
+    //   })
 
     e.target.reset()
   }
