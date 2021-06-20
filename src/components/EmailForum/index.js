@@ -13,6 +13,8 @@ function EmailForum() {
   const focusEmail = () => emailInput.current.focus()
   const focusMessage = () => messageInput.current.focus()
 
+  const checkValue = e => e === "" ? "" : "with-input" 
+
   const handleChange = e => {
     switch (e.target.name) {
       case 'email':
@@ -48,19 +50,37 @@ function EmailForum() {
         <h1 className="contact-header">Contact</h1>
 
         <div className="contact-input-container">
-          <input type="text" name="email" className="contact-input"
-            ref={emailInput} onChange={handleChange} value={emailValue} />
-          <label className="contact-label" htmlFor="email" 
+          <input 
+            type="text" 
+            name="email" 
+            className="contact-input"
+            ref={emailInput} 
+            onChange={handleChange} 
+            value={emailValue} 
+            autoComplete="off"
+          />
+          <label 
+            className={`contact-label ${checkValue(emailValue)}`} 
+            htmlFor="email" 
             onClick={focusEmail} >
-            Email</label>
+            Email
+          </label>
         </div>
 
         <div className="contact-input-container">
-          <input type="text" name="message" className="contact-input" 
-            ref={messageInput} onChange={handleChange} value={messageValue} />
-          <label className="contact-label" htmlFor="message"
+          <input 
+            type="text" 
+            name="message" 
+            className="contact-input"
+            ref={messageInput} 
+            onChange={handleChange} 
+            value={messageValue} />
+          <label 
+            className={`contact-label ${checkValue(messageValue)}`} 
+            htmlFor="message"
             onClick={focusMessage} >
-            Message</label>
+            Message
+          </label>
         </div>
 
         <div className="contact-submit-container">

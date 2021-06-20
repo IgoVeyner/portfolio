@@ -24,6 +24,11 @@
   font-size: 1rem;
 }
 
+.with-input {
+  transform: translateY(20px);
+  font-size: 1rem;
+}
+
 .contact-input {
   padding: var(--spaceL) 0;
   background-color: transparent;
