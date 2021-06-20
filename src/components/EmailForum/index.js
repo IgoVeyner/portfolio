@@ -1,15 +1,32 @@
 import "./index.css"
 import emailjs from 'emailjs-com'
 import { useSelector } from 'react-redux'
-import { useRef } from "react"
+import { useRef, useState } from "react"
 
 function EmailForum() {
+  const [emailValue, setEmailValue] = useState("")
+  const [messageValue, setMessageValue] = useState("")
   const theme = useSelector(state => state.theme)
   const emailInput = useRef(null)
   const messageInput = useRef(null)
 
   const focusEmail = () => emailInput.current.focus()
   const focusMessage = () => messageInput.current.focus()
+
+  const handleChange = e => {
+    switch (e.target.name) {
+      case 'email':
+        setEmailValue(e.target.value)
+        break
+      
+      case 'message':
+        setMessageValue(e.target.value)
+        break
+
+      default:
+        break
+    }
+  }
 
   const sendEmail = (e) => {
     e.preventDefault()
@@ -32,7 +49,7 @@ function EmailForum() {
 
         <div className="contact-input-container">
           <input type="text" name="email" className="contact-input"
-            ref={emailInput}/>
+            ref={emailInput} onChange={handleChange} value={emailValue} />
           <label className="contact-label" htmlFor="email" 
             onClick={focusEmail} >
             Email</label>
@@ -40,7 +57,7 @@ function EmailForum() {
 
         <div className="contact-input-container">
           <input type="text" name="message" className="contact-input" 
-            ref={messageInput} />
+            ref={messageInput} onChange={handleChange} value={messageValue} />
           <label className="contact-label" htmlFor="message"
             onClick={focusMessage} >
             Message</label>
