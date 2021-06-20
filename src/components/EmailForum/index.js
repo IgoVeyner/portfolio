@@ -1,9 +1,15 @@
 import "./index.css"
 import emailjs from 'emailjs-com'
 import { useSelector } from 'react-redux'
+import { useRef } from "react"
 
 function EmailForum() {
   const theme = useSelector(state => state.theme)
+  const emailInput = useRef(null)
+  const messageInput = useRef(null)
+
+  const focusEmail = () => emailInput.current.focus()
+  const focusMessage = () => messageInput.current.focus()
 
   const sendEmail = (e) => {
     e.preventDefault()
@@ -25,13 +31,19 @@ function EmailForum() {
         <h1 className="contact-header">Contact</h1>
 
         <div className="contact-input-container">
-          <input type="text" name="email" className="contact-input" />
-          <label className="contact-label" for="email">Email</label>
+          <input type="text" name="email" className="contact-input"
+            ref={emailInput}/>
+          <label className="contact-label" htmlFor="email" 
+            onClick={focusEmail} >
+            Email</label>
         </div>
 
         <div className="contact-input-container">
-          <input type="text" name="message" className="contact-input" />
-          <label className="contact-label" for="message">Message</label>
+          <input type="text" name="message" className="contact-input" 
+          ref={messageInput} />
+          <label className="contact-label" for="message"
+            onClick={focusMessage} >
+            Message</label>
         </div>
 
         <div className="contact-submit-container">
