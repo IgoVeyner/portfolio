@@ -1,3 +1,4 @@
+import "./index.css"
 import emailjs from 'emailjs-com'
 import { useSelector } from 'react-redux'
 
@@ -19,10 +20,18 @@ function EmailForum() {
   }
 
   return (
-    <section className="section section-email" >
-      <form onSubmit={sendEmail}>
-        <input type="text" name="email"/>
-        <input type="text" name="message"/>
+    <section className="section section-email" id="contact">
+      <form onSubmit={sendEmail} className="email-form">
+        <h1 className="contact-header">Contact</h1>
+
+        <div className="contact-input-container">
+          <input type="text" name="email" className="contact-input" />
+        </div>
+
+        <div className="contact-input-container">
+          <input type="text" name="message" className="contact-input" />
+        </div>
+
         <input type="submit" />
       </form>
     </section>

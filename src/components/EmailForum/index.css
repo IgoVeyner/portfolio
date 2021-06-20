@@ -1,0 +1,48 @@
+.email-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 480px;
+  width: 100%;
+  text-align: center;
+}
+
+.contact-header {
+  font-size: 2rem;
+}
+
+.contact-input {
+  padding: var(--spaceL) 0;
+  background-color: transparent;
+  margin: var(--spaceL) 0;
+  border: none;
+  cursor: text;
+  width: 100%;
+}
+
+.contact-input-container::before {
+  content: "";
+  width: 100%;
+  height: 3px;
+  display: block;
+  position: relative;
+  background: lightgrey;
+  top: 90px;
+}
+
+.contact-input-container::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  display: block;
+  position: relative;
+  background: var(--hexLinuxGreen);
+  bottom: 27px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .6s ease-in-out;
+}
+
+.contact-input-container:focus-within:after {
+  transform: scaleX(1);
+  /* transform-origin: left; */
+}
