@@ -26,13 +26,17 @@ function EmailForum() {
 
         <div className="contact-input-container">
           <input type="text" name="email" className="contact-input" />
+          <label className="contact-label" for="email">Email</label>
         </div>
 
         <div className="contact-input-container">
           <input type="text" name="message" className="contact-input" />
+          <label className="contact-label" for="message">Message</label>
         </div>
 
-        <input type="submit" />
+        <div className="contact-submit-container">
+          <input type="submit" />
+        </div>
       </form>
     </section>
   )
