@@ -3,7 +3,7 @@ import emailjs from 'emailjs-com'
 import { useSelector } from 'react-redux'
 import { useRef, useState } from "react"
 
-function EmailForum() {
+function EmailForm() {
   const [emailValue, setEmailValue] = useState("")
   const [messageValue, setMessageValue] = useState("")
   const theme = useSelector(state => state.theme)
@@ -91,4 +91,4 @@ function EmailForum() {
   )
 }
 
-export default EmailForum
+export default EmailForm

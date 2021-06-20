@@ -3,7 +3,7 @@ import IntroText from '../IntroText'
 import ProjectSummary from "../ProjectSummary"
 import AboutMe from "../AboutMe"
 import Skills from "../Skills"
-import EmailForum from "../EmailForum"
+import EmailForm from "../EmailForm"
 
 const MainContent = () => {
   return (
@@ -12,7 +12,7 @@ const MainContent = () => {
       <ProjectSummary />
       <AboutMe />
       <Skills />
-      <EmailForum />
+      <EmailForm />
     </div>
   )
 }
