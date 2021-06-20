@@ -40,8 +40,8 @@ function EmailForum() {
 
         <div className="contact-input-container">
           <input type="text" name="message" className="contact-input" 
-          ref={messageInput} />
-          <label className="contact-label" for="message"
+            ref={messageInput} />
+          <label className="contact-label" htmlFor="message"
             onClick={focusMessage} >
             Message</label>
         </div>
