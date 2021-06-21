@@ -15,6 +15,12 @@ function EmailForm() {
 
   const checkValue = e => e === "" ? "" : "with-input" 
 
+  let [headerColor, inputColor] = ["dark-contact-header", "dark-contact-input"]
+
+  if (theme === "light") {
+    [headerColor, inputColor] = ["light-contact-header", "light-contact-input"]
+  }
+
   const handleChange = e => {
     switch (e.target.name) {
       case 'email':
@@ -47,13 +53,13 @@ function EmailForm() {
   return (
     <section className="section section-email" id="contact">
       <form onSubmit={sendEmail} className="email-form">
-        <h1 className="contact-header">Contact</h1>
+        <h1 className={`contact-header ${headerColor}`}>Contact</h1>
 
         <div className="contact-input-container">
           <input 
             type="text" 
             name="email" 
-            className="contact-input"
+            className={`contact-input ${inputColor}`}
             ref={emailInput} 
             onChange={handleChange} 
             value={emailValue} 
@@ -71,7 +77,7 @@ function EmailForm() {
           <input 
             type="text" 
             name="message" 
-            className="contact-input"
+            className={`contact-input ${inputColor}`}
             ref={messageInput} 
             onChange={handleChange} 
             value={messageValue} />

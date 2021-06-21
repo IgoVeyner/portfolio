@@ -10,6 +10,14 @@
   font-size: 2.5rem;
 }
 
+.dark-contact-header {
+  color: white;
+}
+
+.light-contact-header {
+  color: black;
+}
+
 .contact-label {
   position: absolute;
   font-size: 1.25rem;
@@ -36,6 +44,14 @@
   border: none;
   cursor: text;
   width: 100%;
+}
+
+.dark-contact-input {
+  color: white;
+}
+
+.light-contact-input {
+  color: black;
 }
 
 .contact-input-container {
@@ -80,7 +96,7 @@
   border-radius: 25px;
   border: none;
   background-color: var(--hexLinuxGreen);
-  transition: filter .3s ease-in-out;
+  transition: filter .2s ease-in-out;
   cursor: pointer;
   font-size: 0.9rem;
   font-weight: 700;
