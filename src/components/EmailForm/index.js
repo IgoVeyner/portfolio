@@ -84,7 +84,8 @@ function EmailForm() {
         </div>
 
         <div className="contact-submit-container">
-          <input type="submit" />
+          <input type="submit" className="contact-submit"
+            value="Send Message" />
         </div>
       </form>
     </section>

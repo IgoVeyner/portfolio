@@ -72,3 +72,21 @@
 .contact-input-container:focus-within:after {
   transform: scaleX(1);
 }
+
+.contact-submit {
+  max-width: 200px;
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+  background-color: var(--hexLinuxGreen);
+  transition: filter .3s ease-in-out;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 700;
+  filter: grayscale(1);
+}
+
+.contact-submit:hover {
+  filter: grayscale(0);
+}
