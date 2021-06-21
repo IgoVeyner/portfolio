@@ -28,12 +28,12 @@
 }
 
 .contact-input:focus + .contact-label {
-  transform: translateY(20px);
+  transform: translateY(12px);
   font-size: 1rem;
 }
 
 .with-input {
-  transform: translateY(20px);
+  transform: translateY(12px);
   font-size: 1rem;
 }
 
@@ -75,7 +75,7 @@
   display: block;
   position: relative;
   background: var(--hexLinuxGreen);
-  bottom: 27px;
+  bottom: 28px;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform .6s ease-in-out;
