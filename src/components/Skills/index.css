@@ -54,11 +54,13 @@
   filter: grayscale(0);
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1300px) { 
   .section-skills {
     height: 120vh;
   }
+}
 
+@media only screen and (max-width: 900px) {
   .skills-container {
     grid-template-columns: none;
   }
