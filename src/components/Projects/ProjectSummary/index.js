@@ -1,8 +1,8 @@
 import { useSelector } from 'react-redux'
 import Project from "../Project"
-import thrasher from '../../images/thrasher-forums.png'
-import typing from '../../images/typing.gif'
-import central from '../../images/central.png'
+import thrasher from '../../../images/thrasher-forums.png'
+import typing from '../../../images/typing.gif'
+import central from '../../../images/central.png'
 
 const projects = [
   {

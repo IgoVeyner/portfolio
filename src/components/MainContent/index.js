@@ -1,6 +1,6 @@
 import "./index.css"
 import IntroText from '../IntroText'
-import ProjectSummary from "../ProjectSummary"
+import ProjectSummary from "../Projects/ProjectSummary"
 import AboutMe from "../AboutMe"
 import Skills from "../Skills"
 import EmailForm from "../EmailForm"

@@ -1,5 +1,5 @@
-import GithubIcon from '../Icons/Github'
-import YoutubeIcon from '../Icons/Youtube'
+import GithubIcon from '../../Icons/Github'
+import YoutubeIcon from '../../Icons/Youtube'
 import './index.css'
 
 const Project = ({ project, id, reverse, theme }) => {
