@@ -39,7 +39,7 @@
 }
 
 .light-line {
-  background-color: rgb(var(--rgbBlack) / .3);
+  background-color: rgb(var(--rgbBlack) / .1);
 }
 
 @keyframes slide {
