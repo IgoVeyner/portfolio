@@ -15,7 +15,7 @@
   --rgbWhite: 255 255 255;
   --lightTextColor: rgb(var(--rgbWhite) / .6);
   --darkTextColor: rgb(var(--rgbBlack) / .6);
-  --fontStack: Gotham, system-ui, -apple-system, BlinkMacSystemFont, San Francisco, Roboto, Segoe UI, Ubuntu, Helvetica Neue, sans-serif;
+  --fontStack: Ubuntu, Gotham, system-ui, -apple-system, BlinkMacSystemFont, San Francisco, Roboto, Segoe UI, Helvetica Neue, sans-serif;
 }
 
 * {
