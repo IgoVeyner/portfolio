@@ -1,11 +1,11 @@
 import './index.css'
 import ReduxImage from '../../../images/redux.png'
 
-const ReduxLi = () => {
+const ReduxLi = ({ textColor }) => {
   return (
     <li>
       <img src={ReduxImage} className="skills-image redux-image" alt="redux"/>
-      <p>Redux</p>
+      <p className={textColor}>Redux</p>
     </li>
   )
 }

@@ -1,11 +1,11 @@
 import './index.css'
 import RubyImage from '../../../images/ruby.png'
 
-const RubyLi = () => {
+const RubyLi = ({ textColor }) => {
   return (
     <li>
       <img src={RubyImage} className="skills-image ruby-image" alt="ruby"/>
-      <p>Ruby</p>
+      <p className={textColor}>Ruby</p>
     </li>
   )
 }

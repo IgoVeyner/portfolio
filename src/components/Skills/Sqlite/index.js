@@ -1,11 +1,11 @@
 import './index.css'
 import SqliteImage from '../../../images/sqlite.png'
 
-const SqliteLi = () => {
+const SqliteLi = ({ textColor }) => {
   return (
     <li>
       <img src={SqliteImage} className="skills-image sqlite-image" alt="sqlite"/>
-      <p>SQLite</p>
+      <p className={textColor}>SQLite</p>
     </li>
   )
 }

@@ -54,6 +54,14 @@
   filter: grayscale(0);
 }
 
+.dark-skills-text {
+  color: rgb(var(--rgbWhite) / .8);
+}
+
+.light-skills-text {
+  color: rgb(var(--rgbBlack) / .5);
+}
+
 @media only screen and (max-width: 1300px) { 
   .section-skills {
     height: 120vh;

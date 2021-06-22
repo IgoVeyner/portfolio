@@ -1,11 +1,11 @@
 import './index.css'
 import CSSImage from '../../../images/css.png'
 
-const CSSLi = () => {
+const CSSLi = ({ textColor }) => {
   return (
     <li>
       <img src={CSSImage} className="skills-image css-image" alt="css"/>
-      <p>CSS</p>
+      <p className={textColor}>CSS</p>
     </li>
   )
 }

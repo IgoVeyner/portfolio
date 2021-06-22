@@ -13,11 +13,13 @@ import { useSelector } from 'react-redux'
 
 const Skills = () => {
   const theme = useSelector(state => state.theme)
-  let [titleColor, borderColor] = ["dark-skills-header", "dark-border"]
+  let [titleColor, borderColor, textColor] = ["dark-skills-header", "dark-border", 
+      "dark-skills-text"]
 
   
   if (theme === "light") {
-    [titleColor, borderColor] = ["light-skills-header", "light-border"]
+    [titleColor, borderColor, textColor] = ["light-skills-header", "light-border",
+      "light-skills-text"]
   }
 
   return (
@@ -26,24 +28,24 @@ const Skills = () => {
 
         <div className="skills-container">
           <div>
-            <h2>Frontend</h2>
+            <h2 className={titleColor}>Frontend</h2>
             <ul>
-              <ReactLi />
-              <ReduxLi />
-              <JavaScriptLi />
-              <HTMLLi />
-              <CSSLi />
-              <JQueryLi />
+              <ReactLi textColor={textColor} />
+              <ReduxLi textColor={textColor} />
+              <JavaScriptLi textColor={textColor} />
+              <HTMLLi textColor={textColor} />
+              <CSSLi textColor={textColor} />
+              <JQueryLi textColor={textColor} />
             </ul>
           </div>
 
           <div className={borderColor}>
-            <h2>Backend</h2>
+            <h2 className={titleColor}>Backend</h2>
             <ul>
-              <RubyLi />
-              <RailsLi />
-              <SqliteLi />
-              <PostgresLi />
+              <RubyLi textColor={textColor} />
+              <RailsLi textColor={textColor} />
+              <SqliteLi textColor={textColor} />
+              <PostgresLi textColor={textColor} />
             </ul>
           </div>
         </div>

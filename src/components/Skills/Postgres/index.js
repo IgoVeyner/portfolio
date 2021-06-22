@@ -1,11 +1,11 @@
 import './index.css'
 import PostgresImage from '../../../images/PostgreSQL.png'
 
-const PostgresLi = () => {
+const PostgresLi = ({ textColor }) => {
   return (
     <li>
       <img src={PostgresImage} className="skills-image postgres-image" alt="postgres"/>
-      <p>Postgres</p>
+      <p className={textColor}>Postgres</p>
     </li>
   )
 }
