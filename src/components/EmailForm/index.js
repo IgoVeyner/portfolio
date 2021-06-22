@@ -15,10 +15,12 @@ function EmailForm() {
 
   const checkValue = e => e === "" ? "" : "with-input" 
 
-  let [headerColor, inputColor] = ["dark-contact-header", "dark-contact-input"]
+  let [headerColor, inputColor, labelColor] = ["dark-contact-header", "dark-contact-input", 
+        "dark-contact-label"]
 
   if (theme === "light") {
-    [headerColor, inputColor] = ["light-contact-header", "light-contact-input"]
+    [headerColor, inputColor, labelColor] = ["light-contact-header", "light-contact-input", 
+      "light-contact-label"]
   }
 
   const handleChange = e => {
@@ -66,7 +68,7 @@ function EmailForm() {
             autoComplete="off"
           />
           <label 
-            className={`contact-label ${checkValue(emailValue)}`} 
+            className={`contact-label ${labelColor} ${checkValue(emailValue)}`} 
             htmlFor="email" 
             onClick={focusEmail} >
             Email
@@ -82,7 +84,7 @@ function EmailForm() {
             onChange={handleChange} 
             value={messageValue} />
           <label 
-            className={`contact-label ${checkValue(messageValue)}`} 
+            className={`contact-label ${labelColor} ${checkValue(messageValue)}`} 
             htmlFor="message"
             onClick={focusMessage} >
             Message

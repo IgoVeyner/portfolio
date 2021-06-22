@@ -54,6 +54,14 @@
   color: black;
 }
 
+.dark-contact-label {
+  color: rgb(var(--rgbWhite) / .8);
+}
+
+.light-contact-label {
+  color: rgb(var(--rgbBlack) / .5);
+}
+
 .contact-input-container {
   position: relative;
 }
