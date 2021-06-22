@@ -1,5 +1,5 @@
 import "./index.css"
-import IntroText from '../IntroText'
+import IntroTitle from '../IntroTitle'
 import Projects from "../Projects"
 import AboutMe from "../AboutMe"
 import Skills from "../Skills"
@@ -8,7 +8,7 @@ import EmailForm from "../EmailForm"
 const MainContent = () => {
   return (
     <div className="main-content">
-      <IntroText />
+      <IntroTitle />
       <Projects />
       <AboutMe />
       <Skills />

@@ -1,10 +1,10 @@
 import "./index.css"
 import { useSelector } from 'react-redux'
-import Name from "../Name"
-import TitleRotating from "../TitleRotating"
-import TitleTyping from "../TitleTyping"
+import Name from "../IntroTitle/Name"
+import TitleRotating from "./TitleRotating"
+import TitleTyping from "./TitleTyping"
 
-const IntroText = () => {
+const IntroTitle = () => {
   const theme = useSelector(state => state.theme)
 
   let color, titleColor
@@ -28,4 +28,4 @@ const IntroText = () => {
   )
 }
 
-export default IntroText
+export default IntroTitle
