@@ -17,7 +17,7 @@ const useMenuAnimation = (menuExpanded, setMenuExpanded, time = 1000) => {
     return () => {
       clearTimeout(timeoutId)
     }
-  }, [menuExpanded]);
+  }, [menuExpanded, setMenuExpanded, time]);
 }
 
 export default useMenuAnimation

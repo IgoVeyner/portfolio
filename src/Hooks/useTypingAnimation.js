@@ -20,7 +20,7 @@ const useTypingAnimation = (words, index, setIndex, reverse, setReverse, subInde
                 150, parseInt(Math.random() * 1000)));
 
     return () => clearTimeout(timeout);
-  }, [subIndex, index, reverse]);
+  }, [subIndex, index, reverse, setIndex, setReverse, setSubIndex, words]);
 }
 
 export default useTypingAnimation

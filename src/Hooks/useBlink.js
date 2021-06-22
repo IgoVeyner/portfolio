@@ -6,7 +6,7 @@ const useBlink = (blink, setBlink) => {
       setBlink(!blink)
     }, 500);
     return () => clearTimeout(timeout2);
-  }, [blink])
+  }, [blink, setBlink])
 }
 
 export default useBlink
