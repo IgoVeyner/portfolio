@@ -1,6 +1,6 @@
 import { useSelector } from 'react-redux'
-import Project from "../Project"
-import projects from '../projects'
+import Project from "./Project"
+import projects from './projects'
 
 const renderProjects = (theme) =>{
   return projects.map((project, i) => { 
@@ -12,7 +12,7 @@ const renderProjects = (theme) =>{
   })
 }
 
-const ProjectSummary = () => {
+const Projects = () => {
   const theme = useSelector(state => state.theme)
 
   return (
@@ -22,4 +22,4 @@ const ProjectSummary = () => {
   )
 }
 
-export default ProjectSummary
+export default Projects
