@@ -102,7 +102,7 @@
   }
 
   .project-title {
-    font-size: 2.25rem
+    font-size: 2.25rem;
   }
 
   .project-text {
@@ -110,7 +110,7 @@
   }
 
   .project-img {
-    max-width: 70vh;
+    max-width: 50vw;
   }
 }
 
@@ -120,11 +120,15 @@
   }
 
   .project-title {
-    font-size: 2rem
+    font-size: 2rem;
   }
 
   .project-text {
     font-size: 1.15rem;
+  }
+
+  .project-img {
+    max-width: 60vw;
   }
 }
 
@@ -134,10 +138,20 @@
   }
 
   .project-title {
-    font-size: 1.75rem
+    font-size: 1.75rem;
   }
 
   .project-text {
-    font-size: 1rem;;
+    font-size: 1rem;
+  }
+
+  .project-img {
+    max-width: 70vh;
+  }
+}
+
+@media only screen and (max-width: 400px) { 
+  .project-title {
+    min-inline-size: inherit;
   }
 }
