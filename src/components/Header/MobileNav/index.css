@@ -5,12 +5,12 @@
 }
 
 .nav-dark {
-  background-color: rgb(var(--rgbGrey) / .8);
+  background-color: rgb(var(--rgbGrey) / .92);
   color: rgb(var(--rgbWhite) / .8);
 }
 
 .nav-light {
-  background-color: rgb(var(--rgbOffWhite) / .8);
+  background-color: rgb(var(--rgbOffWhite) / .92);
   color: rgb(var(--rgbDarkGrey) / .8);
 }
 
@@ -70,7 +70,7 @@
     width: 80%;
     background-color: var(--hexLinuxGreen);
     position: absolute;
-    top: 54%;
+    top: 52%;
     left: 10%;
     transform: scaleX(0) translateY(-1px);
     transform-origin: right;
