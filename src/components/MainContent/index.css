@@ -15,6 +15,7 @@
   width: auto;
   padding-left: 150px;
   padding-right: 150px;
+  min-width: max-content;
 }
 
 @keyframes unblur {
