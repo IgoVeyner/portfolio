@@ -21,11 +21,11 @@
 @keyframes unblur {
   0% {
     filter: blur(25px);
-    opacity: 0%;
+    opacity: 0;
   }
   100% {
     filter: blur(0px);
-    opacity: 100%;
+    opacity: 1;
   }
 }
 
