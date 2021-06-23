@@ -16,6 +16,7 @@
   width: 100%;
   animation: slide 12s infinite 4s; 
   display: block;
+  list-style-type: none;
 }
 
 .li-rotate {
