@@ -44,6 +44,7 @@
   border: none;
   cursor: text;
   width: 100%;
+  user-select: text;
 }
 
 .dark-contact-input {
