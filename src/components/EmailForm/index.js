@@ -10,18 +10,11 @@ function EmailForm() {
   const emailInput = useRef(null)
   const messageInput = useRef(null)
 
+  const [headerColor, inputColor, labelColor] = getStyles(theme)
+
   const focusEmail = () => emailInput.current.focus()
   const focusMessage = () => messageInput.current.focus()
-
   const checkValue = e => e === "" ? "" : "with-input" 
-
-  let [headerColor, inputColor, labelColor] = ["dark-contact-header", "dark-contact-input", 
-        "dark-contact-label"]
-
-  if (theme === "light") {
-    [headerColor, inputColor, labelColor] = ["light-contact-header", "light-contact-input", 
-      "light-contact-label"]
-  }
 
   const handleChange = e => {
     switch (e.target.name) {
@@ -98,6 +91,16 @@ function EmailForm() {
       </form>
     </section>
   )
+}
+
+const getStyles = (theme) => {
+
+  if (theme === "dark") {
+    return ["dark-contact-header", "dark-contact-input", "dark-contact-label"]
+  } else {
+    return ["light-contact-header", "light-contact-input", "light-contact-label"]
+  }
+
 }
 
 export default EmailForm

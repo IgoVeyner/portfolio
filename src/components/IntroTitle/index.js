@@ -6,16 +6,7 @@ import TitleTyping from "./TitleTyping"
 
 const IntroTitle = () => {
   const theme = useSelector(state => state.theme)
-
-  let color, titleColor
-
-  if (theme === "dark") {
-    color = "dark-line"
-    titleColor = "dark-title"
-  } else {
-    color = "light-line"
-    titleColor = "light-title"
-  }
+  const [color, titleColor] = getStyles(theme)
 
   return (
     <section className="section" id="intro">
@@ -26,6 +17,16 @@ const IntroTitle = () => {
       </div>
     </section>
   )
+}
+
+const getStyles = (theme) => {
+
+  if (theme === "dark") {
+    return ["dark-line", "dark-title"]
+  } else {
+    return ["light-line", "light-title"]
+  }
+
 }
 
 export default IntroTitle

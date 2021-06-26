@@ -4,16 +4,9 @@ import './index.css'
 
 const Project = ({ project, id, reverse, theme }) => {
   const {projectName, description, github, demoLink, img } = project
-  let [orderReverse, projReverse] = ["", "", ""]
-  let [titleColor, textColor] = ["dark-proj-title", "dark-proj-text"]
-
-  if (reverse) {
-    [orderReverse, projReverse] = ["order-reverse", "project-reverse"]
-  }
-
-  if (theme === "light") {
-    [titleColor, textColor] = ["light-proj-title", "light-proj-text"]
-  }
+  const [orderReverse, projReverse] = 
+    reverse ? ["order-reverse", "project-reverse"] : ["", ""]
+  let [titleColor, textColor] = getStyles(theme)
 
   return (
     <section className="section section-project" id={id}>
@@ -36,6 +29,16 @@ const Project = ({ project, id, reverse, theme }) => {
       </div>
     </section>
   )
+}
+
+const getStyles = (theme) => {
+
+  if (theme === "dark") {
+    return ["dark-proj-title", "dark-proj-text"]
+  } else {
+    return ["light-proj-title", "light-proj-text"]
+  }
+
 }
 
 export default Project
