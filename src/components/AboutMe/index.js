@@ -4,12 +4,7 @@ import selfie from '../../images/selfie.JPG'
 
 const AboutMe = () => {
   const theme = useSelector(state => state.theme)
-  let [aboutTitle, aboutText] = ["dark-about-title", "dark-about-text"]
-  
-  if (theme === "light") {
-    [aboutTitle, aboutText] = ["light-about-title", "light-about-text"]
-  }
-
+  const [aboutTitle, aboutText] = getStyles(theme)
 
   return (
     <section className="section section-about" id="about">
@@ -40,6 +35,16 @@ const AboutMe = () => {
       </div>
     </section>
   )
+}
+
+const getStyles = (theme) => {
+
+  if (theme === "dark") {
+    return ["dark-about-title", "dark-about-text"]
+  } else {
+    return ["light-about-title", "light-about-text"]
+  }
+
 }
 
 export default AboutMe
