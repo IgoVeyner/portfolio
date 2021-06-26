@@ -110,6 +110,7 @@
   font-size: 0.9rem;
   font-weight: 700;
   filter: grayscale(1);
+  appearance: none;
 }
 
 .contact-submit:hover {
