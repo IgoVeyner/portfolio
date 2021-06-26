@@ -4,7 +4,6 @@
   z-index: 1024;
   height: 65px;
   width: 65px;
-  backdrop-filter: blur(1px);
 }
 
 .logo-svg {
