@@ -45,13 +45,18 @@
   width: 100px;
 }
 
+.skills-container li:hover > .skills-image {
+  filter: grayscale(0);
+}
+
+.skills-container li:hover > .dark-skills-text,
+.skills-container li:hover > .light-skills-text {
+  font-weight: bolder;
+}
+
 .skills-image {
   filter: grayscale(1);
   transition: filter .3s;
-}
-
-.skills-image:hover {
-  filter: grayscale(0);
 }
 
 .dark-skills-text {
