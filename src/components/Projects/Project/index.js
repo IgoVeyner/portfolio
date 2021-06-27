@@ -1,5 +1,6 @@
 import GithubIcon from '../../Icons/Github'
 import YoutubeIcon from '../../Icons/Youtube'
+import Divider from '../Divider'
 import './index.css'
 
 const Project = ({ project, id, reverse, theme }) => {
@@ -19,6 +20,7 @@ const Project = ({ project, id, reverse, theme }) => {
           />
         </div>
         <div className="project-description">
+          <Divider />
           <h1 className={`project-title ${titleColor}`}>{projectName}</h1>
           <p className={`project-text ${textColor}`}>{description}</p>
           <div className="project-links-container">
