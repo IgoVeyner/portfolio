@@ -18,13 +18,11 @@ const AboutMe = () => {
             My name is Igor.
           </p>
           <p className={`about-text ${aboutText}`}>
-            I'm a NYC based Full-Stack Software Engineer and 
-            a proud graduate of <a href="https://flatironschool.com/"
+            I'm a NYC based Software Engineer and 
+            graduate of <a href="https://flatironschool.com/"
               className="about-link" target="_blank" rel="noreferrer">
-              The Flatiron School 
-            </a> where I learned Ruby on Rails for 
-            Backend and React for Frontend development. If you're interested in learning 
-            more about my skills, click <a href="#skills" className="about-link">
+              Flatiron School 
+            </a>'s Software Engineering Bootcamp. Check out my skills <a href="#skills" className="about-link">
               here
           </a>.</p>
           <p className={`about-text ${aboutText}`}>
