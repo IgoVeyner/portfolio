@@ -73,6 +73,10 @@
   margin: 10% 0px;
 }
 
+.divider-container {
+  transform: scale(1.5);
+}
+
 @media only screen and (max-width: 1300px) { 
   .project-title {
     font-size: 2rem
@@ -80,6 +84,10 @@
 
   .project-text {
     font-size: 1rem;
+  }
+
+  .divider-container {
+    transform: scale(1.4);
   }
 }
 
