@@ -4,6 +4,7 @@
   max-height: 80vh;
   filter: contrast(0.95);
   align-self: center;
+  border: var(--hexLinuxGreen) 1px solid;
 }
 
 .about {
@@ -38,6 +39,11 @@
 .about-link {
   color: var(--hexLinuxGreen);
   text-decoration: none;
+  font-weight: bolder;
+}
+
+.about-link:hover {
+  text-decoration: underline;
 }
 
 .dark-about-title {
