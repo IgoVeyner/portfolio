@@ -25,17 +25,13 @@ function EmailForm() {
   const handleChange = e => {
     switch (e.target.name) {
       case 'email':
+        checkEmail(e.target.value)
         setEmailValue(e.target.value)
-        if (emailError.current.innerText !== "") {
-          checkEmail()
-        }
         break
       
       case 'message':
+        checkMessage(e.target.value)
         setMessageValue(e.target.value)
-        if (messageError.current.innerText !== "") {
-          checkMessage()
-        }
         break
 
       default:
@@ -49,10 +45,11 @@ function EmailForm() {
     checkEmail()
     checkMessage()
 
-    if (emailError.current.innerText === "" && messageError.current.innerText === "") {
+    if (emailErrorState === null || emailErrorState || 
+        messageErrorState === null || messageErrorState) {
       return
     }
-
+    
     emailjs.sendForm('service_qyp8yfr', 'template_dlyefrm', e.target, 
     'user_IGuFOYMswP5iM0AcORkLj')
       .then((result) => {
@@ -64,8 +61,8 @@ function EmailForm() {
     e.target.reset()
   }
 
-  const checkMessage = () => {
-    if (messageValue.trim() !== "") {
+  const checkMessage = (message = messageValue) => {
+    if (message.trim() !== "") {
       messageError.current.innerText = ""
       setMessageError(false)
     } else {
@@ -74,8 +71,8 @@ function EmailForm() {
     }
   }
 
-  const checkEmail = () => {
-    if (emailIsValid()) {
+  const checkEmail = (email = emailValue) => {
+    if (emailIsValid(email)) {
       emailError.current.innerText = ""
       setEmailError(false)
     } else {
@@ -94,8 +91,8 @@ function EmailForm() {
     }
   }
   
-  const emailIsValid = () => {
-    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailValue)
+  const emailIsValid = (email) => {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
   }
 
   return (
@@ -110,7 +107,6 @@ function EmailForm() {
             className={`contact-input ${inputColor}`}
             ref={emailInput} 
             onChange={handleChange}
-            onBlur={checkEmail}
             value={emailValue} 
             autoComplete="off"
           />
@@ -138,8 +134,9 @@ function EmailForm() {
             className={`contact-input ${inputColor}`}
             ref={messageInput} 
             onChange={handleChange}
-            onBlur={checkMessage} 
-            value={messageValue} />
+            value={messageValue} 
+            autoComplete="off"
+          />
           <label 
             className={`
               contact-label 
