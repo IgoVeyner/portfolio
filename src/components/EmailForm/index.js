@@ -6,7 +6,11 @@ import { useRef, useState } from "react"
 function EmailForm() {
   const [emailValue, setEmailValue] = useState("")
   const [messageValue, setMessageValue] = useState("")
+  const [emailErrorState, setEmailError] = useState(null)
+  const [messageErrorState, setMessageError] = useState(null)
+
   const theme = useSelector(state => state.theme)
+
   const emailInput = useRef(null)
   const emailError = useRef(null)
   const messageInput = useRef(null)
@@ -61,18 +65,32 @@ function EmailForm() {
   }
 
   const checkMessage = () => {
-    if (messageValue.trim() === "") {
-      messageError.current.innerText = "Please enter a message"
-    } else {
+    if (messageValue.trim() !== "") {
       messageError.current.innerText = ""
+      setMessageError(false)
+    } else {
+      messageError.current.innerText = "Please enter a message"
+      setMessageError(true)
     }
   }
 
   const checkEmail = () => {
     if (emailIsValid()) {
       emailError.current.innerText = ""
+      setEmailError(false)
     } else {
       emailError.current.innerText = "Please enter a valid email address"
+      setEmailError(true)
+    }
+  }
+
+  const checkError = (error) => {
+    if (error === null) {
+      return ""
+    } else if (error === true) {
+      return "has-error"
+    } else {
+      return "valid"
     }
   }
   
@@ -97,7 +115,12 @@ function EmailForm() {
             autoComplete="off"
           />
           <label 
-            className={`contact-label ${labelColor} ${checkValue(emailValue)}`} 
+            className={`
+              contact-label 
+              ${labelColor} 
+              ${checkValue(emailValue)}
+              ${checkError(emailErrorState)}
+            `} 
             htmlFor="email" 
             onClick={focusEmail} >
             Email
@@ -118,7 +141,12 @@ function EmailForm() {
             onBlur={checkMessage} 
             value={messageValue} />
           <label 
-            className={`contact-label ${labelColor} ${checkValue(messageValue)}`} 
+            className={`
+              contact-label 
+              ${labelColor} 
+              ${checkValue(messageValue)}
+              ${checkError(messageErrorState)}
+            `} 
             htmlFor="message"
             onClick={focusMessage} >
             Message

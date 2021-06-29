@@ -127,3 +127,11 @@
   font-size: 13px;
   font-weight: bold;
 }
+
+.has-error {
+  color: red;
+}
+
+.valid {
+  color: var(--hexLinuxGreen)
+}
