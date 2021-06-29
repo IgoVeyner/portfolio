@@ -8,7 +8,9 @@ function EmailForm() {
   const [messageValue, setMessageValue] = useState("")
   const theme = useSelector(state => state.theme)
   const emailInput = useRef(null)
+  const emailError = useRef(null)
   const messageInput = useRef(null)
+  const messageError = useRef(null)
 
   const [headerColor, inputColor, labelColor] = getStyles(theme)
 
@@ -20,10 +22,16 @@ function EmailForm() {
     switch (e.target.name) {
       case 'email':
         setEmailValue(e.target.value)
+        if (emailError.current.innerText !== "") {
+          checkEmail()
+        }
         break
       
       case 'message':
         setMessageValue(e.target.value)
+        if (messageError.current.innerText !== "") {
+          checkMessage()
+        }
         break
 
       default:
@@ -33,6 +41,13 @@ function EmailForm() {
 
   const sendEmail = (e) => {
     e.preventDefault()
+    
+    checkEmail()
+    checkMessage()
+
+    if (emailError.current.innerText === "" && messageError.current.innerText === "") {
+      return
+    }
 
     emailjs.sendForm('service_qyp8yfr', 'template_dlyefrm', e.target, 
     'user_IGuFOYMswP5iM0AcORkLj')
@@ -43,6 +58,26 @@ function EmailForm() {
       })
 
     e.target.reset()
+  }
+
+  const checkMessage = () => {
+    if (messageValue.trim() === "") {
+      messageError.current.innerText = "Please enter a message"
+    } else {
+      messageError.current.innerText = ""
+    }
+  }
+
+  const checkEmail = () => {
+    if (emailIsValid()) {
+      emailError.current.innerText = ""
+    } else {
+      emailError.current.innerText = "Please enter a valid email address"
+    }
+  }
+  
+  const emailIsValid = () => {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailValue)
   }
 
   return (
@@ -56,7 +91,8 @@ function EmailForm() {
             name="email" 
             className={`contact-input ${inputColor}`}
             ref={emailInput} 
-            onChange={handleChange} 
+            onChange={handleChange}
+            onBlur={checkEmail}
             value={emailValue} 
             autoComplete="off"
           />
@@ -66,6 +102,10 @@ function EmailForm() {
             onClick={focusEmail} >
             Email
           </label>
+          <div 
+            className="contact-error"
+            ref={emailError}
+          ></div>
         </div>
 
         <div className="contact-input-container">
@@ -74,7 +114,8 @@ function EmailForm() {
             name="message" 
             className={`contact-input ${inputColor}`}
             ref={messageInput} 
-            onChange={handleChange} 
+            onChange={handleChange}
+            onBlur={checkMessage} 
             value={messageValue} />
           <label 
             className={`contact-label ${labelColor} ${checkValue(messageValue)}`} 
@@ -82,6 +123,10 @@ function EmailForm() {
             onClick={focusMessage} >
             Message
           </label>
+          <div 
+            className="contact-error"
+            ref={messageError}
+          ></div>
         </div>
 
         <div className="contact-submit-container">

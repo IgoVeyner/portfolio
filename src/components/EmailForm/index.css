@@ -119,3 +119,11 @@
   letter-spacing: 0.6px;
   font-weight: bold;
 }
+
+.contact-error {
+  position: absolute;
+  width: 100%;
+  color: red;
+  font-size: 13px;
+  font-weight: bold;
+}
