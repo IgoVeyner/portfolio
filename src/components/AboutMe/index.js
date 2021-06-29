@@ -22,11 +22,18 @@ const AboutMe = () => {
             graduate of <a href="https://flatironschool.com/"
               className="about-link" target="_blank" rel="noreferrer">
               Flatiron School 
-            </a>'s Software Engineering Bootcamp. Check out my skills <a href="#skills" className="about-link">
+            </a>'s Software Engineering Bootcamp. You can read my technical blog posts 
+            on <a 
+              href="https://igor-veyner.medium.com/" 
+              className="about-link"
+            >Medium</a> and check out my skills <a 
+              href="#skills" 
+              className="about-link"
+            >
               here
           </a>.</p>
           <p className={`about-text ${aboutText}`}>
-            When I'm not sitting in front of a computer screen you can find me 
+            When I'm not sitting in front of a computer you can find me 
             skateboarding in the streets and parks across New York.
           </p>
         </div>
