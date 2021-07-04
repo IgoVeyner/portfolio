@@ -1,0 +1,30 @@
+$hoverGreen: darken($colorGreen, 12%);
+$darkShadow: lighten($colorBlack, 40%);
+$lightShadow: lighten($colorBlack, 80%);
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: $colorGreen $colorLightGrey;
+}
+
+body::-webkit-scrollbar {
+  width: $spaceS;
+  height: $spaceS;
+}
+
+body::-webkit-scrollbar-track {
+  background: $colorLightGrey; 
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: $colorGreen;
+  box-shadow: 
+    inset 1px 0px 4px $darkShadow,
+    inset -1px 0px 4px $lightShadow;
+  border-radius: 20px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: $hoverGreen;
+}
