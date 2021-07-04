@@ -1,0 +1,22 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  outline: none;
+  font-family: $baseFont;
+  cursor: default;
+  user-select: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: $colorGreen $colorLightGrey;
+}
+
+a, svg, path, g {
+  cursor: pointer;
+}
+
+main {
+  transition: all 1s;
+}
