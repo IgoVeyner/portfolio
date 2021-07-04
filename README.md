@@ -1,5 +1,5 @@
 # Portfolio
-[ image ] 
+[![Site preview](/src/images/website_gif.gif)](http:igorveyner.com) 
 
 My personal portfolio website. Check it out [live](http:igorveyner.com).
 
