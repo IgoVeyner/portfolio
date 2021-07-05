@@ -1,5 +1,6 @@
 // import './index.css'
 
+// todo add youtube icon styles
 const YoutubeIcon = ({ link }) => {
   return (
     <a href={link} className="icon-container youtube" target="_blank" rel="noreferrer">

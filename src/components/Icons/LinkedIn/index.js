@@ -4,7 +4,7 @@ const LinkedInIcon = ({ link, iconColor }) => {
 
   return (
     <a href={link} className="icon-container" id="linkedIn" target="_blank" rel="noreferrer">
-      <svg className={`icon ${iconColor} medium`}>
+      <svg className={`${iconColor} medium`}>
         <path 
           d="M0 0v24h24v-24h-24zm8 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 
           1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 

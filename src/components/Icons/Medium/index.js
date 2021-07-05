@@ -4,7 +4,7 @@ const MediumIcon = ({ link, iconColor }) => {
 
   return (
     <a href={link} className="icon-container" id="medium" target="_blank" rel="noreferrer">
-      <svg className={`icon ${iconColor} medium`}>
+      <svg className={`${iconColor} medium`}>
         <path 
           d="M2.846 6.887c.03-.295-.083-.586-.303-.784l-2.24-2.7v-.403h6.958l5.378 11.795 
           4.728-11.795h6.633v.403l-1.916 1.837c-.165.126-.247.333-.213.538v13.498c-.034.204.048.411.213.537l1.871 
