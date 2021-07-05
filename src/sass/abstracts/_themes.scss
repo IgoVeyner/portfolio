@@ -31,6 +31,10 @@ $lightLink: $lightColor2;
   color: $darkLink;
 }
 
+.dark-logo {
+  fill: white;
+}
+
 // Light Mode Styles
 .light {
   background-color: $lightBackground;
@@ -45,4 +49,8 @@ $lightLink: $lightColor2;
 .light-link {
   @extend %web-link;
   color: $lightLink;
+}
+
+.light-logo {
+  fill: black;
 }

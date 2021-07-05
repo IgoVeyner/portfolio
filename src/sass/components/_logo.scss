@@ -1,0 +1,33 @@
+.logo {
+  position: relative;
+  top: $space2XL;
+  z-index: 1024;
+  height: $space3XL;
+  width: $space3XL;
+
+  @include breakpoint(700px) {
+    position: fixed;
+    left: $space2XL;
+  }
+
+  @include breakpoint(400px) {
+    left: $spaceXL;
+    top: $spaceXL;
+  }
+}
+
+.logo-svg {
+  transition: fill 4s;
+
+  &:hover {
+    fill: $colorGreen;
+    transition: fill .5s;
+    animation: shake .3s;
+  }
+}
+
+@keyframes shake {
+  33% { transform: translateX(-1px) rotate(-1deg); }
+  66% { transform: translateX(1px) rotate(1deg); }
+  100% { transform: translateX(0px) rotate(0deg);}
+}
