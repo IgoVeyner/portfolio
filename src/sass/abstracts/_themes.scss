@@ -2,17 +2,21 @@
 $darkBackground: #111111;
 $darkColor1: #ffffff99;
 $darkColor2: #ffffffCC;
+$darkColor3: #111111EB;
 $darkFont: $darkColor2;
 $darkIcon: $darkColor1;
 $darkLink: $darkColor2;
+$darkMobileNav: $darkColor3;
 
 $lightBackground: $colorOffWhite;
 $lightColor1: #00000099;
 $lightColor2: #000000BB;
 $lightColor3: #000000B3;
+$lightColor4: #FBFBFBEB;
 $lightFont: $lightColor3;
 $lightIcon: $lightColor1;
 $lightLink: $lightColor2;
+$lightMobileNav: $lightColor4;
 
 
 // Dark Mode Stlyes
@@ -35,6 +39,11 @@ $lightLink: $lightColor2;
   fill: white;
 }
 
+.nav-dark {
+  background-color: $darkMobileNav;
+}
+
+
 // Light Mode Styles
 .light {
   background-color: $lightBackground;
@@ -53,4 +62,9 @@ $lightLink: $lightColor2;
 
 .light-logo {
   fill: black;
+}
+
+.nav-light {
+  background-color: $lightMobileNav;
+  color: $lightColor1;
 }
