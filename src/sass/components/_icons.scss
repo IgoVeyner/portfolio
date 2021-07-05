@@ -48,3 +48,19 @@ $iconGrey: #808080;
 .medium {
   transform: scale(.8);
 }
+
+.github, #linkedIn, #medium, .youtube {
+  transition: transform 1s;
+
+  &:hover {
+    transition: transform .5s;
+  }
+}
+
+.github:hover, #medium:hover {
+  transform: scale(1.3);
+}
+
+#linkedIn:hover, .youtube:hover {
+  transform: scale(1.2);
+}
