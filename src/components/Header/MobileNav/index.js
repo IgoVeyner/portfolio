@@ -1,4 +1,4 @@
-import './index.css'
+// import './index.css'
 import IconNav from '../IconNav'
 import ThemeButton from '../../Buttons/Theme'
 import { useSelector } from 'react-redux'

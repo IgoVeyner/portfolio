@@ -1,5 +1,5 @@
 import { useSelector } from 'react-redux'
-import "./index.css"
+// import "./index.css"
 import IconNav from '../IconNav'
 
 const Navbar = () => {

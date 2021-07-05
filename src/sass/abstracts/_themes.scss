@@ -1,11 +1,26 @@
+// Variables
+$darkIcon: $colorWhite /.6;
+$lightIcon: $colorBlack / .6;
+
+
 // Dark Mode Stlyes
 .dark {
   background-color: $colorGrey;
   color: $colorWhite / .7;
 }
 
+.dark-icon {
+  @extend %icon;
+  fill: $darkIcon;
+}
+
 // Light Mode Styles
 .light {
   background-color: $colorOffWhite;
   color: $colorGrey / .8;
+}
+
+.light-icon {
+  @extend %icon;
+  fill: $lightIcon;
 }

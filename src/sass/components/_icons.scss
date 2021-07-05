@@ -1,0 +1,51 @@
+$iconGrey: #808080;
+
+%icon {
+  width: $spaceL;
+  height: $spaceL;
+  fill: $iconGrey;
+  transition: fill 2.5s, transform .3s;
+}
+
+.web-icons, .mobile-icons {
+  align-items: center;
+  justify-content: center;
+}
+
+.web-icons {
+  flex-direction: column;
+  display: flex;
+  position: relative;
+  bottom: $space2XL;
+
+  @include breakpoint(700px, 625px) {
+    display: none;
+  }
+}
+
+.mobile-icons {
+  display: none;
+
+  @include breakpoint(700px, 625px) {
+    .mobile-icons {
+      display: flex;
+      flex-direction: row;
+      position: absolute;
+      bottom: $spaceXL;
+      left: $spaceXL;
+    }
+  }
+}
+
+.icon-container {
+  padding: $spaceS;
+
+  &:hover %icon {
+    fill: $colorGreen;
+    transition: fill .2s;
+  }
+}
+
+.medium {
+  transform: scale(.8);
+}
