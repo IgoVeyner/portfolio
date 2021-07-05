@@ -9,10 +9,10 @@ const Navbar = () => {
   return (
     <nav className="web-nav">
       <div className="web-nav-list">
-        <a href="#project-1" className={`web-link ${linkColor}`}>Projects</a>
-        <a href="#about" className={`web-link ${linkColor}`}>About</a>
-        <a href="#skills" className={`web-link ${linkColor}`}>Skills</a>
-        <a href="#contact" className={`web-link ${linkColor}`}>Contact</a>
+        <a href="#project-1" className={`${linkColor}`}>Projects</a>
+        <a href="#about" className={`${linkColor}`}>About</a>
+        <a href="#skills" className={`${linkColor}`}>Skills</a>
+        <a href="#contact" className={`${linkColor}`}>Contact</a>
       </div>
       <IconNav classNames={["web-icons"]} />
     </nav>
