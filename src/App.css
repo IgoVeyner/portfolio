@@ -76,6 +76,7 @@ body::-webkit-scrollbar-thumb:hover {
   color: rgb(var(--rgbDarkGrey) / .8);
 }
 
+/* need to add */
 @media only screen and (max-width: 700px) {
   main {
     grid-template-columns: none;
