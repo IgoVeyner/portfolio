@@ -1,12 +1,24 @@
 // Variables
-$darkIcon: $colorWhite /.6;
-$lightIcon: $colorBlack / .6;
+$darkBackground: #111111;
+$darkColor1: #ffffff99;
+$darkColor2: #ffffffCC;
+$darkFont: $darkColor2;
+$darkIcon: $darkColor1;
+$darkLink: $darkColor2;
+
+$lightBackground: $colorOffWhite;
+$lightColor1: #00000099;
+$lightColor2: #000000BB;
+$lightColor3: #000000B3;
+$lightFont: $lightColor3;
+$lightIcon: $lightColor1;
+$lightLink: $lightColor2;
 
 
 // Dark Mode Stlyes
 .dark {
-  background-color: $colorGrey;
-  color: $colorWhite / .7;
+  background-color: $darkBackground;
+  color: $darkFont;
 }
 
 .dark-icon {
@@ -14,13 +26,23 @@ $lightIcon: $colorBlack / .6;
   fill: $darkIcon;
 }
 
+.dark-link {
+  @extend %web-link;
+  color: $darkLink;
+}
+
 // Light Mode Styles
 .light {
-  background-color: $colorOffWhite;
-  color: $colorGrey / .8;
+  background-color: $lightBackground;
+  color: $lightFont;
 }
 
 .light-icon {
   @extend %icon;
   fill: $lightIcon;
+}
+
+.light-link {
+  @extend %web-link;
+  color: $lightLink;
 }
