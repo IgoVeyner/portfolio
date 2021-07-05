@@ -1,0 +1,11 @@
+// Dark Mode Stlyes
+.dark {
+  background-color: $colorGrey;
+  color: $colorWhite / .7;
+}
+
+// Light Mode Styles
+.light {
+  background-color: $colorOffWhite;
+  color: $colorGrey / .8;
+}
