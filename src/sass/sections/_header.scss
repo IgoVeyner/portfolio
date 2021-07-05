@@ -6,4 +6,12 @@
   flex-direction: column;
   align-items: center;
   z-index: 1024;
+
+  @include breakpoint(700px) {
+    display: block;
+    width: 0px;
+    height: auto;
+    position: relative;
+    z-index: 100;
+  }
 }
