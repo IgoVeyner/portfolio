@@ -49,11 +49,16 @@ $lightMenu: black;
   background-color: $darkMenu;
 }
 
+.dark-button {
+  filter: contrast(0);
+}
+
 @include breakpoint(700px, 625px) {
   .dark-bg-menu:hover {
     backdrop-filter: contrast(0.7);
   }
 }
+
 
 // Light Mode Styles
 .light {
@@ -82,6 +87,10 @@ $lightMenu: black;
 
 .light-menu {
   background-color: $lightMenu;
+}
+
+.light-button {
+  filter: opacity(0.75);
 }
 
 @include breakpoint(700px, 625px) { 
