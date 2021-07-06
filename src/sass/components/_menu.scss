@@ -1,0 +1,45 @@
+.menu {
+  display: none;
+
+  @include breakpoint(700px, 625px) {
+    display: block;
+    position: fixed;
+    top: $space2XL;
+    right: $space2XL;
+    z-index: 1024;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    padding: $spaceS;
+    border-radius: 50px;
+    transition: backdrop-filter .3s
+  }
+
+  @include breakpoint(400px) {
+    right: $spaceXL;
+    top: $spaceXL;
+  }
+}
+
+.hamburger {
+  cursor: inherit;
+  position: relative;
+  top: -2px;
+}
+
+.menu-line {
+  width: $spaceXL;
+  height: 3px;
+  display: block;
+  margin: 9px auto;
+  transition: all 0.3s ease-in-out;
+  cursor: inherit;
+}
+
+.menu-open .menu-line:nth-child(1){
+  transform: translateY(13px);
+}
+
+.menu-open .menu-line:nth-child(3){
+  transform: translateY(-13px);
+}

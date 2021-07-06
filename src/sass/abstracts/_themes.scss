@@ -7,6 +7,7 @@ $darkFont: $darkColor2;
 $darkIcon: $darkColor1;
 $darkLink: $darkColor2;
 $darkMobileNav: $darkColor3;
+$darkMenu: white;
 
 $lightBackground: $colorOffWhite;
 $lightColor1: #00000099;
@@ -17,6 +18,7 @@ $lightFont: $lightColor3;
 $lightIcon: $lightColor1;
 $lightLink: $lightColor2;
 $lightMobileNav: $lightColor4;
+$lightMenu: black;
 
 
 // Dark Mode Stlyes
@@ -43,6 +45,15 @@ $lightMobileNav: $lightColor4;
   background-color: $darkMobileNav;
 }
 
+.dark-menu {
+  background-color: $darkMenu;
+}
+
+@include breakpoint(700px, 625px) {
+  .dark-bg-menu:hover {
+    backdrop-filter: contrast(0.7);
+  }
+}
 
 // Light Mode Styles
 .light {
@@ -67,4 +78,14 @@ $lightMobileNav: $lightColor4;
 .nav-light {
   background-color: $lightMobileNav;
   color: $lightColor1;
+}
+
+.light-menu {
+  background-color: $lightMenu;
+}
+
+@include breakpoint(700px, 625px) { 
+  .light-bg-menu:hover {
+    backdrop-filter: contrast(0.85);
+  }
 }

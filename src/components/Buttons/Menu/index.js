@@ -1,5 +1,5 @@
 import { useSelector } from 'react-redux'
-import './index.css'
+// import './index.css'
 
 const MenuButton = ({ toggleMenu, menuExpanded }) => {
   const theme = useSelector(state => state.theme)
