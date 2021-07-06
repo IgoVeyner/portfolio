@@ -26,13 +26,11 @@ $iconGrey: #808080;
   display: none;
 
   @include breakpoint(700px, 625px) {
-    .mobile-icons {
-      display: flex;
-      flex-direction: row;
-      position: absolute;
-      bottom: $spaceXL;
-      left: $spaceXL;
-    }
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: $spaceXL;
+    left: $spaceXL;
   }
 }
 
