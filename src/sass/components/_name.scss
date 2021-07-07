@@ -1,0 +1,126 @@
+
+.name-container {
+  margin-bottom: $spaceS;
+  overflow: hidden;
+
+  @include breakpoint(1200px) {
+    margin-bottom: $spaceM;
+  }
+}
+
+.name {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  font-family: $secondaryFont;
+  
+  &::before {
+    content: "";
+    background-color: $colorGreen;
+    display: block;
+    position: relative;
+    height: 24px;
+    width: 230px;
+    top: 29px;
+    left: 0px;
+    animation: reveal 3s forwards 2.5s;
+  }
+
+  @include breakpoint(2000px) {
+    font-size: 1.4rem;
+
+    &::before {
+      width: 215px;
+    }
+  }
+
+  @include breakpoint(1600px) {
+    font-size: 1.3rem;
+
+    &::before {
+      width: 200px;
+    }
+  }
+
+  @include breakpoint(1200px) {
+    font-size: 1.2rem;
+
+    &::before {
+      width: 180px;
+    }
+  }
+
+  @include breakpoint(900px) {
+    font-size: 1.15rem;
+
+    &::before {
+      width: 175px;
+      top: 26px;
+    }
+  }
+
+  @include breakpoint(700px) {
+    font-size: 0.95rem;
+
+    &::before {
+      width: 145px;
+      height: 22px;
+    }
+  }
+
+  @include breakpoint(400px) {
+    font-size: 1.125rem;
+
+    &::before {
+      width: 170px;
+    }
+  }
+}
+
+@keyframes reveal {
+  0% {left: 0px}
+  100% {left: -230px}
+}
+
+@media only screen and (max-width: 2000px) {
+  @keyframes reveal {
+    0% {left: 0px}
+    100% {left: -215px}
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  @keyframes reveal {
+    0% {left: 0px}
+    100% {left: -200px}
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  @keyframes reveal {
+    0% {left: 0px}
+    100% {left: -180px}
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  @keyframes reveal {
+    0% {left: 0px}
+    100% {left: -175px}
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  @keyframes reveal {
+    0% {left: 0px}
+    100% {left: -145px}
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  @keyframes reveal {
+    0% {left: 0px}
+    100% {left: -175px}
+  }
+}

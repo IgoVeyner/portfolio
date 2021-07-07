@@ -1,0 +1,38 @@
+.blinker {
+  margin-left: 4px;
+  height: 8.5rem;
+  width: 4rem;
+  display: inline;
+  position: absolute;
+  bottom: 0px;
+
+  @include breakpoint(2000px) {
+    height: 7.5rem;
+    width: 3.5rem;
+  }
+
+  @include breakpoint(1600px) {
+    height: 6.5rem;
+    width: 3rem;
+  }
+
+  @include breakpoint(1200px) {
+    height: 5.5rem;
+    width: 2.5rem;
+  }
+
+  @include breakpoint(900px) {
+    height: 4.5rem;
+    width: 2rem;
+  }
+
+  @include breakpoint(700px) {
+    height: 3.5rem;
+    width: 1.5rem;
+  }
+
+  @include breakpoint(400px) {
+    height: 2.25rem;
+    width: 1rem;
+  }
+}
