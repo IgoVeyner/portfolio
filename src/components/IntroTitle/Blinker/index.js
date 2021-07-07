@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import useBlink from '../../../Hooks/useBlink'
-import "./index.css"
+// import "./index.css"
 
 const Blinker = ({ titleColor }) => {
   const [blink, setBlink] = useState(true);
