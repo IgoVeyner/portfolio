@@ -1,0 +1,21 @@
+.intro-title {
+  width: 100%;
+  position: relative;
+  max-width: 1100px;
+
+  @include breakpoint(2000px) {
+    max-width: 920px;
+  }
+  
+  @include breakpoint(1600px) {
+    max-width: 780px;
+  }
+
+  @include breakpoint(700px) {
+    top: $space3XL * -1;
+  }
+
+  @include h-breakpoint(450px) {
+    margin-top: 50vh;
+  }
+}

@@ -1,4 +1,4 @@
-import "./index.css"
+// import "./index.css"
 import { useSelector } from 'react-redux'
 import Name from "../IntroTitle/Name"
 import TitleRotating from "./TitleRotating"

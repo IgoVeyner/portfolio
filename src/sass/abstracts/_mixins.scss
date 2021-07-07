@@ -9,3 +9,9 @@
     }
   }
 }
+
+@mixin h-breakpoint($height) {
+  @media only screen and (max-height: $height) {
+    @content
+  }
+}

@@ -7,7 +7,8 @@ $darkFont: $darkColor2;
 $darkIcon: $darkColor1;
 $darkLink: $darkColor2;
 $darkMobileNav: $darkColor3;
-$darkMenu: white;
+$darkMenu: $colorWhite;
+$darkIntroTitle: $colorWhite;
 
 $lightBackground: $colorOffWhite;
 $lightColor1: #00000099;
@@ -18,7 +19,8 @@ $lightFont: $lightColor3;
 $lightIcon: $lightColor1;
 $lightLink: $lightColor2;
 $lightMobileNav: $lightColor4;
-$lightMenu: black;
+$lightMenu: $colorBlack;
+$lightIntroTitle: $colorBlack;
 
 
 // Dark Mode Stlyes
@@ -51,6 +53,10 @@ $lightMenu: black;
 
 .dark-button {
   filter: contrast(0);
+}
+
+.dark-title {
+  color: $darkIntroTitle;
 }
 
 @include breakpoint(700px, 625px) {
@@ -91,6 +97,10 @@ $lightMenu: black;
 
 .light-button {
   filter: opacity(0.75);
+}
+
+.light-title {
+  color: $lightIntroTitle;
 }
 
 @include breakpoint(700px, 625px) { 
