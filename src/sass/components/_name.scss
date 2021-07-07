@@ -2,10 +2,6 @@
 .name-container {
   margin-bottom: $spaceS;
   overflow: hidden;
-
-  @include breakpoint(1200px) {
-    margin-bottom: $spaceM;
-  }
 }
 
 .name {
@@ -22,7 +18,7 @@
     position: relative;
     height: 24px;
     width: 230px;
-    top: 29px;
+    top: 27px;
     left: 0px;
     animation: reveal 3s forwards 2.5s;
   }
@@ -65,7 +61,7 @@
 
     &::before {
       width: 145px;
-      height: 22px;
+      top: 25px;
     }
   }
 
@@ -80,47 +76,47 @@
 
 @keyframes reveal {
   0% {left: 0px}
-  100% {left: -230px}
+  100% {left: -235px}
 }
 
-@media only screen and (max-width: 2000px) {
+@include breakpoint(2000px) {
   @keyframes reveal {
     0% {left: 0px}
-    100% {left: -215px}
+    100% {left: -220px}
   }
 }
 
-@media only screen and (max-width: 1600px) {
+@include breakpoint(1600px) {
   @keyframes reveal {
     0% {left: 0px}
-    100% {left: -200px}
+    100% {left: -205px}
   }
 }
 
-@media only screen and (max-width: 1200px) {
+@include breakpoint(1200px) {
+  @keyframes reveal {
+    0% {left: 0px}
+    100% {left: -185px}
+  }
+}
+
+@include breakpoint(900px) {
   @keyframes reveal {
     0% {left: 0px}
     100% {left: -180px}
   }
 }
 
-@media only screen and (max-width: 900px) {
+@include breakpoint(700px) {
   @keyframes reveal {
     0% {left: 0px}
-    100% {left: -175px}
+    100% {left: -150px}
   }
 }
 
-@media only screen and (max-width: 700px) {
+@include breakpoint(400px) {
   @keyframes reveal {
     0% {left: 0px}
-    100% {left: -145px}
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  @keyframes reveal {
-    0% {left: 0px}
-    100% {left: -175px}
+    100% {left: -180px}
   }
 }
