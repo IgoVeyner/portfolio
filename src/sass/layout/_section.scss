@@ -1,0 +1,45 @@
+.main-content {
+  width: 100%;
+  opacity: 0;
+  animation: unblur 5s forwards .5s;
+  z-index: 0;
+  position: relative;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  width: auto;
+  padding-left: 150px;
+  padding-right: 150px;
+  min-width: fit-content;
+
+  @include breakpoint(1000px) {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+
+  @include breakpoint(700px) {
+    padding-left: $space2XL;
+    padding-right: $space2XL;
+  }
+
+  @include breakpoint(400px) {
+    padding-left: $spaceXL;
+    padding-right: $spaceXL;
+  }
+}
+
+@keyframes unblur {
+  0% {
+    filter: blur(25px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
