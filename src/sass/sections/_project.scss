@@ -55,6 +55,16 @@
     margin-top: 5%;
     width: 75%;
   }
+
+  &:hover > .divider-container > .divider-top {
+    transition: all 1.3s ease-out;
+    transform: translateX(-120%);
+  }
+
+  &:hover > .divider-container > .divider-bottom {
+    transition: all 1.3s ease-out;
+    transform: translateX(120%);
+  }
 }
 
 .project-title {
@@ -112,4 +122,11 @@
 
 .divider-container {
   transform: scale(1.5);
+  fill: $colorGreen;
+  padding: 1rem;
+  cursor: default;
+}
+
+.divider-container path {
+  cursor: default;
 }
