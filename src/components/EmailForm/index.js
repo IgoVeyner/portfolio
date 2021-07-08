@@ -1,4 +1,4 @@
-import "./index.css"
+// import "./index.css"
 import emailjs from 'emailjs-com'
 import { useSelector } from 'react-redux'
 import { useRef, useState } from "react"
@@ -166,9 +166,9 @@ function EmailForm() {
 const getStyles = (theme) => {
 
   if (theme === "dark") {
-    return ["dark-contact-header", "dark-contact-input", "dark-contact-label"]
+    return ["dark-title", "dark-contact-input", "dark-contact-label"]
   } else {
-    return ["light-contact-header", "light-contact-input", "light-contact-label"]
+    return ["light-title", "light-contact-input", "light-contact-label"]
   }
 
 }

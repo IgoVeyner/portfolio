@@ -31,6 +31,7 @@ $lightLine: $lightColor5;
 $lightProjText: $lightColor6;
 $lightAboutText: $lightColor6;
 $lightSkillsText: $lightColor6;
+$lightLabel: $lightColor6;
 
 
 // Dark Mode Stlyes
@@ -50,7 +51,7 @@ $lightSkillsText: $lightColor6;
 }
 
 .dark-logo {
-  fill: white;
+  fill: $colorWhite;
 }
 
 .nav-dark {
@@ -85,6 +86,10 @@ $lightSkillsText: $lightColor6;
   color: darken($colorWhite, 20%);
 }
 
+.dark-contact-input {
+  color: $colorWhite;
+}
+
 @include breakpoint(700px, 625px) {
   .dark-bg-menu:hover {
     backdrop-filter: contrast(0.7);
@@ -109,7 +114,7 @@ $lightSkillsText: $lightColor6;
 }
 
 .light-logo {
-  fill: black;
+  fill: $colorBlack;
 }
 
 .nav-light {
@@ -155,6 +160,14 @@ $lightSkillsText: $lightColor6;
 
 .light-skills-text {
   color: $lightSkillsText;
+}
+
+.light-contact-input {
+  color: $colorBlack;
+}
+
+.light-contact-label {
+  color: $lightLabel;
 }
 
 @include breakpoint(700px, 625px) { 
