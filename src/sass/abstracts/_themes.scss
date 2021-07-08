@@ -29,6 +29,7 @@ $lightIntroTitle: $colorBlack;
 $lightBlinker: $colorBlack;
 $lightLine: $lightColor5;
 $lightProjText: $lightColor6;
+$lightAboutText: $lightColor6;
 
 
 // Dark Mode Stlyes
@@ -129,6 +130,10 @@ $lightProjText: $lightColor6;
 
 .light-proj-text {
   color: $lightProjText;
+}
+
+.light-about-text {
+  color: $lightAboutText;
 }
 
 @include breakpoint(700px, 625px) { 

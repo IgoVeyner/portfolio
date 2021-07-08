@@ -1,5 +1,5 @@
 import { useSelector } from 'react-redux'
-import './index.css'
+// import './index.css'
 import selfie from '../../images/selfie.JPG'
 
 const AboutMe = () => {
@@ -45,9 +45,9 @@ const AboutMe = () => {
 const getStyles = (theme) => {
 
   if (theme === "dark") {
-    return ["dark-about-title", "dark-about-text"]
+    return ["dark-title", ""]
   } else {
-    return ["light-about-title", "light-about-text"]
+    return ["light-title", "light-about-text"]
   }
 
 }
