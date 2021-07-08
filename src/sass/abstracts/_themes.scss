@@ -19,6 +19,7 @@ $lightColor2: #000000BB;
 $lightColor3: #000000B3;
 $lightColor4: #F2F2F2;
 $lightColor5: #0000001A;
+$lightColor6: #00000080;
 $lightFont: $lightColor3;
 $lightIcon: $lightColor1;
 $lightLink: $lightColor2;
@@ -27,6 +28,7 @@ $lightMenu: $colorBlack;
 $lightIntroTitle: $colorBlack;
 $lightBlinker: $colorBlack;
 $lightLine: $lightColor5;
+$lightProjText: $lightColor6;
 
 
 // Dark Mode Stlyes
@@ -123,6 +125,10 @@ $lightLine: $lightColor5;
 
 .light-line {
   background-color: $lightLine;
+}
+
+.light-proj-text {
+  color: $lightProjText;
 }
 
 @include breakpoint(700px, 625px) { 
