@@ -1,4 +1,4 @@
-import './index.css'
+// import './index.css'
 import jQueryImage from '../../../images/jQuery.png'
 
 const JQueryLi = ({ textColor }) => {

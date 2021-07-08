@@ -1,4 +1,4 @@
-import './index.css'
+// import './index.css'
 import CSSImage from '../../../images/css.png'
 
 const CSSLi = ({ textColor }) => {

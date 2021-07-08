@@ -1,0 +1,46 @@
+.css-image, .html-image, 
+.jQuery-image, .rails-image, 
+.sqlite-image  {
+  width: 70px;
+}
+
+.rails-small {
+  font-size: 1rem;
+
+  @include breakpoint(900px) {
+    font-size: 0.85rem;
+  }
+
+  @include breakpoint(900px) {
+    font-size: 0.85rem;
+  }
+}
+
+.ruby-image {
+  width: 60px;
+}
+
+.postgres-image, .redux-image {
+  width: 76px;
+}
+
+.react-image {
+  width: 90px;
+}
+
+.javascript-image {
+  width: 80px;
+}
+
+.javascript-small {
+  display: block;
+  font-size: 1rem;
+
+  @include breakpoint(900px) {
+    font-size: 0.85rem;
+  }
+
+  @include breakpoint(900px) {
+    font-size: 0.75rem;
+  }
+}

@@ -1,4 +1,4 @@
-import './index.css'
+// import './index.css'
 import SqliteImage from '../../../images/sqlite.png'
 
 const SqliteLi = ({ textColor }) => {
