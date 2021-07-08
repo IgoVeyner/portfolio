@@ -41,6 +41,7 @@
     transform: scaleX(0) translateY(-2px);
     transform-origin: right;
     transition: transform .3s ease-in-out;
+    filter: blur(1px);
   }
 
   &:hover::after {

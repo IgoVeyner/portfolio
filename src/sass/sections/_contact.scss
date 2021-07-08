@@ -69,6 +69,7 @@ $colorRed: red;
     transform: scaleX(0);
     transform-origin: left;
     transition: transform .6s ease-in-out;
+    filter: blur(1px);
   }
 
   &:focus-within::after {
