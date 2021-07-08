@@ -1,0 +1,40 @@
+.title-ending {
+  display: inline;
+  font-weight: bolder;
+}
+
+.linux {
+  color: $colorGreen;
+  font-weight: 400;
+  margin-right: $spaceS;
+  position: relative;
+  top: 2px;
+}
+
+.title-typing {
+  font-size: 8rem;
+
+  @include breakpoint(2000px) {
+    font-size: 7rem;
+  }
+
+  @include breakpoint(1600px) {
+    font-size: 6rem;
+  }
+
+  @include breakpoint(1200px) {
+    font-size: 5rem;
+  }
+  
+  @include breakpoint(900px) {
+    font-size: 4rem;
+  }
+
+  @include breakpoint(700px) {
+    font-size: 3rem;
+  }
+
+  @include breakpoint(400px) {
+    font-size: 2rem;
+  }
+}

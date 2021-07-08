@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import useTypingAnimation from '../../../Hooks/useTypingAnimation'
 import Blinker from "../Blinker";
-import "./index.css"
+// import "./index.css"
 
 const words = ["Engineer", "Developer"]
 
@@ -13,7 +13,7 @@ const TitleTyping = ({ titleColor }) => {
   useTypingAnimation(words, index, setIndex, reverse, setReverse, subIndex, setSubIndex)
 
   return (
-    <div>
+    <div className="title-typing">
       <span className="linux">
           ~$
       </span> 
