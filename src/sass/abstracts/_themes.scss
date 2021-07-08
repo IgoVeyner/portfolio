@@ -30,6 +30,7 @@ $lightBlinker: $colorBlack;
 $lightLine: $lightColor5;
 $lightProjText: $lightColor6;
 $lightAboutText: $lightColor6;
+$lightSkillsText: $lightColor6;
 
 
 // Dark Mode Stlyes
@@ -74,6 +75,14 @@ $lightAboutText: $lightColor6;
 
 .dark-line {
   background-color: $darkLine;
+}
+
+.dark-border {
+  border-left: $darkLine 1px solid;
+}
+
+.dark-subheader {
+  color: darken($colorWhite, 20%);
 }
 
 @include breakpoint(700px, 625px) {
@@ -136,8 +145,29 @@ $lightAboutText: $lightColor6;
   color: $lightAboutText;
 }
 
+.light-border {
+  border-left: $lightLine 1px solid;
+}
+
+.light-subheader {
+  color: lighten($colorBlack, 40%);
+}
+
+.light-skills-text {
+  color: $lightSkillsText;
+}
+
 @include breakpoint(700px, 625px) { 
   .light-bg-menu:hover {
     backdrop-filter: contrast(0.85);
+  }
+}
+
+// both
+
+@include breakpoint(900px) {
+  .dark-border, .light-border {
+    border: none;
+    margin-top: 2rem;
   }
 }

@@ -1,0 +1,103 @@
+.section-skills {
+  @include breakpoint(1300px) {
+    height: 150vh;
+  }
+}
+
+.skills-header {
+  margin: $spaceXL 0;
+  font-size: 2.5rem;
+  text-align: center;
+
+  @include breakpoint(900px) {
+    font-size: 2rem;
+  }
+}
+
+.skills-image {
+  filter: grayscale(1);
+  transition: filter .3s;
+  max-width: 100px;
+
+  @include breakpoint(900px) {
+    transform: scale(0.9);
+  }
+
+  @include breakpoint(800px) {
+    transform: scale(0.8);
+  }
+
+  @include breakpoint(500px) {
+    transform: scale(0.7);
+  }
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  text-align: center;
+
+  h2 {
+    font-size: 2rem;
+    margin: $spaceM;
+    
+    &:nth-of-type(2n) {
+      margin-top: 2rem;
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+  }
+
+  li {
+    list-style-type: none;
+    font-size: 1.25rem;
+    margin: 1rem;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &:hover > .skills-image {
+      filter: grayscale(0);
+    }
+
+    &:hover > .dark-skills-text,
+    &:hover >.light-skills-text {
+      font-weight: bolder;
+    }
+
+    @include breakpoint(900px) {
+      margin: .5rem;
+      font-size: 1.15rem;
+      width: 90px;
+    }
+
+    @include breakpoint(800px) { 
+      margin: .3rem;
+      font-size: 1rem;
+      width: 85px;
+    }
+
+    @include breakpoint(500px) {
+      margin: .2rem;
+      width: 80px;
+    }
+  }
+
+  @include breakpoint(900px) {
+    grid-template-columns: none;
+  }
+}
+
+@include breakpoint(900px) {
+  .dark-border, .light-border {
+    border: none;
+    margin-top: 2rem;
+  }
+}

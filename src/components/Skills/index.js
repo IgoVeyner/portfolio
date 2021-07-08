@@ -1,4 +1,4 @@
-import './index.css'
+// import './index.css'
 import JavaScriptLi from './JavaScript'
 import ReactLi from './React'
 import ReduxLi from './Redux'
@@ -13,7 +13,7 @@ import { useSelector } from 'react-redux'
 
 const Skills = () => {
   const theme = useSelector(state => state.theme)
-  let [titleColor, borderColor, textColor] = getStyles(theme)
+  let [titleColor, borderColor, textColor, subHeaderColor] = getStyles(theme)
 
   return (
     <section className="section section-skills" id="skills">
@@ -21,7 +21,7 @@ const Skills = () => {
 
         <div className="skills-container">
           <div>
-            <h2 className={titleColor}>Frontend</h2>
+            <h2 className={subHeaderColor}>Frontend</h2>
             <ul>
               <ReactLi textColor={textColor} />
               <ReduxLi textColor={textColor} />
@@ -33,7 +33,7 @@ const Skills = () => {
           </div>
 
           <div className={borderColor}>
-            <h2 className={titleColor}>Backend</h2>
+            <h2 className={subHeaderColor}>Backend</h2>
             <ul>
               <RubyLi textColor={textColor} />
               <RailsLi textColor={textColor} />
@@ -51,15 +51,17 @@ const getStyles = (theme) => {
 
   if (theme === "dark") {
     return [
-      "dark-skills-header", 
+      "dark-title", 
       "dark-border", 
-      "dark-skills-text"
+      "dark-skills-text",
+      "dark-subheader"
     ]
   } else {
     return [
-      "light-skills-header",
+      "light-title",
       "light-border",
-      "light-skills-text"
+      "light-skills-text",
+      "light-subheader"
     ]
   }
 
