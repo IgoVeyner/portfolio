@@ -3,6 +3,7 @@ $darkBackground: #111111;
 $darkColor1: #ffffff99;
 $darkColor2: #ffffffCC;
 $darkColor3: #111111EB;
+$darkColor4: #ffffff4D;
 $darkFont: $darkColor2;
 $darkIcon: $darkColor1;
 $darkLink: $darkColor2;
@@ -10,12 +11,14 @@ $darkMobileNav: $darkColor3;
 $darkMenu: $colorWhite;
 $darkIntroTitle: $colorWhite;
 $darkBlinker: $colorWhite;
+$darkLine: $darkColor4;
 
 $lightBackground: $colorOffWhite;
 $lightColor1: #00000099;
 $lightColor2: #000000BB;
 $lightColor3: #000000B3;
 $lightColor4: #F2F2F2;
+$lightColor5: #0000001A;
 $lightFont: $lightColor3;
 $lightIcon: $lightColor1;
 $lightLink: $lightColor2;
@@ -23,6 +26,7 @@ $lightMobileNav: $lightColor4;
 $lightMenu: $colorBlack;
 $lightIntroTitle: $colorBlack;
 $lightBlinker: $colorBlack;
+$lightLine: $lightColor5;
 
 
 // Dark Mode Stlyes
@@ -63,6 +67,10 @@ $lightBlinker: $colorBlack;
 
 .dark-blinker {
   background-color: $darkBlinker;
+}
+
+.dark-line {
+  background-color: $darkLine;
 }
 
 @include breakpoint(700px, 625px) {
@@ -111,6 +119,10 @@ $lightBlinker: $colorBlack;
 
 .light-blinker {
   background-color: $lightBlinker;
+}
+
+.light-line {
+  background-color: $lightLine;
 }
 
 @include breakpoint(700px, 625px) { 

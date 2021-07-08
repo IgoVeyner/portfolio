@@ -1,4 +1,4 @@
-import "./index.css"
+// import "./index.css"
 
 const TitleRotating = ({ color, titleColor }) => {
   return (
