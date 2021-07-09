@@ -1,4 +1,3 @@
-// import './index.css'
 import HTMLImage from '../../../images/html5.png'
 
 const HTMLLi = ({ textColor }) => {

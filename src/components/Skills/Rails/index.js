@@ -1,4 +1,3 @@
-// import './index.css'
 import RailsImage from '../../../images/Rails.png'
 
 const RailsLi = ({ textColor }) => {

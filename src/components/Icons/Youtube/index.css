@@ -1,8 +1,0 @@
-.youtube {
-  transition: transform 1s;
-}
-
-.youtube:hover {
-  transition: transform .5s;
-  transform: scale(1.2);
-}

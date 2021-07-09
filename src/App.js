@@ -1,4 +1,3 @@
-import './App.css'
 import './sass/app.scss'
 import Home from './components/Home'
 import { useSelector } from 'react-redux'

@@ -1,5 +1,3 @@
-// import './index.css'
-
 const GithubIcon = ({ link, iconColor="" }) => {
 
   return (

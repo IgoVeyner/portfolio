@@ -1,4 +1,3 @@
-// import './index.css'
 import PostgresImage from '../../../images/PostgreSQL.png'
 
 const PostgresLi = ({ textColor }) => {

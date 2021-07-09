@@ -2,7 +2,6 @@ import { useSelector } from 'react-redux'
 import GithubIcon from '../../Icons/Github'
 import LinkedInIcon from '../../Icons/LinkedIn'
 import MediumIcon from '../../Icons/Medium'
-// import "./index.css"
 
 const IconNav = ({ classNames }) => {
   const [navName] = classNames

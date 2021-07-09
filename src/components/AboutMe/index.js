@@ -1,5 +1,4 @@
 import { useSelector } from 'react-redux'
-// import './index.css'
 import selfie from '../../images/selfie.JPG'
 
 const AboutMe = () => {

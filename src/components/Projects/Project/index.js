@@ -1,7 +1,6 @@
 import GithubIcon from '../../Icons/Github'
 import YoutubeIcon from '../../Icons/Youtube'
 import Divider from '../Divider'
-// import './index.css'
 
 const Project = ({ project, id, reverse, theme }) => {
   const {projectName, description, github, demoLink, img } = project

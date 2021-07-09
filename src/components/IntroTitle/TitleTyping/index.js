@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import useTypingAnimation from '../../../Hooks/useTypingAnimation'
 import Blinker from "../Blinker";
-// import "./index.css"
 
 const words = ["Engineer", "Developer"]
 

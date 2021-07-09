@@ -1,4 +1,3 @@
-// import './index.css'
 import JavaScriptImage from '../../../images/javascript.png'
 
 const JavaScriptLi = ({ textColor }) => {

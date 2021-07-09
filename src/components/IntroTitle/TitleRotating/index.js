@@ -1,5 +1,3 @@
-// import "./index.css"
-
 const TitleRotating = ({ color, titleColor }) => {
   return (
     <div className="title-container">

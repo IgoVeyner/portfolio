@@ -1,4 +1,3 @@
-// import './index.css'
 import RubyImage from '../../../images/ruby.png'
 
 const RubyLi = ({ textColor }) => {

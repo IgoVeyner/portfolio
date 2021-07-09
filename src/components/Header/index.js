@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import useMenuAnimation from '../../Hooks/useMenuAnimation'
-// import './index.css'
 import Logo from './Logo'
 import Nav from './Nav'
 import MenuButton from '../Buttons/Menu'

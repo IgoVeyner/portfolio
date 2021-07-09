@@ -1,4 +1,3 @@
-// import './index.css'
 import ReactImage from '../../../images/React.png'
 
 const ReactLi = ({ textColor }) => {

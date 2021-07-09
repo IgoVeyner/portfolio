@@ -1,4 +1,3 @@
-// import './index.css'
 import JavaScriptLi from './JavaScript'
 import ReactLi from './React'
 import ReduxLi from './Redux'

@@ -1,8 +1,0 @@
-.github {
-  transition: transform 1s;
-}
-
-.github:hover {
-  transition: transform .5s;
-  transform: scale(1.3);
-}

@@ -1,4 +1,3 @@
-// import "./index.css"
 import emailjs from 'emailjs-com'
 import { useSelector } from 'react-redux'
 import { useRef, useState } from "react"

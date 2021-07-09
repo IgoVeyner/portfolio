@@ -1,8 +1,0 @@
-#medium {
-  transition: transform 1s;
-}
-
-#medium:hover {
-  transition: transform .5s;
-  transform: scale(1.3);
-}

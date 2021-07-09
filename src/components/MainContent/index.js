@@ -1,4 +1,3 @@
-// import "./index.css"
 import IntroTitle from '../IntroTitle'
 import Projects from "../Projects"
 import AboutMe from "../AboutMe"

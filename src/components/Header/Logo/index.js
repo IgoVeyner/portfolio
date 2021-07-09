@@ -1,5 +1,4 @@
 import { useSelector } from 'react-redux'
-// import './index.css'
 
 const Logo = () => {
   const theme = useSelector(state => state.theme)

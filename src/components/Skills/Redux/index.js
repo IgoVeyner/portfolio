@@ -1,4 +1,3 @@
-// import './index.css'
 import ReduxImage from '../../../images/redux.png'
 
 const ReduxLi = ({ textColor }) => {

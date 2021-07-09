@@ -1,5 +1,3 @@
-// import './index.css'
-
 const LinkedInIcon = ({ link, iconColor }) => {
 
   return (

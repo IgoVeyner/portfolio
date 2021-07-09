@@ -1,5 +1,3 @@
-// import './index.css'
-
 const MediumIcon = ({ link, iconColor }) => {
 
   return (
