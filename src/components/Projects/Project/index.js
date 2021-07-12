@@ -25,8 +25,8 @@ const Project = ({ project, id, reverse, theme }) => {
           <p className={`project-text ${textColor}`}>{description}</p>
           <div className="project-links-container">
             <GithubIcon link={github} iconColor={iconColor} />
-            <YoutubeIcon link={demoLink} iconColor={iconColor} />
             {live ? <WebsiteIcon link={live} iconColor={iconColor} /> : null}
+            <YoutubeIcon link={demoLink} iconColor={iconColor} />
           </div>
         </div>
       </div>

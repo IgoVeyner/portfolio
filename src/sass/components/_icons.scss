@@ -47,7 +47,7 @@ $iconGrey: #808080;
   transform: scale(.8);
 }
 
-.github, #linkedIn, #medium, .youtube {
+.github, #linkedIn, #medium, .youtube, .live-link {
   transition: transform 1s;
 
   &:hover {
@@ -55,10 +55,15 @@ $iconGrey: #808080;
   }
 }
 
-.github:hover, #medium:hover {
+.github:hover, #medium:hover, .live-link:hover {
   transform: scale(1.3);
 }
 
 #linkedIn:hover, .youtube:hover {
   transform: scale(1.2);
+}
+
+
+.live-link-icon {
+  width: 20px;
 }

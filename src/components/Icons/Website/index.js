@@ -1,9 +1,9 @@
 const WebsiteIcon = ({ link, iconColor }) => {
 
   return (
-    <a href={link} className="icon-container" target="_blank" rel="noreferrer">
+    <a href={link} className="icon-container live-link" target="_blank" rel="noreferrer">
       <svg 
-        className={`${iconColor} web-icon`}
+        className={`${iconColor} web-icon live-link-icon`}
         xmlns="http://www.w3.org/2000/svg" 
         viewBox="0 0 24 24">
           <path 
