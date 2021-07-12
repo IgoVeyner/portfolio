@@ -8,7 +8,8 @@ const projects = [
     description: "Skateboarding Forum / Message board site in the style of Thrasher Magazine",
     demoLink: "https://www.youtube.com/watch?v=21PHZBzQKAo",
     github: "https://github.com/IgoVeyner/thrasher-forums",
-    img: thrasher
+    img: thrasher,
+    live: "https://thrasher-forums.web.app/"
   },
   {
     projectName: "Code Speed Typer",

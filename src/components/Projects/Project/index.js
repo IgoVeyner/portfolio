@@ -1,9 +1,10 @@
 import GithubIcon from '../../Icons/Github'
 import YoutubeIcon from '../../Icons/Youtube'
+import WebsiteIcon from '../../Icons/Website'
 import Divider from '../Divider'
 
 const Project = ({ project, id, reverse, theme }) => {
-  const {projectName, description, github, demoLink, img } = project
+  const {projectName, description, github, demoLink, img, live } = project
   const [orderReverse, projReverse] = 
     reverse ? ["order-reverse", "project-reverse"] : ["", ""]
   let [titleColor, textColor, iconColor] = getStyles(theme)
@@ -25,6 +26,7 @@ const Project = ({ project, id, reverse, theme }) => {
           <div className="project-links-container">
             <GithubIcon link={github} iconColor={iconColor} />
             <YoutubeIcon link={demoLink} iconColor={iconColor} />
+            {live ? <WebsiteIcon link={live} iconColor={iconColor} /> : null}
           </div>
         </div>
       </div>
