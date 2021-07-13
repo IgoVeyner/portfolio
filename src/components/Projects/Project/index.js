@@ -2,6 +2,7 @@ import GithubIcon from '../../Icons/Github'
 import YoutubeIcon from '../../Icons/Youtube'
 import WebsiteIcon from '../../Icons/Website'
 import Divider from '../Divider'
+import Modal from '../Modal'
 
 const Project = ({ project, id, reverse, theme }) => {
   const {projectName, description, github, demoLink, img, live } = project
@@ -12,13 +13,14 @@ const Project = ({ project, id, reverse, theme }) => {
   return (
     <section className="section section-project" id={id}>
       <div className={`project ${projReverse}`}>
-        <div className={`project-preview ${orderReverse}`}>
+        {/* <div className={`project-preview ${orderReverse}`}>
           <img 
             className="project-img"
             src={img}
             alt="stub"
           />
-        </div>
+        </div> */}
+        <Modal image={img} orderReverse={orderReverse} />
         <div className="project-description">
           <Divider />
           <h1 className={`project-title ${titleColor}`}>{projectName}</h1>
