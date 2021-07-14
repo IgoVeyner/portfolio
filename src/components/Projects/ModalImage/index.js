@@ -2,8 +2,6 @@ import { useEffect } from "react";
 
 const ModalImage = ({ image, toggleModal }) => {
 
-  // align the images properly
-  // use useEffect to get the window pageYoffset
   useEffect(() => {
     document.body.style.overflow = 'hidden';
     return () => document.body.style.overflow = 'unset';
