@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useSelector } from 'react-redux'
 import useMenuAnimation from '../../Hooks/useMenuAnimation'
 import Logo from './Logo'
 import Nav from './Nav'
@@ -10,6 +11,9 @@ const Header = () => {
 
   const [menuExpanded, setMenuExpanded] = useState("unmounted")
   useMenuAnimation(menuExpanded, setMenuExpanded)
+  
+  const modalStatus = useSelector(state => state.modal)
+  const hidden = modalStatus ? "hidden" : "" 
 
   const toggleMenu = () => {
     if (menuExpanded === "mounted") {
@@ -21,7 +25,7 @@ const Header = () => {
   }
 
   return (
-    <header className="navbar">
+    <header className={`navbar ${hidden}`}>
       <Logo />
       <Nav />
       { menuExpanded !== "unmounted" ?  <MobileNav menuExpanded={menuExpanded} /> : null }
