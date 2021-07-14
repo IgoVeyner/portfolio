@@ -15,7 +15,7 @@ const Modal = ({ image, orderReverse }) => {
         onClick={toggleModal}
       />
       {isOpen ? 
-        <ModalImage image={image} toggleModal={toggleModal} isOpen={isOpen}/> 
+        <ModalImage image={image} toggleModal={toggleModal} /> 
         : 
         null
       }

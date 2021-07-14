@@ -1,8 +1,9 @@
 import { useEffect } from "react";
 
-const ModalImage = ({ image, toggleModal, isOpen }) => {
-  const openStatus = isOpen ? "open" : "";
+const ModalImage = ({ image, toggleModal }) => {
 
+  // align the images properly
+  // use useEffect to get the window pageYoffset
   useEffect(() => {
     document.body.style.overflow = 'hidden';
     return () => document.body.style.overflow = 'unset';
@@ -10,7 +11,7 @@ const ModalImage = ({ image, toggleModal, isOpen }) => {
 
   return (
     <div 
-      className={`modal-container ${openStatus}`}
+      className='modal-container'
       onClick={toggleModal}
       style={{top: window.pageYOffset}}
       >

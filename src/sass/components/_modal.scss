@@ -4,12 +4,12 @@
   height: 101vh;
   z-index: 2000;
   background-color: green;
-  display: grid;
-  place-items: center;
+  left: 0;
+  display: flex;
 }
 
 .modal-img {
-  position: relative;
+  margin: auto;
   width: auto;
   max-height: 80%;
 }
