@@ -10,3 +10,5 @@ const handleModal = (state = false, action) => {
       return state
   }
 }
+
+export default handleModal
