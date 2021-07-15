@@ -23,9 +23,15 @@
   justify-content: center;
   order: 1;
 
+  
   .project-img {
     max-width: 90%;
     width: 100%;
+    
+    &:hover {
+      cursor: pointer;
+      filter: contrast(0.8);
+    }
   }
 
   @include breakpoint(1300px) {

@@ -5,6 +5,10 @@
   z-index: 2000;
   left: 0;
   display: flex;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .modal-img {
@@ -12,6 +16,10 @@
   width: auto;
   max-width: 80%;
   max-height: 80%;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .hidden {
