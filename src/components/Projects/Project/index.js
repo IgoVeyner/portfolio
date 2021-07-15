@@ -13,22 +13,21 @@ const Project = ({ project, id, reverse, theme }) => {
   return (
     <section className="section section-project" id={id}>
       <div className={`project ${projReverse}`}>
-        {/* <div className={`project-preview ${orderReverse}`}>
-          <img 
-            className="project-img"
-            src={img}
-            alt="stub"
-          />
-        </div> */}
-        <Modal image={img} orderReverse={orderReverse} />
+
+        <Modal image={img} orderReverse={orderReverse} projectName={projectName} />
+
         <div className="project-description">
+
           <Divider />
           <h1 className={`project-title ${titleColor}`}>{projectName}</h1>
           <p className={`project-text ${textColor}`}>{description}</p>
+
           <div className="project-links-container">
+
             <GithubIcon link={github} iconColor={iconColor} />
             {live ? <WebsiteIcon link={live} iconColor={iconColor} /> : null}
             <YoutubeIcon link={demoLink} iconColor={iconColor} />
+            
           </div>
         </div>
       </div>

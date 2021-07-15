@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { setOpen, setClose } from '../../../redux/actions/modalActions'
 import ModalImage from "../ModalImage";
 
-const Modal = ({ image, orderReverse }) => {
+const Modal = ({ image, orderReverse, projectName }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const modalStatus = useSelector(state => state.modal)
@@ -19,11 +19,11 @@ const Modal = ({ image, orderReverse }) => {
       <img 
         className="project-img"
         src={image}
-        alt="stub"
+        alt={projectName}
         onClick={toggleModal}
       />
       {isOpen ? 
-        <ModalImage image={image} toggleModal={toggleModal} /> 
+        <ModalImage image={image} toggleModal={toggleModal} projectName={projectName} /> 
         : 
         null
       }
