@@ -1,9 +1,8 @@
-.modal-container {
+%modal-container {
   position: absolute;
   width: 100%;
   height: 102vh;
   z-index: 2000;
-  background-color: green;
   left: 0;
   display: flex;
 }

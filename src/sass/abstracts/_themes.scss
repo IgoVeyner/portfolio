@@ -90,6 +90,11 @@ $lightLabel: $lightColor6;
   color: $colorWhite;
 }
 
+.dark-modal {
+  @extend %modal-container;
+  background: $darkBackground;
+}
+
 @include breakpoint(700px, 625px) {
   .dark-bg-menu:hover {
     backdrop-filter: contrast(0.7);
@@ -168,6 +173,11 @@ $lightLabel: $lightColor6;
 
 .light-contact-label {
   color: $lightLabel;
+}
+
+.light-modal {
+  @extend %modal-container;
+  background: $lightBackground;
 }
 
 @include breakpoint(700px, 625px) { 

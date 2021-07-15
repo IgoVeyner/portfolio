@@ -1,6 +1,11 @@
 import { useEffect } from "react";
+import { useSelector } from "react-redux"
 
 const ModalImage = ({ image, toggleModal }) => {
+  // finish background color
+  const theme = useSelector(state => state.theme)
+
+  const modalBackground = theme === "dark" ? "dark-modal" : "light-modal"
 
   useEffect(() => {
     document.body.style.overflow = 'hidden';
@@ -9,7 +14,7 @@ const ModalImage = ({ image, toggleModal }) => {
 
   return (
     <div 
-      className='modal-container'
+      className={modalBackground}
       onClick={toggleModal}
       style={{top: window.pageYOffset}}
       >
