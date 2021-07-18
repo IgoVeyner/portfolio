@@ -1,14 +1,14 @@
 import IntroTitle from '../IntroTitle'
-import Projects from "../Projects"
 import AboutMe from "../AboutMe"
 import Skills from "../Skills"
 import EmailForm from "../EmailForm"
+import Carousel from '../Carousel'
 
 const MainContent = () => {
   return (
     <div className="main-content">
       <IntroTitle />
-      <Projects />
+      <Carousel />
       <AboutMe />
       <Skills />
       <EmailForm />

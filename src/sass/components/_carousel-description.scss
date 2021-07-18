@@ -1,0 +1,48 @@
+.carousel-proj-desc {
+  text-align: center;
+}
+
+.project-text {
+  font-size: 1.25rem;
+  max-width: 700px;
+  margin: auto;
+
+  @include breakpoint(2000px) {
+    font-size: 1.15rem;
+  }
+
+  @include breakpoint(1300px) {
+    font-size: 1rem;
+    max-width: 500px;
+  }
+
+  @include breakpoint(850px) {
+    font-size: 0.85rem;
+  }
+}
+
+.project-title {
+  font-size: 2.5rem;
+  margin-top: 0;
+  min-inline-size: max-content;
+
+  @include breakpoint(2000px) {
+    font-size: 2.25rem;
+  }
+
+  @include breakpoint(1600px) {
+    font-size: 2rem;
+  }
+
+  @include breakpoint(700px) {
+    font-size: 1.5rem;
+  }
+}
+
+.carousel-proj-links {
+  display: flex;
+  width: 150px;
+  justify-content: space-evenly;
+  transform: scale(1.15);
+  margin: 1rem auto 0 auto;
+}

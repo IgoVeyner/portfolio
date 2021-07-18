@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <nav className="web-nav">
       <div className="web-nav-list">
-        <a href="#project-1" className={`${linkColor}`}>Projects</a>
+        <a href="#projects" className={`${linkColor}`}>Projects</a>
         <a href="#about" className={`${linkColor}`}>About</a>
         <a href="#skills" className={`${linkColor}`}>Skills</a>
         <a href="#contact" className={`${linkColor}`}>Contact</a>

@@ -1,0 +1,71 @@
+
+%arrow-container {
+  height: 100%;
+  width: 100px;
+  position: relative;
+  z-index: 10;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  align-items: center;
+  transition: right 1s ease,
+    background 0.3s ease-in-out;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+}
+
+.carousel-arrow {
+  fill: $colorGreen;
+  height: 75px;
+  width: 75px;
+  transition: height 0.3s ease-in-out,
+    width 0.3s ease-in-out;
+
+  path {
+    fill: inherit;
+    filter: drop-shadow(1px 1px 2px grey);
+  }
+
+  %arrow-container:hover & {
+    fill: darken($hoverGreen, 5%);
+  }
+
+  @include breakpoint(1100px) {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+.arrow-reverse {
+  transform: rotateY(180deg);
+}
+
+.arrow-left {
+  @extend %arrow-container;
+  right: 100px;
+
+  @include breakpoint(1600px) {
+    right: 0px;
+  }
+
+  @include breakpoint(700px) {
+    right: 48px;
+  }
+}
+
+.arrow-right {
+  @extend %arrow-container;
+  right: 0px;
+
+  @include breakpoint(1600px) {
+    right: 100px;
+  }
+
+  @include breakpoint(700px) {
+    right: 52px;
+  }
+}

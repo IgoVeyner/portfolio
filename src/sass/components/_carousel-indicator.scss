@@ -1,0 +1,42 @@
+.carousel-indicator {
+  width: 200px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: auto;
+}
+
+.indicator-circle-container {
+  width: 25%;
+  height: 60%;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.indicator-circle {
+  width: 15px;
+  height: 15px;
+  fill: lighten($colorGrey, 50%);
+  transition: width 0.5s ease-in-out,
+    height 0.5s ease-in-out;
+  cursor: pointer;
+
+  @include breakpoint(1100px) {
+    width: 12px;
+    height: 12px;
+  }
+
+  circle {
+    cursor: pointer;
+  }
+
+  .indicator-circle-container:hover & {
+    fill: $colorGreen;
+  }
+}
+
+.indicator-filled {
+  fill: $colorGreen;
+}
