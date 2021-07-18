@@ -1,138 +1,65 @@
-.section-project {
-  margin: 10% 0px;
-  
-  .project {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    align-items: center;
-  }
-
-  @include breakpoint(1300px) {
-    height: 120vh;
-
-    .project {
-      flex-direction: column;
-    }
-  }
+.carousel-projects {
+  overflow: hidden;
+  height: 110vh;
 }
 
-.project-preview {
-  display: flex;
-  width: 60%;
-  justify-content: center;
-  order: 1;
-
-  
-  .project-img {
-    max-width: 90%;
-    width: 100%;
-    
-    &:hover {
-      cursor: pointer;
-      filter: contrast(0.8);
-    }
-  }
-
-  @include breakpoint(1300px) {
-    width: 65%;
-  }
-
-  @include breakpoint(1000px) {
-    width: 85%
-  }
-
-  @include breakpoint(850px) {
-    width: 100%;
-  }
+.carousel-section-container {
+  height: 100vh;
+  width: 100%;
 }
 
-.project-description {
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  order: 2;
-
-  @include breakpoint(1300px) {
-    width: 100%;
-    margin-top: 5%;
-    width: 75%;
-  }
-
-  &:hover > .divider-container > .divider-top {
-    transition: all 1.3s ease-out;
-    transform: translateX(-120%);
-  }
-
-  &:hover > .divider-container > .divider-bottom {
-    transition: all 1.3s ease-out;
-    transform: translateX(120%);
-  }
-}
-
-.project-title {
-  font-size: 2.5rem;
-  margin-top: 0;
-  min-inline-size: max-content;
+.carousel-container {
+  margin-left: auto;
+  margin-right: auto;
+  height: 65%;
+  width: 100%;
+  max-width: 1100px;
+  display: grid;
+  grid-template-columns: 0% 1fr 0%;
+  transition: max-width 0.5s ease-in-out,
+    width 0.5s ease-in-out,
+    height 0.5s ease-in-out;
 
   @include breakpoint(2000px) {
-    font-size: 2.25rem;
+    transition: max-width 0.5s ease-in-out;
   }
-
+  
   @include breakpoint(1600px) {
-    font-size: 2rem;
+    transition: max-width 0.5s ease-in-out,
+    height 0.5s ease-in-out;
   }
 
-  @include breakpoint(700px) {
-    font-size: 1.5rem;
-  }
-}
-
-.project-text {
-  font-size: 1.25rem;
-  text-align: center;
-  max-width: 600px;
-
-  @include breakpoint(2000px) {
-    font-size: 1.15rem;
+  @include breakpoint(1100px) {
+    margin-top: 5%;
+    height: 60%;
+    transition: height 0.5s ease-in-out;
   }
 
-  @include breakpoint(1300px) {
-    font-size: 1rem;
-    max-width: 400px;
+  @include breakpoint(800px) {
+    margin-top: 15%;
+    height: 50%;
   }
-
-  @include breakpoint(850px) {
-    font-size: 0.85rem;
+  
+  @include breakpoint(600px) {
+    margin-top: 25%;
+    height: 40%;
   }
 }
 
-.order-reverse {
-  order: 3;
+.carousel-content {
+  height: 100%;
+  width: inherit;
+  overflow: hidden;
+}
 
-  @include breakpoint(1300px) {
-    order: 1;
+.carousel-img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  object-position: top;
+
+  &:hover {
+    cursor: pointer;
+    filter: brightness(0.6);
   }
-}
-
-.project-links-container {
-  display: flex;
-  width: 150px;
-  justify-content: space-evenly;
-  transform: scale(1.15);
-  margin-top: 1.5rem;
-}
-
-.divider-container {
-  transform: scale(1.5);
-  fill: $colorGreen;
-  padding: 1rem;
-  cursor: default;
-}
-
-.divider-container path {
-  cursor: default;
 }

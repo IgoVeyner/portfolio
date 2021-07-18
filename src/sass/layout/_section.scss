@@ -17,11 +17,6 @@
   padding-right: 150px;
   min-width: fit-content;
 
-  @include breakpoint(1000px) {
-    padding-left: 150px;
-    padding-right: 150px;
-  }
-
   @include breakpoint(700px) {
     padding-left: $space2XL;
     padding-right: $space2XL;
