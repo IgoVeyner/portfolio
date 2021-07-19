@@ -5,10 +5,12 @@ import Projects from './Projects'
 import CarouselArrow from './Arrow'
 import CarouselIndicator from './Indicator'
 import CarouselDescription from './Description'
+import Modal from './Modal'
 
 const Carousel = () => {
   const dispatch = useDispatch()
   const position = useSelector(state => state.carousel)
+  const modalStatus = useSelector(state => state.modal)
 
   const {projectName, description, github, demoLink, img, live } = projects[position]
 
@@ -39,7 +41,8 @@ const Carousel = () => {
           demoLink={demoLink}
           live={live}
         />
-        
+
+        {modalStatus ? <Modal /> : null}
       </div>
     </div> 
   )
