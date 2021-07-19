@@ -38,6 +38,10 @@
     height: 50px;
     width: 50px;
   }
+
+  @include breakpoint(400px) {
+    display: none;
+  }
 }
 
 .arrow-reverse {
@@ -53,7 +57,7 @@
   }
 
   @include breakpoint(700px) {
-    right: 48px;
+    right: 28px;
   }
 }
 
@@ -66,6 +70,6 @@
   }
 
   @include breakpoint(700px) {
-    right: 52px;
+    right: 72px;
   }
 }
