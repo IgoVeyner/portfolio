@@ -1,7 +1,6 @@
 import { useSelector, useDispatch } from 'react-redux'
 import { setIncrease, setDecrease, setFromIndicator } from '../../redux/actions/carouselActions'
 import projects from './projects'
-import Project from './Project'
 import Projects from './Projects'
 import CarouselArrow from './Arrow'
 import CarouselIndicator from './Indicator'
@@ -20,17 +19,19 @@ const Carousel = () => {
   return (
     <div className="section carousel-projects" id="projects">
       <div className="carousel-section-container">
+
         <div className="carousel-container">
           <CarouselArrow updatePosition={prev} orientation="arrow-left" />
-          <Projects />
-          {/* <Project projectName={projectName} img={img} /> */}
+          <Projects position={position} projects={projects} />
           <CarouselArrow updatePosition={next} orientation="arrow-right" />
         </div>
+
         <CarouselIndicator 
           position={position} 
           length={projects.length}
           updateCarousel={updateFromIndicator}
         />
+
         <CarouselDescription 
           projectName={projectName}
           description={description}
@@ -38,6 +39,7 @@ const Carousel = () => {
           demoLink={demoLink}
           live={live}
         />
+        
       </div>
     </div> 
   )
