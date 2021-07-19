@@ -4,7 +4,7 @@ const Projects = ({ position, projects }) => {
   const renderProjects = () => {
     return projects.map ( project => {
       const { projectName, img } = project
-      return <Project projectName={projectName} img={img} />
+      return <Project key={projectName} projectName={projectName} img={img} />
     })
   }
   

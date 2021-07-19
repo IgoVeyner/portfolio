@@ -13,7 +13,7 @@ const Carousel = () => {
   const position = useSelector(state => state.carousel)
   const modalStatus = useSelector(state => state.modal)
   
-  const {projectName, description, github, demoLink, img, live } = projects[position]
+  const {projectName, description, github, demoLink, live } = projects[position]
   
   const next = () => dispatch(setIncrease(position))
   const prev = () => dispatch(setDecrease(position))
