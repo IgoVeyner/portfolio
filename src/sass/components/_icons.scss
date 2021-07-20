@@ -15,11 +15,18 @@ $iconGrey: #808080;
   flex-direction: column;
   display: flex;
   position: relative;
-  bottom: $space2XL;
+  bottom: -150px;
+  animation: icons-slide-up 0.7s ease-in-out forwards;
+  animation-delay: 1s;
 
   @include breakpoint(700px, 625px) {
     display: none;
   }
+}
+
+@keyframes icons-slide-up {
+  0% { bottom: -150px}
+  100% { bottom: $space2XL}
 }
 
 .mobile-icons {

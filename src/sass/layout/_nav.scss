@@ -28,6 +28,25 @@
   line-height: 1;
   transition: color 2s;
   position: relative;
+  top: -200%;
+  animation: slide-right 0.6s ease-in-out forwards;
+
+  &:nth-of-type(1) {
+    animation-delay: 0.2s;
+  }
+
+  &:nth-of-type(2) {
+    animation-delay: 0.4s;
+  }
+
+  &:nth-of-type(3) {
+    animation-delay: 0.6s;
+  }
+
+  &:nth-of-type(4) {
+    animation-delay: 0.8s;
+  }
+
 
   &::after {
     content: "";
@@ -48,4 +67,9 @@
     transform: scaleX(1) translateY(-2px);
     transform-origin: left;
   }
+}
+
+@keyframes slide-right {
+  0% { top: -200%}
+  100% { top: 0%}
 }
