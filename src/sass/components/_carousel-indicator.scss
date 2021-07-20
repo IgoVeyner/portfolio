@@ -20,7 +20,8 @@
   height: 15px;
   fill: lighten($colorGrey, 50%);
   transition: width 0.5s ease-in-out,
-    height 0.5s ease-in-out;
+    height 0.5s ease-in-out,
+    transform 0.2s linear;
   cursor: pointer;
 
   @include breakpoint(1100px) {
@@ -34,6 +35,7 @@
 
   .indicator-circle-container:hover & {
     fill: $colorGreen;
+    transform: scale(1.2);
   }
 }
 

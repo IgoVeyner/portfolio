@@ -4,6 +4,10 @@
   z-index: 1024;
   height: $space3XL;
   width: $space3XL;
+  left: 0px;
+  animation: logo-slide-right 0.6s ease-in-out;
+  transition: top 0.5s ease-in-out,
+    left 0.5s ease-in-out;
 
   @include breakpoint(700px) {
     position: fixed;
@@ -30,4 +34,9 @@
   33% { transform: translateX(-1px) rotate(-1deg); }
   66% { transform: translateX(1px) rotate(1deg); }
   100% { transform: translateX(0px) rotate(0deg);}
+}
+
+@keyframes logo-slide-right {
+  0% { left: -150px}
+  100% { left: 0px}
 }

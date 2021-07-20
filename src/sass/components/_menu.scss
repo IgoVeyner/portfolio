@@ -12,7 +12,9 @@
     height: 40px;
     padding: $spaceS;
     border-radius: 50px;
-    transition: backdrop-filter .3s
+    transition: backdrop-filter .3s,
+      right 0.5s ease-in-out,
+      top 0.5s ease-in-out;
   }
 
   @include breakpoint(400px) {

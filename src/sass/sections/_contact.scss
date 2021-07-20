@@ -10,6 +10,7 @@ $colorRed: red;
 
 .contact-header {
   font-size: 2.5rem;
+  transition: font-size 0.5s ease-in-out;
 
   @include breakpoint(900px) {
     font-size: 2rem;
