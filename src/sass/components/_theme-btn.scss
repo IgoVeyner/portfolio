@@ -34,6 +34,7 @@
 .theme-button {
   z-index: 1024;
   top: $space2XL;
+  animation: fade-in 6s ease-in;
 
   @include breakpoint(700px, 625px) {
     display: none;
@@ -47,4 +48,9 @@
     display: block;
     bottom: 33px;
   }
+}
+
+@keyframes fade-in {
+  0% { opacity: 0}
+  100% { opacity: 1;}
 }
