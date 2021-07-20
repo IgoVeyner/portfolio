@@ -4,6 +4,9 @@
   z-index: 1024;
   height: $space3XL;
   width: $space3XL;
+  left: 0;
+  transition: top 0.5s ease-in-out,
+    left 0.5s ease-in-out;
 
   @include breakpoint(700px) {
     position: fixed;
