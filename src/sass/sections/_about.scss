@@ -1,4 +1,6 @@
 .section-about {
+  transition: height 0.5s ease-in-out;
+
   @include breakpoint(1000px) {
     height: 150vh;
   }
@@ -16,6 +18,7 @@
 .about {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  transition: grid-template-columns 0.5s ease-in-out;
 
   @include breakpoint(1600px) {
     grid-template-columns: 45% 1fr;
@@ -38,6 +41,7 @@
   flex-direction: column;
   justify-content: center;
   margin: 0 20%;
+  transition: margin 0.5s ease-in-out;
 
   @include breakpoint(1600px) {
     margin: 0 15%;
@@ -51,6 +55,7 @@
 .about-title {
   font-size: 2.5rem;
   margin-bottom: $spaceM;
+  transition: font-size 0.5s ease-in-out;
 
   @include breakpoint(1600px) {
     font-size: 2rem
@@ -60,6 +65,7 @@
 .about-text {
   font-size: 1.25rem;
   margin-bottom: $spaceM;
+  transition: font-size 0.5s ease-in-out;
 
   @include breakpoint(1600px) {
     font-size: 1rem;

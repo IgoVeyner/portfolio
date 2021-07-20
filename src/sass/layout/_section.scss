@@ -16,6 +16,8 @@
   padding-left: 150px;
   padding-right: 150px;
   min-width: fit-content;
+  transition: padding-left 0.5s ease-in-out,
+    padding-right 0.5s ease-in-out;
 
   @include breakpoint(700px) {
     padding-left: $space2XL;
