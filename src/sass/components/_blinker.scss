@@ -5,6 +5,8 @@
   display: inline;
   position: absolute;
   bottom: 0px;
+  transition: height 0.5s ease-in-out,
+    width 0.5s ease-in-out;
 
   @include breakpoint(2000px) {
     height: 7.5rem;

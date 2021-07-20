@@ -10,6 +10,8 @@
   height: 9rem;
   font-size: 8rem;
   flex-shrink: 0;
+  transition: font-size 0.5s ease-in-out,
+    height 0.5s ease-in-out;
 
   @include breakpoint(2000px) {
     height: 8rem;
@@ -62,6 +64,8 @@
   transform-origin: left;
   margin-top: 32px;
   margin-left: 40px;
+  transition: margin-top 0.5s ease-in-out,
+    margin-left 0.5s ease-in-out;
 
   @include breakpoint(2000px) {
     margin-top: 30px;
@@ -84,6 +88,7 @@
   }
 
   @include breakpoint(700px) {
+    margin-top: 4px;
     margin-left: 11px;
   }
 

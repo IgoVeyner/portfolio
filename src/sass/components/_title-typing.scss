@@ -13,6 +13,7 @@
 
 .title-typing {
   font-size: 8rem;
+  transition: font-size 0.5s ease-in-out;
 
   @include breakpoint(2000px) {
     font-size: 7rem;

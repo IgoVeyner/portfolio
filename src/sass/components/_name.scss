@@ -10,6 +10,7 @@
   text-transform: uppercase;
   letter-spacing: .2em;
   font-family: $secondaryFont;
+  transition: font-size 0.5s ease-in-out;
   
   &::before {
     content: "";
