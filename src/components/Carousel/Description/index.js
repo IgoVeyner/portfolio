@@ -6,12 +6,12 @@ import WebsiteIcon from '../../Icons/Website'
 const CarouselDescription = ({ projectName, description, github, demoLink, live }) => {
   const theme = useSelector(state => state.theme)
 
-  let [titleColor, textColor, iconColor] = getStyles(theme)
+  let [iconColor] = getStyles(theme)
 
   return (
     <div className="carousel-proj-desc">
-      <h1 className={`project-title ${titleColor}`}>{projectName}</h1>
-      <p className={`project-text ${textColor}`}>{description}</p>
+      <h1 className='project-title'>{projectName}</h1>
+      <p className='project-text'>{description}</p>
 
       <div className="carousel-proj-links">
         <GithubIcon link={github} iconColor={iconColor} />
@@ -25,9 +25,9 @@ const CarouselDescription = ({ projectName, description, github, demoLink, live 
 const getStyles = (theme) => {
 
   if (theme === "dark") {
-    return ["dark-title", "", "dark-icon"]
+    return ["proj-icon"]
   } else {
-    return ["light-title", "light-proj-text", "light-icon"]
+    return ["proj-icon"]
   }
 
 }
