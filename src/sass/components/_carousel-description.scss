@@ -4,6 +4,10 @@
   width: 50%;
   margin: auto;
   top: -63%;
+
+  @include breakpoint(850px) {
+    width: 75%
+  }
 }
 
 .project-text {
@@ -19,7 +23,6 @@
 
   @include breakpoint(1300px) {
     font-size: 1rem;
-    max-width: 500px;
   }
 
   @include breakpoint(850px) {

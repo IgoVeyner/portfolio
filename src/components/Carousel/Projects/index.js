@@ -1,6 +1,9 @@
 import Project from '../Project'
+import CarouselDescription from '../Description'
 
 const Projects = ({ position, projects }) => {
+  const {projectName, description, github, demoLink, live } = projects[position]
+
   const renderProjects = () => {
     return projects.map ( project => {
       const { projectName, img } = project
@@ -30,7 +33,15 @@ const Projects = ({ position, projects }) => {
     <div className="carousel-list-container">
       <ul className={`carousel-list ${transformPosition}`}>
         {renderProjects()}
+
       </ul>
+      <CarouselDescription 
+          projectName={projectName}
+          description={description}
+          github={github}
+          demoLink={demoLink}
+          live={live}
+        />
     </div>
   )
 }

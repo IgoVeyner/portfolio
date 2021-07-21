@@ -37,13 +37,13 @@ const Carousel = () => {
           updateCarousel={updateFromIndicator}
         />
 
-        <CarouselDescription 
+        {/* <CarouselDescription 
           projectName={projectName}
           description={description}
           github={github}
           demoLink={demoLink}
           live={live}
-        />
+        /> */}
 
         {modalStatus ? <Modal /> : null}
       </div>
