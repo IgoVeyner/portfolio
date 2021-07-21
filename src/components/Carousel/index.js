@@ -4,7 +4,6 @@ import projects from './projects'
 import Projects from './Projects'
 import CarouselArrow from './Arrow'
 import CarouselIndicator from './Indicator'
-import CarouselDescription from './Description'
 import Modal from './Modal'
 import useProgressCarousel from '../../Hooks/useProgressCarousel'
 
@@ -12,8 +11,6 @@ const Carousel = () => {
   const dispatch = useDispatch()
   const position = useSelector(state => state.carousel)
   const modalStatus = useSelector(state => state.modal)
-  
-  const {projectName, description, github, demoLink, live } = projects[position]
   
   const next = () => dispatch(setIncrease(position))
   const prev = () => dispatch(setDecrease(position))
@@ -36,14 +33,6 @@ const Carousel = () => {
           length={projects.length}
           updateCarousel={updateFromIndicator}
         />
-
-        {/* <CarouselDescription 
-          projectName={projectName}
-          description={description}
-          github={github}
-          demoLink={demoLink}
-          live={live}
-        /> */}
 
         {modalStatus ? <Modal /> : null}
       </div>
