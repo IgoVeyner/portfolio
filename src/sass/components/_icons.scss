@@ -41,6 +41,13 @@ $iconGrey: #808080;
   }
 }
 
+.proj-icon {
+  @extend %icon;
+  fill: $iconGrey;
+  position: relative;
+  top: 2px;
+}
+
 .icon-container {
   padding: $spaceS;
 

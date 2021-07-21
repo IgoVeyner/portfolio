@@ -1,11 +1,21 @@
 .carousel-proj-desc {
   text-align: center;
+  position: relative;
+  width: 50%;
+  margin: auto;
+  top: -63%;
+
+  @include breakpoint(850px) {
+    width: 75%
+  }
 }
 
 .project-text {
   font-size: 1.25rem;
-  max-width: 700px;
+  max-width: 600px;
   margin: auto;
+  color: darken(white, 10%);
+  text-shadow: 2px 2px 4px black;
 
   @include breakpoint(2000px) {
     font-size: 1.15rem;
@@ -13,7 +23,6 @@
 
   @include breakpoint(1300px) {
     font-size: 1rem;
-    max-width: 500px;
   }
 
   @include breakpoint(850px) {
@@ -24,7 +33,8 @@
 .project-title {
   font-size: 2.5rem;
   margin-top: 0;
-  min-inline-size: max-content;
+  color: white;
+  text-shadow: 2px 2px 4px black;
 
   @include breakpoint(2000px) {
     font-size: 2.25rem;
@@ -44,5 +54,7 @@
   width: 150px;
   justify-content: space-evenly;
   transform: scale(1.15);
-  margin: 1rem auto 0 auto;
+  margin: 1.5rem auto 0 auto;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
 }
