@@ -8,6 +8,7 @@ import RubyLi from './Ruby'
 import RailsLi from './Rails'
 import SqliteLi from './Sqlite'
 import PostgresLi from './Postgres'
+import SassLi from './Sass'
 import { useSelector } from 'react-redux'
 
 const Skills = () => {
@@ -25,6 +26,7 @@ const Skills = () => {
               <ReactLi textColor={textColor} />
               <ReduxLi textColor={textColor} />
               <JavaScriptLi textColor={textColor} />
+              <SassLi textColor={textColor} />
               <HTMLLi textColor={textColor} />
               <CSSLi textColor={textColor} />
               <JQueryLi textColor={textColor} />
