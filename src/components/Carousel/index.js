@@ -12,8 +12,8 @@ const Carousel = () => {
   const position = useSelector(state => state.carousel)
   const modalStatus = useSelector(state => state.modal)
   
-  const next = () => dispatch(setIncrease(position))
-  const prev = () => dispatch(setDecrease(position))
+  const next = () => dispatch(setIncrease(position + 1))
+  const prev = () => dispatch(setDecrease(position - 1))
   const updateFromIndicator = (num) => dispatch(setFromIndicator(num)) 
   
   useProgressCarousel(next, position, modalStatus)
