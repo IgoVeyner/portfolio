@@ -16,7 +16,8 @@ const projects = [
     description: "Typing Tutor application that aims to improve a programmer's typing speed",
     demoLink: "https://youtu.be/48r0azXDRM4",
     github: "https://github.com/IgoVeyner/code-speed-typer",
-    img: typing
+    img: typing,
+    live: "https://code-race.netlify.app/"
   },
   {
     projectName: "Central Park Zoo",
